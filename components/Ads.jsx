@@ -6,8 +6,8 @@ import Grid from '@material-ui/core/Grid';
 import Group from "../public/Group.png";
 import Vector from "../public/Vector.png";
 import Morpheus from "../public/Morpheus.png";
-import Samsung from "../public/Samsung.png";
-import Monday from "../public/Monday.png";
+import Samsung from "../public/samsung.png";
+import Monday from "../public/monday.png";
 import Segment from "../public/segment.png";
 import Image from 'next/image'
 
