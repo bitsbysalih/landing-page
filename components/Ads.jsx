@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import MuiGrid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typography from '@material-ui/core/Typography';
@@ -20,8 +19,8 @@ import Image from 'next/image'
 
 function Ads() {
   return (
-    <Box style={{ textAlign: "center",border: "1px solid"}}>
-<Grid style={{ width: "100%"}}>
+    <Box style={{ textAlign: "center"}}>
+<Grid >
     <Typography style={{margin:'2rem' ,fontSize:'1rem'}}>Companies we work with!</Typography>
       <Grid container spacing={2}  xs={12} sm={12} md={12} lg={12}>
         <Grid item xs={12} sm={6} md={4} lg={2}>

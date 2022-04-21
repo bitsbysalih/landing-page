@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import SEO from '@bradgarropy/next-seo'
 import { createTheme, ThemeProvider, useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { LanguageContextProvider } from "../context/languageContext"
@@ -18,11 +17,7 @@ function MyApp({ Component, pageProps }) {
 
      <>
 
-     <SEO title="Beyin Digital Technology"
-      description="Beyin"
-      keywords={['Technology','Digital','Card']}
-      icon='/logo.svg'
-     />
+
         <LanguageContextProvider>
      <ThemeProvider theme={theme}>
         <Component {...pageProps} />

@@ -15,7 +15,7 @@ import DrawerComponent from "./Drawer";
 const useStyles = makeStyles((theme) =>({
 
 bar:{
-  background:'#fff' ,boxShadow:'0 1px 70px -20px rgba(0, 0, 0, 0.3)', border:'1px solid'
+ boxShadow:'0 1px 70px -20px rgba(0, 0, 0, 0.3)',
 },
 link:{
   fontFamily: 'Poppins',textDecoration: "none",color:'#000',fontSize: "21px",marginLeft: theme.spacing(6),
@@ -38,8 +38,7 @@ const classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
-<div position="static" className={classes.bar} >
-{/* style={{ background:'#fff' ,boxShadow:'0 1px 70px -20px rgba(0, 0, 0, 0.3)', border:'1px solid'}} */}
+<div position="static" className={classes.bar}>
   <CssBaseline />
       <Toolbar >
           <div variant="h4" className={classes.img}>
