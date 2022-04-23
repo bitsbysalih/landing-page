@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-    Divider,
+  Divider,
   Drawer,
   IconButton,
   List,
@@ -8,71 +8,71 @@ import {
   ListItemText,
   makeStyles,
 } from "@material-ui/core";
-import Link from '@material-ui/core/Link';
+import Link from "@material-ui/core/Link";
 
 import MenuIcon from "@material-ui/icons/Menu";
 
-const useStyles = makeStyles(()=>({
-    link:{
-        textDecoration:"none",
-        color: "black",
-        fontSize: "20px",
-    },
-    icon:{
-        color: "black"
-    }
+const useStyles = makeStyles(() => ({
+  link: {
+    textDecoration: "none",
+    color: "black",
+    fontSize: "20px",
+  },
+  icon: {
+    color: "black",
+  },
 }));
 
 function DrawerComponent() {
-    const classes = useStyles();
+  const classes = useStyles();
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <>
-      <Drawer
-        open={openDrawer}
-        onClose={() => setOpenDrawer(false)}
-      >
+      <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
         <List>
-        <ListItem onClick={() => setOpenDrawer(false)}>
+          <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link href="/">
                 <a className={classes.link}>Home</a>
-                </Link>
-            </ListItemText>
-          </ListItem>
-          <Divider/>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-              <Link href="/about" >
-                        <a className={classes.link}>About</a>
               </Link>
+            </ListItemText>
           </ListItem>
-          <Divider/>
+          <Divider />
+          <ListItem onClick={() => setOpenDrawer(false)}>
+            <Link href="/about">
+              <a className={classes.link}>About</a>
+            </Link>
+          </ListItem>
+          <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link href="/contact" >
+              <Link href="/contact">
                 <a className={classes.link}>How it works </a>
-                </Link>
+              </Link>
             </ListItemText>
           </ListItem>
-          <Divider/>
+          <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link href="/fueatures" >
+              <Link href="/fueatures">
                 <a className={classes.link}>Fueatures</a>
-                </Link>
+              </Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link href="/prices" >
-               <a className={classes.link}> Prices</a>
-                </Link>
+              <Link href="/prices">
+                <a className={classes.link}> Prices</a>
+              </Link>
             </ListItemText>
           </ListItem>
-          <Divider/>
+          <Divider />
         </List>
       </Drawer>
-      <IconButton onClick={() => setOpenDrawer(!openDrawer)}className={classes.icon}>
+      <IconButton
+        onClick={() => setOpenDrawer(!openDrawer)}
+        className={classes.icon}
+      >
         <MenuIcon />
       </IconButton>
     </>
