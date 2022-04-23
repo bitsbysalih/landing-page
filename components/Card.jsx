@@ -3,8 +3,6 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import Image from "next/image";
-import Iphone from "../public/iPhone.png";
 import StyleButton from "./Button/StyleButton";
 
 const useStyles = makeStyles(() => ({

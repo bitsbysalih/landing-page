@@ -6,29 +6,36 @@ import Typography from "@material-ui/core/Typography";
 import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
-<<<<<<< HEAD
-  paper: { padding: "1rem", maxWidth: "80%", textAlign: "center" },
-  img: { margin: "auto", display: "block", width: "100%", height: "100%" },
-  box: { width: 128, height: "100%" },
-  typo: { textAlign: "left", padding: "4px" },
-=======
   paper:
   { padding: "1rem", maxWidth: "80%",
    textAlign: "center"
-  },
+   },
   img:
   { margin: "auto", display: "block",
-  width: "100%", height: "100%"
-},
+   width: "100%", height: "100%"
+  },
   box:
-  { width: 128,
-    height: "100%"
+  { width: 128, height: "100%"
+},
+  typo:
+  { textAlign: "left", padding: "4px"
+},
+
+  paper:
+  { padding: "1rem",
+  maxWidth: "80%",
+   textAlign: "center"
+   },
+  img:
+  { margin: "auto", display: "block",
+   width: "100%", height: "100%"
+  },
+  box:
+   { width: 128, height: "100%"
    },
   typo:
-  { textAlign: "left",
-   padding: "4px"
-  },
->>>>>>> styled and remove about page
+  { textAlign: "left", padding: "4px"
+ },
 }));
 
 export default function Beyin() {
