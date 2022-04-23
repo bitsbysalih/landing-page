@@ -8,73 +8,85 @@ import Image from "next/image";
 
 const useStyles = makeStyles(() => ({
 box:
-{margin:'5rem 2rem'}
+{margin:'9rem 0rem', width:'100%', height:'100%'},
+typo:
+{fontFamily: 'Poppins',
+fontStyle: 'normal',
+fontWeight: 300,
+fontSize: '40px',
+lineHeight: '54px',
+display: 'flex',
+alignItems: 'center',
+
+
+},
+imgIphone:{
+  boxShadow: ' 0px 67.6825px 87.2063px rgba(0, 0, 0, 0.01)',
+  borderRadius: '19.5238px',
+
+},
+imgCard:
+{
+boxShadow: '0px 138px 189px -76px rgba(0, 0, 0, 0.03)',
+borderRadius: '5.25573px'},
+typo2:{ fontSize: "70px", display: "flex" },
+gridCard:{marginLeft:'1rem' }
 }));
-
-// const Item = styled(Paper)(({ theme }) => ({
-
-// }));
 
 export default function Work() {
   const classes = useStyles();
   return (
-    <Box className={classes.box}>
-          <Box style={{margin:'3rem 1rem'}}>
-          <Typography component="h2" variant=""> How it works ?</Typography>
-          </Box>
-      <Grid container
-      direction="row"
-      justifyContent="space-between"
-      alignItems="center"
-       columns={12}>
-        <Grid item xs={12} sm={12} md={4} lg={6} >
+<Box className={classes.box}>
+      <Box style={{margin:'3rem 0rem'}}>
+      <Typography className={classes.typo}> How it works ?</Typography>
+      </Box>
+      {/* grid card all */}
+    <Grid container direction="row" justifyContent="space-between" alignItems="center" className={classes.gridCard}>
+       {/* one card */}
+        <Grid item xs={12} sm={8} md={4} lg={4} >
           <Grid>
-            <Grid sx={{ flex: "1 0 auto" }}>
-              <Typography component="div" variant="h5">
-                <Typography variant="span" style={{ fontSize: "4rem", display: "flex" }}>
-                  1
-                  <Typography component="div" variant="h6" style={{ margin: "18px 3rem"}}>
-                    Using your phone <br /> scan the QR code.
-                  </Typography>
+            <Grid style={{margin:'1rem 0rem'}}>
+                {/* <Typography component="div" variant="h5">  </Typography> */}
+                <Typography  className={classes.typo2}>
+                1
+                <Typography component="div" variant="h6" style={{ margin: " 1rem 5rem"}}>
+                Using your phone <br /> scan the QR code.
                 </Typography>
-              </Typography>
+                </Typography>
             </Grid>
-            <Box style={{height: "22vh" ,maxWidth: "50%"}}>
-            <Image src={ImageCard} alt="Card"   />
-            </Box>
+                <Box className={classes.imgCard}>
+                <Image src={ImageCard} alt="Card" />
+                </Box>
           </Grid>
         </Grid>
-        <Grid container xs={12} sm={12} md={6} lg={5} item  style={{marginLeft:'4rem' }}  >
-          <Grid xs={2}>
-            <Image src={ImageIphone}  style={{maxWidth:'100%', height:'120%'}}/>
-          </Grid>
-          <Grid xs={6} rows={12}>
-            <Grid xs={12} >
-              <Grid container  columns={12}>
-                <Grid
-                  item
-                  xs={3}
-                 >
-                  <Typography style={{ fontSize: "4rem",marginLeft:'1rem' }}>2</Typography>
+        {/* tow card */}
+        <Grid container justifyContent="center" item xs={12} sm={12} md={7} lg={5}  >
+              <Grid xs={3} className={classes.imgIphone}>
+                <Image src={ImageIphone}  />
                 </Grid>
-                <Grid item xs={7}>
-                  <Typography component='div' variant='p' >
-                    Click on start, then allow the camera to scan the card.
-                  </Typography>
-                </Grid>
-              </Grid>
+              <Grid xs={7}  >
+                  <Grid>
+                      <Grid  container justifyContent="space-around" >
+                      <Grid item xs={3} >
+                      <Typography style={{ fontSize: "4rem", margin:'-24px 30px'}}>2</Typography>
+                      </Grid>
+                      <Grid item xs={7}>
+                      <Typography component='div' variant='body1' >
+                      Click on start, then allow the camera to scan the card.
+                      </Typography>
+                      </Grid>
+                      </Grid>
+                  </Grid>
+                  <Grid style={{margin: "2rem 2rem" }}>
+                      <Typography component='div' >
+                      The website will recognize the card and show the Extended Business
+                      Card.
+                      </Typography>
+                  </Grid>
             </Grid>
-            <Grid
-              style={{marginLeft: "1rem" }}>
-                <Typography component='div' >
-                The website will recognize the card and show the Extended Business
-              Card.
-              </Typography>
-            </Grid>
-          </Grid>
         </Grid>
-      </Grid>
-    </Box>
+    </Grid>
+  </Box>
   );
 }
 

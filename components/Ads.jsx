@@ -10,13 +10,6 @@ import Monday from "../public/monday.png";
 import Segment from "../public/segment.png";
 import Image from 'next/image'
 
-// const Grid = styled(MuiGrid)(() => ({
-//   maxWidth: "100%",
-//  height: "24vh",
-
-// }));
-
-
 function Ads() {
   return (
     <Box style={{ textAlign: "center"}}>
@@ -24,7 +17,7 @@ function Ads() {
     <Typography style={{margin:'2rem' ,fontSize:'1rem'}}>Companies we work with!</Typography>
       <Grid container spacing={2}  xs={12} sm={12} md={12} lg={12}>
         <Grid item xs={12} sm={6} md={4} lg={2}>
-        <Image src={Group} alt="z-openZapplin" />
+        <Image src={Group} alt="Group" />
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={2}>
         <Image src={Vector} alt="oracle" />

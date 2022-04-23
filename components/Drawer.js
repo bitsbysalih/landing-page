@@ -35,30 +35,38 @@ function DrawerComponent() {
         <List>
         <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/" className={classes.link}>Home</Link>
+              <Link href="/">
+                <a className={classes.link}>Home</a>
+                </Link>
+            </ListItemText>
+          </ListItem>
+          <Divider/>
+          <ListItem onClick={() => setOpenDrawer(false)}>
+              <Link href="/about" >
+                        <a className={classes.link}>About</a>
+              </Link>
+          </ListItem>
+          <Divider/>
+          <ListItem onClick={() => setOpenDrawer(false)}>
+            <ListItemText>
+              <Link href="/contact" >
+                <a className={classes.link}>How it works </a>
+                </Link>
             </ListItemText>
           </ListItem>
           <Divider/>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/about" className={classes.link}>About</Link>
-            </ListItemText>
-          </ListItem>
-          <Divider/>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link to="/contact" className={classes.link}>How it works </Link>
-            </ListItemText>
-          </ListItem>
-          <Divider/>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link to="/fueatures" className={classes.link}>Fueatures</Link>
+              <Link href="/fueatures" >
+                <a className={classes.link}>Fueatures</a>
+                </Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/prices" className={classes.link}>Prices</Link>
+              <Link href="/prices" >
+               <a className={classes.link}> Prices</a>
+                </Link>
             </ListItemText>
           </ListItem>
           <Divider/>

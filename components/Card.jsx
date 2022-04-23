@@ -1,66 +1,50 @@
-
-
-
-
-
-import * as React from 'react';
-
-import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import * as React from "react";
+import Box from "@material-ui/core/Box";
+import Grid from "@material-ui/core/Grid";
+import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-import ArrowForwardIosSharpIcon from "@material-ui/icons/ArrowForwardIos";
+import Image from 'next/image'
+import Iphone from '../public/iPhone.png'
+import StyleButton from './Button/StyleButton'
 
-const useStyles = makeStyles((theme) =>({
-  box:
-  { marginTop:'6rem',height:'450px',maxWidth:'100%',position: 'relative'},
-  grid:
-  {border:'1px solid gray' , height:'333px',width:'1132px', position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-     boxShadow:'0px 138px 189px -76px rgba(0, 0, 0, 0.06)',borderRadius:'20px',background: '#FBFBFB',
-     border: '2px solid rgba(227, 227, 227, 0.8)'
-    },
-    button:
-    { border: "1px solid gray",  borderRadius: 16,  background: "#fff",marginRight:'1rem'}
-}))
+const useStyles = makeStyles(() => ({
+  box: {
+    margin: "5rem 1rem 10rem",borderRadius: "30px",border:'2px solid rgba(227, 227, 227, 0.8)'
+  },
+  boxx:{
+    textAlign: "left",  margin: "4rem 2rem",  width: "90%",maxHeight: "100%",
+  },
+  typo:{
+    marginTop: "2rem",fontFamily: "Poppins", fontWeight: 300, lineHeight: "54px", fontSize: "36px"
+  },
+button:{
+  marginLeft: "1",  border: "1px solid gray", borderRadius: "22px",
+},
 
+}));
 
- function CardF() {
-    const classes = useStyles();
+export default function Hero() {
+  const classes = useStyles();
 
   return (
-
-<Box className={classes.box}>
-  <Grid container spacing={2} xs={12} sm={11} className={classes.grid}>
-
-<Grid item xs={4} sm={4} md={4}>
-
-</Grid>
-<Grid item xs={8} sm={8} md={8} maxWidth="100%"  style={{textAlign:'left'}}>
-<CardContent>
-          <Typography component='div' variant='h5' style={{ fontSize:'30px'}} >
-          Be the market leader
-          </Typography>
-          <Typography  component='div' variant='p' style={{marginTop:'2rem'}}>
-          Stay ahead of the curve; upgrading to EBC will boost your business <br/> reputation and sales, especially with high profile clients.
-          </Typography>
-          <div style={{padding:'2rem 0rem'}}>
-          <Button variant="" className={classes.button}>
-            Get started <ArrowForwardIosSharpIcon />
-          </Button>
-          <span>Get one month free Trial and cancel anytime</span>
-          </div>
-          </CardContent>
-
-</Grid>
-   </Grid>
-
- </Box>
-
+  <Box className={classes.box}>
+      <Grid container direction="row" justifyContent="space-around" alignItems="center">
+        <Grid item xs={4} style={{width: '20%',}} >
+        {/* <Image src={Iphone} width="400%"  alt="Beyin Image"/> */}
+        </Grid>
+        <Grid item xs={6} sm={12} md={6} lg={7}>
+          <Box className={classes.boxx}>
+            <Typography
+            variant="h4" className={classes.typo}>
+            Be the market leader
+            </Typography>
+            <Typography component="div" variant="" style={{ margin: "2rem 1px" }}>
+            Stay ahead of the curve; upgrading to EBC will boost your business <br/> reputation and sales, especially with high profile clients.
+            </Typography>
+               <StyleButton />
+          </Box>
+        </Grid>
+      </Grid>
+  </Box>
   );
 }
-export default CardF

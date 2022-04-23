@@ -8,8 +8,7 @@ import {
   useMediaQuery,
 } from "@material-ui/core";
 import Link from 'next/link'
-import Logo from '../public/logo.svg'
-import Image from 'next/image'
+import Logo from './logo/Logo'
 import DrawerComponent from "./Drawer";
 
 const useStyles = makeStyles((theme) =>({
@@ -21,13 +20,13 @@ link:{
   fontFamily: 'Poppins',textDecoration: "none",color:'#000',fontSize: "21px",marginLeft: theme.spacing(6),
 },
 img:{
-  flexGrow: "0.9",cursor: "pointer",
+  flexGrow: "1",cursor: "pointer",marginLeft:'6rem',
 },
 log:{  border: '1px solid #e3e3e3',width: '114px',
 marginLeft:'1rem',borderRadius: '14px',boxShadow : '0px 3px 51px rgba(0, 0, 0, 0.03)',
 transition: 'all 240ms ease-in-out',cursor: 'pointer'
 },
-get:{  marginLeft: "10rem",borderRadius: "14px",
+get:{  marginLeft: "12rem",borderRadius: "14px",
 filter: "0px 3px 51px rgba(0, 0, 0, 0.03)",transition: "all 240ms ease-in-out",
 cursor: "pointer"
 }
@@ -41,28 +40,32 @@ const classes = useStyles();
 <div position="static" className={classes.bar}>
   <CssBaseline />
       <Toolbar >
-          <div variant="h4" className={classes.img}>
-             <Image src={Logo}  alt='Beyin Logo'/>
-          </div>
+         {/* Logo */}
+          <Logo />
             {isMobile ? (
+              // Icon
                   <DrawerComponent />
                   ) : (
-              <>
-                  <Link href="/about">
+              <div style={{flexGrow:0.7}}>
+                  <Link href="/about" >
                      <a className={classes.link}>About</a>
                   </Link>
-                  <Link href="/work" >
+                  <Link href="/components/works">
                       <a className={classes.link}>How to work</a>
                   </Link>
-                  <Link href="/about" >
+                  <Link href="/" >
                      <a className={classes.link}>Fuetseers</a>
                   </Link>
-                  <Link href="/prices" >
+                  <Link href="/prices"  >
                     <a className={classes.link}> Prices</a>
                   </Link>
-                     <Button className={classes.get}>Get Started</Button>
+
+                 <>
+                 <Button className={classes.get}>Get Started</Button>
                      <Button className={classes.log}>Login</Button>
-               </>
+                 </>
+
+               </div>
            )}
       </Toolbar>
 </div>

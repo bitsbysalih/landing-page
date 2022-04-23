@@ -1,18 +1,16 @@
 import * as React from "react";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import { Button, Typography } from "@material-ui/core";
+import {  Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
-
-import ArrowForwardIosSharpIcon from "@material-ui/icons/ArrowForwardIos";
-
+import StyleButton from './Button/StyleButton'
 
 const useStyles = makeStyles(() => ({
   box: {
     margin: "5rem 1rem 10rem",borderRadius: "30px"
   },
   boxx:{
-    textAlign: "left",  margin: "4rem 2rem",  minWidth: "90%",maxHeight: "100%",
+    textAlign: "left",  margin: "4rem 2rem",  width: "100%",maxHeight: "100%",
   },
   typo:{
     marginTop: "2rem",fontFamily: "Poppins", fontWeight: 300, lineHeight: "54px", fontSize: "36px"
@@ -46,16 +44,14 @@ export default function Hero() {
           business cards for you, your company, or clients in no time and
           without complex steps for as low as $1 per month!
           </Typography>
-          <Button  variant="light" className={classes.button}>
-          Get started
-          <ArrowForwardIosSharpIcon />
-          </Button>
-          <span >Get one month free Trial! cancle anytime</span>
+          {/* button */}
+          <StyleButton  />
       </Box>
     </Grid>
+           {/* video */}
         <Grid item  >
           <Box style={{ height: "420px", maxWidth: "100%" }}>
-          <video controls autostart autoPlay src="./video.mp4" type="video/mp4" alt="Beyin Video"
+          <video controls autostart="true" autoPlay src="./video.mp4" type="video/mp4" alt="Beyin Video"
         className={classes.video}
           />
           </Box>

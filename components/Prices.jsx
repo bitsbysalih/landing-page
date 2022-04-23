@@ -40,24 +40,29 @@ const useCardHeaderStyles = makeStyles(() => ({
         background: "#E3E3E3",
         fontFamily: 'Poppins'
       },
-      icon :{fontSize:'small', margin:'3px'}
+      icon :{fontSize:'small', margin:'3px'},
+      typo:{margin:'3rem 1rem'}
 
 }))
 
 
 export default function CenteredGrid() {
   const classes = useCardHeaderStyles();
-  // const classes = useStyles();
+
   return (
   <Box>
-          <Typography component='div' variant='h3' >
+          <Typography component='div' variant='h3' className={classes.typo} >
           We made sure you get the best prices so you<br/> can thrive !
           </Typography>
-          <Typography component='div' variant='h6' style={{margin:'3rem'}}>
+          <Typography component='div' variant='h6' className={classes.typo}>
           Our Extended Business Card is extremely affordable at every scale. Our goal is to provide<br/> amazing technology for everyone for the lowest price possible.
           </Typography>
-      <Grid container xs={12} lg={12}>
-      <Grid item  >
+      <Grid container xs={12} sm={12}
+  direction="row"
+  justifyContent="center"
+  alignItems="center" >
+    {/* card one */}
+     <Grid item xs={12} sm={6} lg={4} >
       <Paper item className={classes.card}>
         <CardHeader
         action={
@@ -78,7 +83,8 @@ export default function CenteredGrid() {
         </Box>
       </Paper>
       </Grid>
-      <Grid item >
+      {/* card tow */}
+      <Grid item xs={12} sm={6} lg={4} >
         <Paper item className={classes.card} >
           <CardHeader
           action={
@@ -99,7 +105,8 @@ export default function CenteredGrid() {
           </Box>
         </Paper>
       </Grid>
-      <Grid  item >
+      {/* card three */}
+      <Grid  item xs={12}  sm={6} lg={4} >
         <Paper item className={classes.card}>
           <CardHeader
           action={
@@ -120,7 +127,8 @@ export default function CenteredGrid() {
           </Box>
         </Paper>
       </Grid>
-      <Grid item >
+      {/* card fore */}
+      <Grid item xs={12} sm={6} lg={4} >
         <Paper item className={classes.card}>
           <CardHeader
           action={
@@ -144,7 +152,8 @@ export default function CenteredGrid() {
           </Box>
         </Paper>
       </Grid>
-      <Grid item >
+      {/* card five */}
+      <Grid item  xs={12} sm={6} lg={4} >
         <Paper item className={classes.card}>
           <CardHeader
           action={

@@ -1,12 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import Image from 'next/image'
-import Test from '../public/card.png'
-
 
 const useStyles = makeStyles((theme) => ({
 
@@ -21,7 +18,7 @@ export default function Beyin() {
   const classes = useStyles();
 
   return (
-    <div style={{ border:'1px solid', margin:'3rem 0rem'}}>
+    <div style={{ margin:'3rem 0rem'}}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <div className={classes.paper} >
@@ -35,10 +32,10 @@ export default function Beyin() {
             <Grid item xs container  spacing={2}>
               <Grid item >
                 <Typography  variant="h5" className={classes.typo}>
-                it keeps a lasting <br/>impression every time
+                it keeps a lasting impression every time
                 </Typography>
                 <Typography variant="body2"  className={classes.typo}>
-                Be memorable! leave a card that can be<br/> experienced again and again long after<br/> you’re gone.
+                Be memorable! leave a card that can be experienced again and again long after you’re gone.
                 </Typography>
               </Grid>
             </Grid>
@@ -65,10 +62,10 @@ export default function Beyin() {
             <Grid item xs container  spacing={2}>
               <Grid item >
                 <Typography  variant="h5" className={classes.typo}>
-                Unlimited copies and <br/>views
+                Unlimited copies and views
                 </Typography>
                 <Typography variant="body2"  className={classes.typo}>
-                Distribute as many copies as you need,<br/> no strings attached!
+                Distribute as many copies as you need,no strings attached!
                 </Typography>
               </Grid>
             </Grid>

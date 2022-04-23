@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from "@material-ui/core/Container";
+import Container from '@material-ui/core/Container';
 import Header from './Navbar'
 import Hero from './Hero'
 import Ads from './Ads'
@@ -12,19 +12,19 @@ import Works from './Works'
 
 function Layout() {
   return (
-    <div style={{ border:'1px solid'}}>
-              <Header />
-              <Container minWidth="xs" maxWidth="lg">
-                <Hero />
-                <Ads />
-                <Work />
-                <Beyin />
-                <Card />
-                <Prices />
-                <Works />
-                <Footer />
-                </Container>
-    </div>
+    <>
+      <Header />
+        <Container  maxWidth="lg">
+          <Hero />
+          <Ads />
+          <Work />
+          <Beyin />
+          <Card />
+          <Prices />
+          <Works />
+          <Footer />
+        </Container>
+    </>
   )
 }
 
