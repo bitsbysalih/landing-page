@@ -10,6 +10,7 @@ import Card from "@material-ui/core/Card";
 import Paper from "@material-ui/core/Paper";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
+<<<<<<< HEAD
 // const useStyles = makeStyles((theme) => ({
 // root:{
 //     height:"66%",width:'100%',
@@ -17,6 +18,9 @@ import CardContent from "@material-ui/core/CardContent";
 //     border:'1px solid'
 // }
 // }));
+=======
+
+>>>>>>> styled and remove about page
 const useCardHeaderStyles = makeStyles(() => ({
   card: {
     borderColor: "#E3E3E3",

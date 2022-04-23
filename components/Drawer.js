@@ -39,14 +39,24 @@ function DrawerComponent() {
           </ListItem>
           <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
+<<<<<<< HEAD
             <Link href="/about">
               <a className={classes.link}>About</a>
             </Link>
+=======
+              <Link href="/" >
+                        <a className={classes.link}>About</a>
+              </Link>
+>>>>>>> styled and remove about page
           </ListItem>
           <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
+<<<<<<< HEAD
               <Link href="/contact">
+=======
+              <Link href="/" >
+>>>>>>> styled and remove about page
                 <a className={classes.link}>How it works </a>
               </Link>
             </ListItemText>
@@ -54,16 +64,26 @@ function DrawerComponent() {
           <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
+<<<<<<< HEAD
               <Link href="/fueatures">
+=======
+              <Link href="/" >
+>>>>>>> styled and remove about page
                 <a className={classes.link}>Fueatures</a>
               </Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
+<<<<<<< HEAD
               <Link href="/prices">
                 <a className={classes.link}> Prices</a>
               </Link>
+=======
+              <Link href="/" >
+               <a className={classes.link}> Prices</a>
+                </Link>
+>>>>>>> styled and remove about page
             </ListItemText>
           </ListItem>
           <Divider />

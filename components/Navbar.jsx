@@ -60,7 +60,11 @@ function Navbar() {
           <DrawerComponent />
         ) : (
           <div style={{ flexGrow: 0.7 }}>
+<<<<<<< HEAD
             <Link href="/about">
+=======
+            <Link href="/">
+>>>>>>> styled and remove about page
               <a className={classes.link}>About</a>
             </Link>
             <Link href="/components/works">
@@ -69,7 +73,11 @@ function Navbar() {
             <Link href="/">
               <a className={classes.link}>Fuetseers</a>
             </Link>
+<<<<<<< HEAD
             <Link href="/prices">
+=======
+            <Link href="/">
+>>>>>>> styled and remove about page
               <a className={classes.link}> Prices</a>
             </Link>
 
