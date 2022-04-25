@@ -5,9 +5,9 @@ import Link from "@material-ui/core/Link";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-// import Image from 'next/image'
-// import Beyin from "../public/logo.svg";
 import Logo from "./logo/Logo";
+
+
 const useStyles = makeStyles(() => ({
   grid: {
     marginLeft: "2rem",
