@@ -61,7 +61,7 @@ const Footer = () => {
               component="div"
               variant="body1"
               align="center"
-              style={{ fontSize: "10px" }}
+            
             >
               Beyin Digital Technology Limited | Abu Dhabi, Masdar city
               <br />

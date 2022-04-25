@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
-  paper:
+  div:
   { padding: "1rem", maxWidth: "80%",
    textAlign: "center"
    },
@@ -21,21 +21,7 @@ const useStyles = makeStyles((theme) => ({
   { textAlign: "left", padding: "4px"
 },
 
-  paper:
-  { padding: "1rem",
-  maxWidth: "80%",
-   textAlign: "center"
-   },
-  img:
-  { margin: "auto", display: "block",
-   width: "100%", height: "100%"
-  },
-  box:
-   { width: 128, height: "100%"
-   },
-  typo:
-  { textAlign: "left", padding: "4px"
- },
+
 }));
 
 export default function Beyin() {
@@ -45,7 +31,7 @@ export default function Beyin() {
     <div style={{ margin: "3rem 0rem" }}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
-          <div className={classes.paper}>
+          <div className={classes.div}>
             <Grid xs={12} container spacing={2}>
               <Grid item>
                 <Box className={classes.box}>
