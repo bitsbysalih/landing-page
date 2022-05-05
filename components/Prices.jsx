@@ -32,6 +32,7 @@ const useCardHeaderStyles = makeStyles(() => ({
   },
   icon: { fontSize: "small", margin: "3px" },
   typo: { margin: "3rem 1rem" },
+  title:{fontSize: "2rem"}
 }));
 
 export default function CenteredGrid() {
@@ -48,22 +49,24 @@ export default function CenteredGrid() {
         goal is to provide
         <br /> amazing technology for everyone for the lowest price possible.
       </Typography>
-      <Grid
+   <Box>
+   <Grid
         container
         xs={12}
-        sm={12}
+
+
         direction="row"
         justifyContent="center"
         alignItems="center"
       >
         {/* card one */}
-        <Grid item xs={12} sm={6} lg={4}>
+        {/* <Grid item xs={12} sm={6} lg={4}>
           <Paper item className={classes.card}>
             <CardHeader
               action={
                 <Typography component="div" variant="h5">
                   {" "}
-                  1-10 <br /> <small>card</small>{" "}
+                  1-9 <br /> <small>card</small>{" "}
                 </Typography>
               }
               title="Personal Subscription "
@@ -79,26 +82,26 @@ export default function CenteredGrid() {
             </CardContent>
             <Box>
               <Button className={classes.button} variant="">
-                $2/M only
+                $2-$18/M only
               </Button>
             </Box>
           </Paper>
-        </Grid>
+        </Grid> */}
         {/* card tow */}
-        <Grid item xs={12} sm={6} lg={4}>
+        {/* <Grid item xs={12} sm={6} lg={4}>
           <Paper item className={classes.card}>
             <CardHeader
               action={
                 <Typography component="div" variant="h5">
                   {" "}
-                  10-50 <br /> <small>cards</small>{" "}
+                  10-49 <br /> <small>cards</small>{" "}
                 </Typography>
               }
               title="Startup Subscription "
             />
             <CardContent>
               <Typography variant="body2" color="textSecondary" component="p">
-                <CheckIcon className={classes.icon} /> $1.5 percard monthly
+                <CheckIcon className={classes.icon} /> $1.5 per user monthly
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
                 <CheckIcon className={classes.icon} /> Customizable card and
@@ -107,19 +110,19 @@ export default function CenteredGrid() {
             </CardContent>
             <Box>
               <Button className={classes.button} variant="">
-                $15/M only
+                $15-$148.5/M only
               </Button>
             </Box>
           </Paper>
-        </Grid>
+        </Grid> */}
         {/* card three */}
-        <Grid item xs={12} sm={6} lg={4}>
+        {/* <Grid item xs={12} sm={6} lg={4}>
           <Paper item className={classes.card}>
             <CardHeader
               action={
                 <Typography component="div" variant="h5">
                   {" "}
-                  50-100 <br /> <small>cards</small>{" "}
+                  50-99 <br /> <small>cards</small>{" "}
                 </Typography>
               }
               title="SME  Subscription"
@@ -135,19 +138,19 @@ export default function CenteredGrid() {
             </CardContent>
             <Box>
               <Button className={classes.button} variant="">
-                $60/M only
+                $60-$120/M only
               </Button>
             </Box>
           </Paper>
-        </Grid>
+        </Grid> */}
         {/* card fore */}
-        <Grid item xs={12} sm={6} lg={4}>
+        {/* <Grid item xs={12} sm={6} lg={4}>
           <Paper item className={classes.card}>
             <CardHeader
               action={
                 <Typography component="div" variant="h5">
                   {" "}
-                  100-200 <br /> <small>cards</small>{" "}
+                  100-199 <br /> <small>cards</small>{" "}
                 </Typography>
               }
               title="SME+ Subscription "
@@ -171,13 +174,13 @@ export default function CenteredGrid() {
                 style={{ marginTop: "1rem" }}
                 variant=""
               >
-                $120/M only
+                $120-$240/M only
               </Button>
             </Box>
           </Paper>
-        </Grid>
+        </Grid> */}
         {/* card five */}
-        <Grid item xs={12} sm={6} lg={4}>
+        {/* <Grid item xs={12} sm={6} lg={4}>
           <Paper item className={classes.card}>
             <CardHeader
               action={
@@ -208,12 +211,125 @@ export default function CenteredGrid() {
                 style={{ marginTop: "1rem" }}
                 variant=""
               >
-                $200/M only
+                $200+/M only
+              </Button>
+            </Box>
+          </Paper>
+        </Grid> */}
+
+        {/* NEW CARD  */}
+
+           {/* card one */}
+       <div>
+       <Grid item xs={12} sm={4} lg={12}>
+          <Paper item className={classes.card}>
+            <CardHeader
+              action={
+                <Typography component="div" variant="h5">
+                  {" "}
+                  50 <br /> <small>cards</small>{" "}
+                </Typography>
+              }
+              title="SME Subscription"
+
+            />
+            <CardContent>
+              <Typography variant="body2" color="textSecondary" component="p">
+                <CheckIcon className={classes.icon} /> $1.2 per user monthly
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                <CheckIcon className={classes.icon} /> Customizable card and
+                logo
+              </Typography>
+            </CardContent>
+            <Box>
+              <Button className={classes.button} variant="">
+                $720/Y only
               </Button>
             </Box>
           </Paper>
         </Grid>
+       </div>
+        {/* card two */}
+       <div>
+       <Grid item xs={12} sm={4} lg={12}>
+          <Paper item className={classes.card}>
+            <CardHeader
+              action={
+                <Typography component="div" variant="h5">
+                  {" "}
+                  100 <br /> <small>cards</small>{" "}
+                </Typography>
+              }
+              title="SME+ Subscription "
+
+            />
+            <CardContent>
+              <Typography variant="body2" color="textSecondary" component="p">
+                <CheckIcon className={classes.icon} /> $1.2 per user monthly
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                <CheckIcon className={classes.icon} /> Customizable card and
+                logo
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                <CheckIcon className={classes.icon} /> Fully customizable
+                loading page
+              </Typography>
+            </CardContent>
+            <Box>
+              <Button
+                className={classes.button}
+                style={{ marginTop: "1rem" }}
+                variant=""
+              >
+                $1,440/Y only
+              </Button>
+            </Box>
+          </Paper>
+        </Grid>
+       </div>
+        {/* card three */}
+      <div>
+      <Grid item xs={12} sm={4} lg={12}>
+          <Paper item className={classes.card}>
+            <CardHeader
+              action={
+                <Typography component="div" variant="h5">
+                  {" "}
+                  200+ <br /> <small>cards</small>{" "}
+                </Typography>
+              }
+              title="Agency Subscription "
+
+            />
+            <CardContent>
+              <Typography variant="body2" color="textSecondary" component="p">
+                <CheckIcon className={classes.icon} /> $1 per user
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                <CheckIcon className={classes.icon} /> Customizable card and
+                logo
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                <CheckIcon className={classes.icon} /> Fully customizable
+                loading page
+              </Typography>
+            </CardContent>
+            <Box>
+              <Button
+                className={classes.button}
+                style={{ marginTop: "1rem" }}
+                variant=""
+              >
+                $2400/Y only
+              </Button>
+            </Box>
+          </Paper>
+        </Grid>
+      </div>
       </Grid>
+   </Box>
     </Box>
   );
 }
