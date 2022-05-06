@@ -40,7 +40,7 @@ export default function Hero() {
   const classes = useStyles();
 
   return (
-    <Box className={classes.box}>
+    <Box className={classes.box} id="hero">
       <Grid
         container
         spacing={9}

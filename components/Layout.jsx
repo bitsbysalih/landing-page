@@ -14,7 +14,7 @@ function Layout() {
   return (
     <>
       <Header />
-      <Container maxWidth="lg">
+      <Container>
         <Hero />
         <Ads />
         <Work />

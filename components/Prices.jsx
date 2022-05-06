@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import Card from "@material-ui/core/Card";
 import Button from "@material-ui/core/Button";
 import CheckIcon from "@material-ui/icons/Check";
 import Typography from "@material-ui/core/Typography";
@@ -8,14 +9,16 @@ import Box from "@material-ui/core/Box";
 import Paper from "@material-ui/core/Paper";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
+import Container from "@material-ui/core/Container";
 
 const useCardHeaderStyles = makeStyles(() => ({
   card: {
     borderColor: "#E3E3E3",
     borderRadius: "8.05664px",
     transition: "0.4s",
-    width: "270px",
-    margin: "1rem 1rem",
+    width:'273px',
+    height: "37vh",
+
     "&:hover": {
       transform: "scale(1.1)",
       border: "2.671387px solid #E3E3E3",
@@ -39,7 +42,7 @@ export default function CenteredGrid() {
   const classes = useCardHeaderStyles();
 
   return (
-    <Box>
+    <Box id="price">
       <Typography component="div" variant="h3" className={classes.typo}>
         We made sure you get the best prices so you
         <br /> can thrive !
@@ -50,18 +53,14 @@ export default function CenteredGrid() {
         <br /> amazing technology for everyone for the lowest price possible.
       </Typography>
    <Box>
-   <Grid
-        container
-        xs={12}
-
-
-        direction="row"
+   <Box style={{ margin:"4rem auto"}}>
+     <Container maxWidth="100%">
+   {/* <Grid container spacing={6} xs={12} lg={12}   direction="row"
         justifyContent="center"
-        alignItems="center"
-      >
-        {/* card one */}
-        {/* <Grid item xs={12} sm={6} lg={4}>
-          <Paper item className={classes.card}>
+        alignItems="center"> */}
+          {/* card one */}
+          {/* <Grid item>
+          <Card item className={classes.card}>
             <CardHeader
               action={
                 <Typography component="div" variant="h5">
@@ -85,11 +84,11 @@ export default function CenteredGrid() {
                 $2-$18/M only
               </Button>
             </Box>
-          </Paper>
+          </Card>
         </Grid> */}
         {/* card tow */}
-        {/* <Grid item xs={12} sm={6} lg={4}>
-          <Paper item className={classes.card}>
+        {/* <Grid item>
+          <Card item className={classes.card}>
             <CardHeader
               action={
                 <Typography component="div" variant="h5">
@@ -113,10 +112,10 @@ export default function CenteredGrid() {
                 $15-$148.5/M only
               </Button>
             </Box>
-          </Paper>
+          </Card>
         </Grid> */}
         {/* card three */}
-        {/* <Grid item xs={12} sm={6} lg={4}>
+        {/* <Grid item>
           <Paper item className={classes.card}>
             <CardHeader
               action={
@@ -144,7 +143,7 @@ export default function CenteredGrid() {
           </Paper>
         </Grid> */}
         {/* card fore */}
-        {/* <Grid item xs={12} sm={6} lg={4}>
+        {/* <Grid item>
           <Paper item className={classes.card}>
             <CardHeader
               action={
@@ -180,7 +179,7 @@ export default function CenteredGrid() {
           </Paper>
         </Grid> */}
         {/* card five */}
-        {/* <Grid item xs={12} sm={6} lg={4}>
+        {/* <Grid item>
           <Paper item className={classes.card}>
             <CardHeader
               action={
@@ -217,21 +216,22 @@ export default function CenteredGrid() {
           </Paper>
         </Grid> */}
 
-        {/* NEW CARD  */}
 
+        {/* NEW CARD  */}
+  <Grid container spacing={9} xs={12} lg={12}   direction="row"
+        justifyContent="center"
+        alignItems="center">
            {/* card one */}
-       <div>
-       <Grid item xs={12} sm={4} lg={12}>
+           <Grid item>
           <Paper item className={classes.card}>
             <CardHeader
               action={
                 <Typography component="div" variant="h5">
                   {" "}
-                  50 <br /> <small>cards</small>{" "}
+                  50 <br /> <small style={{ fontSize:"24px"}}>cards</small>{" "}
                 </Typography>
               }
-              title="SME Subscription"
-
+              title="SME  Subscription"
             />
             <CardContent>
               <Typography variant="body2" color="textSecondary" component="p">
@@ -244,15 +244,13 @@ export default function CenteredGrid() {
             </CardContent>
             <Box>
               <Button className={classes.button} variant="">
-                $720/Y only
+                $270/Y only
               </Button>
             </Box>
           </Paper>
         </Grid>
-       </div>
         {/* card two */}
-       <div>
-       <Grid item xs={12} sm={4} lg={12}>
+        <Grid item>
           <Paper item className={classes.card}>
             <CardHeader
               action={
@@ -262,7 +260,6 @@ export default function CenteredGrid() {
                 </Typography>
               }
               title="SME+ Subscription "
-
             />
             <CardContent>
               <Typography variant="body2" color="textSecondary" component="p">
@@ -288,10 +285,8 @@ export default function CenteredGrid() {
             </Box>
           </Paper>
         </Grid>
-       </div>
         {/* card three */}
-      <div>
-      <Grid item xs={12} sm={4} lg={12}>
+         <Grid item>
           <Paper item className={classes.card}>
             <CardHeader
               action={
@@ -300,8 +295,7 @@ export default function CenteredGrid() {
                   200+ <br /> <small>cards</small>{" "}
                 </Typography>
               }
-              title="Agency Subscription "
-
+              title="Agency Subscription"
             />
             <CardContent>
               <Typography variant="body2" color="textSecondary" component="p">
@@ -322,13 +316,14 @@ export default function CenteredGrid() {
                 style={{ marginTop: "1rem" }}
                 variant=""
               >
-                $2400/Y only
+                $2400+/Y only
               </Button>
             </Box>
           </Paper>
         </Grid>
-      </div>
-      </Grid>
+</Grid>
+</Container>
+   </Box>
    </Box>
     </Box>
   );

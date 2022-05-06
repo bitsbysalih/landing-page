@@ -10,10 +10,11 @@ import Logo from "./logo/Logo";
 
 const useStyles = makeStyles(() => ({
   grid: {
-    marginLeft: "2rem",
+
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+
   },
 }));
 
@@ -22,32 +23,32 @@ const Footer = () => {
   return (
     <Box style={{ marginTop: "12rem" }}>
       <footer>
-        <Container>
-          <Grid container spacing={3} xs={12} className={classes.grid}>
-            <Grid item xs={3} sm={4} md={3} lg={3}>
+        <Container style={{textAlign: "center"}} >
+          <Grid container spacing={4} xs={12} className={classes.grid}>
+            <Grid item xs={3} sm={6} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/" color="inherit">
                   Terms and Conditions
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={3} sm={4} md={3} lg={3}>
+            <Grid item xs={3} sm={6} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/" color="inherit">
                   Privacy Policy
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={3} sm={4} md={3} lg={3}>
+            <Grid item xs={3} sm={6} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/" color="inherit">
                   Contact us
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={3} sm={4} md={3} lg={3}>
+            <Grid item xs={3} sm={6} md={3} lg={3}>
               <Box>
-                <Link underline="none" href="/" color="inherit">
+                <Link underline="none" href="#price" color="inherit">
                   Pricing
                 </Link>
               </Box>

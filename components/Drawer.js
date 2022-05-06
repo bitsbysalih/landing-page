@@ -39,14 +39,14 @@ function DrawerComponent() {
           </ListItem>
           <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
-            <Link href="/about">
+            <Link href="3hero">
               <a className={classes.link}>About</a>
             </Link>
           </ListItem>
           <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link href="/contact">
+              <Link href="#work">
                 <a className={classes.link}>How it works </a>
               </Link>
             </ListItemText>
@@ -54,15 +54,15 @@ function DrawerComponent() {
           <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link href="/fueatures">
+              <Link href="#features">
                 <a className={classes.link}>Fueatures</a>
               </Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link href="/prices">
-                <a className={classes.link}> Prices</a>
+              <Link href="#price">
+                <a className={classes.link}>Prices</a>
               </Link>
             </ListItemText>
           </ListItem>

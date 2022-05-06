@@ -32,7 +32,7 @@ const useStyles = makeStyles(() => ({
 export default function Work() {
   const classes = useStyles();
   return (
-    <Box className={classes.box}>
+    <Box className={classes.box} id="work">
       <Box style={{ margin: "3rem 0rem" }}>
         <Typography className={classes.typo}> How it works ?</Typography>
       </Box>

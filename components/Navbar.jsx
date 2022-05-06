@@ -60,17 +60,17 @@ function Navbar() {
           <DrawerComponent />
         ) : (
           <div style={{ flexGrow: 0.7 }}>
-            <Link href="/about">
-              <a className={classes.link}>About</a>
+            <Link href="#hero">
+              <a className={classes.link} >About</a>
             </Link>
-            <Link href="/components/works">
+            <Link href="#work">
               <a className={classes.link}>How to work</a>
             </Link>
-            <Link href="/">
-              <a className={classes.link}>Fuetseers</a>
+            <Link href="#features">
+              <a className={classes.link}>Features</a>
             </Link>
-            <Link href="/prices">
-              <a className={classes.link}> Prices</a>
+            <Link href="#price">
+              <a className={classes.link}>Prices</a>
             </Link>
 
             <>

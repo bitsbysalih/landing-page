@@ -27,7 +27,7 @@ export default function Beyin() {
   const classes = useStyles();
 
   return (
-    <div style={{ margin: "3rem 0rem" }}>
+    <div style={{ margin: "3rem 0rem" }} id="features">
       <Grid container spacing={3}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <div className={classes.div}>
