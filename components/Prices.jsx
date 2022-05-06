@@ -17,7 +17,7 @@ const useCardHeaderStyles = makeStyles(() => ({
     borderRadius: "8.05664px",
     transition: "0.4s",
     width:'273px',
-    height: "37vh",
+    height: "306px",
 
     "&:hover": {
       transform: "scale(1.1)",
