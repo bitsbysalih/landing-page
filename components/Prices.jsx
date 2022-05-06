@@ -32,6 +32,7 @@ const useCardHeaderStyles = makeStyles(() => ({
     borderRadius: "37px",
     background: "#E3E3E3",
     fontFamily: "Poppins",
+    width: "60%"
   },
   icon: { fontSize: "small", margin: "3px" },
   typo: { margin: "3rem 1rem" },
