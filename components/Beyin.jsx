@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Image from "next/image";
 import Vector from "../public/vector1.png";
-import Vector2 from "../public/vector2.png";
+import Vectoor from "../public/vector2.png";
 import Flat from "../public/flat.png";
 
 
@@ -80,7 +80,7 @@ export default function Beyin() {
                   <Image
                     className={classes.img1}
                     alt="icon heart"
-                    src={Vector2}
+                    src={Vectoor}
                   />
                 </Box>
                 <Grid xs={8} sm={7} md={7} lg={8}>
