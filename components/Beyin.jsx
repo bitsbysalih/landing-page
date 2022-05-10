@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Image from "next/image";
 import Vector from "../public/vectoor.png";
-import Vector1 from "../public/vecttor.png";
+import Vectoor from "../public/vecttor.png";
 import Flat from "../public/flat.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -93,7 +93,7 @@ export default function Beyin() {
                   <Image
                     className={classes.img}
                     alt="icon infinite"
-                    src={Vector1}
+                    src={Vectoor}
                   />
                 </Box>
               </Grid>
