@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Image from "next/image";
 import Vector from "../public/vector1.png";
-import Vectoor from "../public/vector2.png";
+import Vectoor from "../public/Vector2.png";
 import Flat from "../public/flat.png";
 
 const useStyles = makeStyles((theme) => ({
