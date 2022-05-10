@@ -79,7 +79,7 @@ export default function Beyin() {
                   <Image
                     className={classes.img1}
                     alt="icon heart"
-                    src={Vectoor}
+                    src={Vector}
                   />
                 </Box>
                 <Grid xs={8} sm={7} md={7} lg={8}>
@@ -102,7 +102,7 @@ export default function Beyin() {
                   <Image
                     className={classes.img1}
                     alt="icon infinite"
-                    src={Vector}
+                    src={Vectoor}
                   />
                 </Box>
                 <Grid xs={8} sm={7} md={7} lg={8}>
