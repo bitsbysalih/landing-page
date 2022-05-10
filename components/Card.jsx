@@ -5,14 +5,12 @@ import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import StyleButton from "./Button/StyleButton";
 import Image from 'next/image';
-import ImageCard from '../public/image.png';
+import ImageCard from '../public/squircle.png';
 
 
 const useStyles = makeStyles(() => ({
   box: {
-    margin: "5rem 1rem 10rem",
-    borderRadius: "30px",
-
+    margin: "10rem 1rem 10rem",
   },
   boxx: {
     textAlign: "left",
@@ -45,7 +43,7 @@ export default function Hero() {
         justifyContent="space-around"
         alignItems="center"
       >
-        <Grid item xs={4} style={{ width: "20%" }}>
+        <Grid item xs={6} sm={12} md={4} lg={2} style={{ width: "20%" }}>
           <Image src={ImageCard} alt="Image Card"/>
         </Grid>
         <Grid item xs={6} sm={12} md={6} lg={7}>
