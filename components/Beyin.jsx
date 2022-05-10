@@ -4,23 +4,32 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Image from "next/image";
+import Vector from "../public/vectoor.png";
+import Vector1 from "../public/vecttor.png";
+import Flat from "../public/flat.png";
 
 const useStyles = makeStyles((theme) => ({
-  div:
-  { padding: "1rem", maxWidth: "80%",
-   textAlign: "center"
-   },
-  img:
-  { margin: "auto", display: "block",
-  width: "100%", height: "100%"
-},
-  box:
-  { width: 128, height: "100%"
- },
-  typo:
-  { textAlign: "left",
-  padding: "4px"
- },
+  div: { padding: "1rem", maxWidth: "80%", textAlign: "center" },
+  img: { margin: "auto", display: "block", width: "100%", height: "100%" },
+  box: {
+    width: 128,
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  box1: {
+    width: 338,
+    height: "200px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  typo: { textAlign: "left", padding: "4px" },
+  img: {
+    height: "156px",
+    width: "156px",
+  },
 }));
 
 export default function Beyin() {
@@ -34,7 +43,11 @@ export default function Beyin() {
             <Grid xs={12} container spacing={2}>
               <Grid item>
                 <Box className={classes.box}>
-                  {/* <Image className={classes.img} alt="" src="" /> */}
+                  <Image
+                    className={classes.img1}
+                    alt="icon heart"
+                    src={Vector}
+                  />
                 </Box>
               </Grid>
               <Grid item xs={12} sm container>
@@ -55,8 +68,8 @@ export default function Beyin() {
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <div className={classes.div}>
-            <Box className={classes.box}>
-              {/* <Image className={classes.img} alt="" src="" /> */}
+            <Box className={classes.box1}>
+              <Image className={classes.img} alt="flat icon" src={Flat} />
             </Box>
           </div>
         </Grid>
@@ -65,7 +78,11 @@ export default function Beyin() {
             <Grid xs={12} container spacing={2}>
               <Grid item>
                 <Box className={classes.box}>
-                  {/* <Image className={classes.img} alt="" src="" /> */}
+                  <Image
+                    className={classes.img}
+                    alt="icon infinite"
+                    src={Vector1}
+                  />
                 </Box>
               </Grid>
               <Grid item xs={12} sm container>
@@ -86,11 +103,11 @@ export default function Beyin() {
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <div className={classes.div}>
             <Grid xs={12} container spacing={2}>
-              <Grid item>
+              {/* <Grid item>
                 <Box className={classes.box}>
-                  {/* <Image className={classes.img} alt="" src="" /> */}
+                  <Image className={classes.img} alt="" src={Flat} />
                 </Box>
-              </Grid>
+              </Grid> */}
               <Grid item xs={12} sm container>
                 <Grid item xs container spacing={2}>
                   <Grid item>
