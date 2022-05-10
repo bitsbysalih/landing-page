@@ -8,7 +8,6 @@ import Vector from "../public/vector1.png";
 import Vectoor from "../public/vector2.png";
 import Flat from "../public/flat.png";
 
-
 const useStyles = makeStyles((theme) => ({
   div: {
     padding: "1rem",
