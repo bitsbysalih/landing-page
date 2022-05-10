@@ -9,8 +9,17 @@ import Vector1 from "../public/vecttor.png";
 import Flat from "../public/flat.png";
 
 const useStyles = makeStyles((theme) => ({
-  div: { padding: "1rem", maxWidth: "80%", textAlign: "center" },
-  img: { margin: "auto", display: "block", width: "100%", height: "100%" },
+  div: {
+    padding: "1rem",
+    maxWidth: "80%",
+    textAlign: "center",
+  },
+  img: {
+    margin: "auto",
+    display: "block",
+    width: "100%",
+    height: "100%",
+  },
   box: {
     width: 128,
     height: "100%",
@@ -25,7 +34,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
-  typo: { textAlign: "left", padding: "4px" },
+  typo: {
+    textAlign: "left",
+    padding: "4px",
+  },
   img: {
     height: "156px",
     width: "156px",
