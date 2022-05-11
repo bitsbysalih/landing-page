@@ -3,8 +3,10 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import { Typography, makeStyles } from "@material-ui/core";
 import StyleButton from "./Button/StyleButton";
+import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   box: {
     marginTop: "5rem",
     borderRadius: "30px",
@@ -36,11 +38,13 @@ const useStyles = makeStyles(() => ({
 
 export default function Hero() {
   const classes = useStyles();
-
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("xs"));
+  // console.log({matches});
   return (
     <div id="hero" className={classes.box}>
       <Grid container direction="row" justifyContent="space-between">
-        <Grid item sm={6} md={6} lg={7}>
+        <Grid item sm={7} md={6} lg={7}>
           <div className={classes.boxx}>
             <Typography variant="h4" className={classes.typo}>
               Get the most effective business <br />
@@ -64,8 +68,15 @@ export default function Hero() {
           </div>
         </Grid>
         {/* video */}
-        <Grid item>
-          <Box style={{ height: "420px", maxWidth: "100%" }}>
+        <Grid
+          container
+          alignItems="center"
+          justifyContent="center"
+          sm={5}
+          md={4}
+          lg={3}
+        >
+          <Grid style={{ height: "420px", maxWidth: "100%" }}>
             <video
               controls
               autostart="true"
@@ -75,7 +86,7 @@ export default function Hero() {
               alt="Beyin Video"
               className={classes.video}
             />
-          </Box>
+          </Grid>
         </Grid>
       </Grid>
     </div>

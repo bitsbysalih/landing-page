@@ -25,6 +25,7 @@ const useStyles = makeStyles(() => ({
     height: "51px",
     fontSize: "21px",
     lineHeight: "31px",
+    margin: "3rem auto"
   },
 }));
 
@@ -39,7 +40,7 @@ export const Works = () => {
         alignItems="center"
       >
         <div className={classes.box}>
-          <Typography component="div" variant="h3" style={{textAlign: "center"}}>
+          <Typography component="div" variant="h4" style={{textAlign: "center"}}>
             Let’s make your business card
             <br /> close more deals
           </Typography>

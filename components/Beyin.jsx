@@ -13,11 +13,8 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem",
     maxWidth: "90%",
     textAlign: "center",
-
-
   },
   img: {
-
     display: "block",
     width: "80%",
     height: "100%",
@@ -27,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginLeft: "1px"
   },
   box1: {
     width: "60%",
@@ -37,18 +35,16 @@ const useStyles = makeStyles((theme) => ({
   },
   typo: {
     textAlign: "left",
-    margin: "1rem",
-
+    margin: "1rem 2rem",
   },
   img: {
     height: "156px",
     width: "156px",
   },
   grid: {
-    margin: "1rem auto",
+    margin: "2rem auto",
     width: "100%",
-    height: "100%"
-
+    height: "100%",
   },
 }));
 
@@ -56,27 +52,19 @@ export default function Beyin() {
   const classes = useStyles();
 
   return (
-
     <div id="features">
-      <Grid container  direction="row"
-        justifyContent="space-around"
-        alignItems="center"  Align="center">
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-        >
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-between"
+        alignItems="center"
+        Align="center"
+      >
+        <Grid item sm={12} md={6} lg={6}>
           {/* card one */}
           <div className={classes.div}>
-            <Grid  container spacing={4}>
-              <Grid
-                container
-
-
-                className={classes.grid}
-              >
+            <Grid container spacing={2}>
+              <Grid container className={classes.grid}>
                 {/* card one one */}
                 <div className={classes.box}>
                   <Image
@@ -99,8 +87,8 @@ export default function Beyin() {
                   </Grid>
                 </Grid>
               </Grid>
-                {/* card two  */}
-              <Grid container  className={classes.grid}>
+              {/* card two  */}
+              <Grid container className={classes.grid}>
                 <div className={classes.box}>
                   <Image
                     className={classes.img1}
@@ -112,7 +100,7 @@ export default function Beyin() {
                   <Grid item xs container>
                     <Grid item>
                       <Typography variant="h5" className={classes.typo}>
-                        Unlimited copies and <br/> views
+                        Unlimited copies and <br /> views
                       </Typography>
                       <Typography variant="body2" className={classes.typo}>
                         Distribute as many copies as you need, no strings
@@ -125,30 +113,19 @@ export default function Beyin() {
             </Grid>
           </div>
         </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-        >
+        <Grid item sm={12} md={6} lg={6}>
           <div className={classes.div}>
             <Grid container spacing={2}>
-              <Grid
-                 container
-
-
-                 className={classes.grid}
-              >
+              <Grid container className={classes.grid}>
                 {/* <Box> */}
-                  <Grid className={classes.box1}>
+                <Grid className={classes.box1}>
                   <Image className={classes.img1} alt="icon heart" src={Flat} />
-                  </Grid>
+                </Grid>
                 {/* </Box> */}
               </Grid>
               <Grid item container className={classes.grid}>
-                <Grid item  sm={6} md={8} lg={10} container>
-                  <Grid item xs container spacing={2}>
+                <Grid item sm={10} md={8} lg={10} container>
+                  <Grid item container spacing={2}>
                     <Grid item>
                       <Typography variant="h5" className={classes.typo}>
                         Works on all Smart devices
