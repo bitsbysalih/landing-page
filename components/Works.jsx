@@ -38,15 +38,15 @@ export const Works = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Box className={classes.box}>
+        <div className={classes.box}>
           <Typography component="div" variant="h3" style={{textAlign: "center"}}>
             Let’s make your business card
             <br /> close more deals
           </Typography>
-        </Box>
+        </div>
         <Button
           className={classes.button}
-          type="button"
+
           onClick={() => console.log("hey")}
           endIcon={<ArrowForwardIosSharpIcon />}
         >

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grid } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import ImageCard from "../public/card.png";
 import ImageIphone from "../public/iPhone.png";
 import Image from "next/image";
@@ -32,8 +32,8 @@ const useStyles = makeStyles(() => ({
 export default function Work() {
   const classes = useStyles();
   return (
-    <Box className={classes.box} id="work">
-      <Box style={{ margin: "3rem 0rem" }}>
+    <div className={classes.box} id="work">
+      <Box style={{ margin: "3rem auto" }}>
         <Typography className={classes.typo}> How it works ?</Typography>
       </Box>
       {/* grid card all */}
@@ -60,9 +60,9 @@ export default function Work() {
                 </Typography>
               </Typography>
             </Grid>
-            <Box className={classes.imgCard}>
+            <div className={classes.imgCard}>
               <Image src={ImageCard} alt="Card" />
-            </Box>
+            </div>
           </Grid>
         </Grid>
         {/* tow card */}
@@ -71,31 +71,37 @@ export default function Work() {
           justifyContent="center"
           item
           xs={12}
-          sm={12}
+          sm={8}
           md={7}
           lg={5}
         >
-          <Grid xs={3} className={classes.imgIphone}>
+          <Grid item xs={4} md={3} className={classes.imgIphone}>
             <Image src={ImageIphone} />
           </Grid>
-          <Grid xs={7}>
-            <Grid>
-              <Grid container justifyContent="space-around">
-                <Grid item xs={3}>
+          <Grid item xs={12} sm={4} md={4} lg={8}>
+            <Grid item>
+              <Grid container>
+                <Grid item xs={4}>
                   <Typography
-                    style={{ fontSize: "4rem", margin: "-24px 30px" }}
+                    style={{ fontSize: "4rem", margin: "-22px 15px" }}
                   >
                     2
                   </Typography>
                 </Grid>
-                <Grid item xs={7}>
+                <Grid item sm={8} md={8} lg={7}>
                   <Typography component="div" variant="body1">
                     Click on start, then allow the camera to scan the card.
                   </Typography>
                 </Grid>
               </Grid>
             </Grid>
-            <Grid style={{ margin: "2rem 2rem" }}>
+            <Grid
+              item
+              sm={12}
+              md={10}
+              lg={10}
+              style={{ margin: "2.5rem auto" }}
+            >
               <Typography component="div">
                 The website will recognize the card and show the Extended
                 Business Card.
@@ -104,6 +110,6 @@ export default function Work() {
           </Grid>
         </Grid>
       </Grid>
-    </Box>
+    </div>
   );
 }

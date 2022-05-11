@@ -14,27 +14,27 @@ function Ads() {
   return (
     <Box style={{ textAlign: "center" }}>
       <Grid>
-        <Typography style={{ margin: "2rem", fontSize: "1rem" }}>
+        <Typography style={{ margin: "2rem", fontSize: "1.4rem" }}>
           Companies we work with!
         </Typography>
-        <Grid container spacing={2} xs={12} sm={12} md={12} lg={12}>
+        <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={4} lg={2}>
-            <Image src={Group} alt="Group" />
+            <Image src={Group} alt="Group image" />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={2}>
-            <Image src={Vector} alt="oracle" />
+            <Image src={Vector} alt="oracle image" />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={2}>
-            <Image src={Morpheus} alt="Morpheus" />
+            <Image src={Morpheus} alt="Morpheus image" />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={2}>
-            <Image src={Samsung} alt="Samsung" />
+            <Image src={Samsung} alt="Samsung image" />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={2}>
-            <Image src={Monday} alt="Monday" />
+            <Image src={Monday} alt="Monday image" />
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={2}>
-            <Image src={Segment} alt="Monday" />
+            <Image src={Segment} alt="Segment image" />
           </Grid>
         </Grid>
       </Grid>

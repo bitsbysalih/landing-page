@@ -1,8 +1,7 @@
 import * as React from "react";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
+import { Typography ,makeStyles} from "@material-ui/core";
 import StyleButton from "./Button/StyleButton";
 
 const useStyles = makeStyles(() => ({
@@ -40,7 +39,7 @@ export default function Hero() {
   const classes = useStyles();
 
   return (
-    <Box className={classes.box} id="hero">
+    <div className={classes.box} id="hero">
       <Grid
         container
         spacing={9}
@@ -49,14 +48,14 @@ export default function Hero() {
         alignItems="center"
       >
         <Grid item xs={7} sm={12} md={6} lg={7}>
-          <Box className={classes.boxx}>
+          <div className={classes.boxx}>
             <Typography variant="h4" className={classes.typo}>
               Get the most effective business <br />
               card ever for only 1$/month
             </Typography>
             <Typography
               component="div"
-              variant="p"
+              variant="body1"
               style={{ margin: "2rem 1px" }}
             >
               Extended Business Card Platform allows you to create extended
@@ -65,7 +64,7 @@ export default function Hero() {
             </Typography>
             {/* button */}
             <StyleButton />
-          </Box>
+          </div>
         </Grid>
         {/* video */}
         <Grid item>
@@ -82,6 +81,6 @@ export default function Hero() {
           </Box>
         </Grid>
       </Grid>
-    </Box>
+    </div>
   );
 }

@@ -1,12 +1,10 @@
 import * as React from "react";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
+import { Typography, makeStyles  } from "@material-ui/core";
 import StyleButton from "./Button/StyleButton";
-import Image from 'next/image';
-import ImageCard from '../public/squircle.png';
-
+import Image from "next/image";
+import ImageCard from "../public/squircle.png";
 
 const useStyles = makeStyles(() => ({
   box: {
@@ -36,7 +34,7 @@ export default function Hero() {
   const classes = useStyles();
 
   return (
-    <Box className={classes.box}>
+    <div className={classes.box}>
       <Grid
         container
         direction="row"
@@ -44,25 +42,21 @@ export default function Hero() {
         alignItems="center"
       >
         <Grid item xs={6} sm={12} md={4} lg={2} style={{ width: "20%" }}>
-          <Image src={ImageCard} alt="Image Card"/>
+          <Image src={ImageCard} alt="Image Card" />
         </Grid>
         <Grid item xs={6} sm={12} md={6} lg={7}>
-          <Box className={classes.boxx}>
+          <div className={classes.boxx}>
             <Typography variant="h4" className={classes.typo}>
               Be the market leader
             </Typography>
-            <Typography
-              component="div"
-              variant=""
-              style={{ margin: "2rem 1px" }}
-            >
+            <Typography component="div" style={{ margin: "2rem 1px" }}>
               Stay ahead of the curve; upgrading to EBC will boost your business{" "}
               <br /> reputation and sales, especially with high profile clients.
             </Typography>
             <StyleButton />
-          </Box>
+          </div>
         </Grid>
       </Grid>
-    </Box>
+    </div>
   );
 }

@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import ArrowForwardIosSharpIcon from "@material-ui/icons/ArrowForwardIos";
 import { Button, Typography } from "@material-ui/core";
 
@@ -21,13 +21,13 @@ export default function StyleButton() {
     <div>
       <Button
         className={classes.button}
-        type="submit"
+
         endIcon={<ArrowForwardIosSharpIcon />}
         onClick={() => console.log("hey")}
       >
         Get started
       </Button>
-      <Typography variant="span" style={{ margin: "0rem 1rem" }}>
+      <Typography variant="subtitle2" component="span" style={{ margin: "0rem 1rem" }}>
         Get one month free Trial! cancel anytime
       </Typography>
     </div>

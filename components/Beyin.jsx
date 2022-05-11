@@ -55,7 +55,7 @@ export default function Beyin() {
   return (
 
     <div style={{ margin: "4rem 0rem" }} id="features">
-      <Grid container spacing={1}>
+      <Grid container spacing={4}>
         <Grid
           item
           xs={12}
@@ -65,25 +65,23 @@ export default function Beyin() {
         >
           {/* card one */}
           <div className={classes.div}>
-            <Grid xs={12} container spacing={2}>
+            <Grid  container spacing={4}>
               <Grid
                 container
-                xs={12}
-                sm={12}
-                md={12}
-                lg={12}
+
+
                 className={classes.grid}
               >
                 {/* card one one */}
-                <Box className={classes.box}>
+                <div className={classes.box}>
                   <Image
                     className={classes.img1}
                     alt="icon heart"
                     src={Vector}
                   />
-                </Box>
-                <Grid xs={8} sm={7} md={7} lg={8}>
-                  <Grid item container>
+                </div>
+                <Grid item xs={8}>
+                  <Grid container>
                     <Grid item>
                       <Typography variant="h5" className={classes.typo}>
                         it keeps a lasting impression every time
@@ -97,15 +95,15 @@ export default function Beyin() {
                 </Grid>
               </Grid>
                 {/* card two  */}
-              <Grid container xs={12} className={classes.grid}>
-                <Box className={classes.box}>
+              <Grid container  className={classes.grid}>
+                <div className={classes.box}>
                   <Image
                     className={classes.img1}
                     alt="icon infinite"
                     src={Vectoor}
                   />
-                </Box>
-                <Grid xs={8} sm={7} md={7} lg={8}>
+                </div>
+                <Grid item xs={8}>
                   <Grid item xs container spacing={2}>
                     <Grid item>
                       <Typography variant="h5" className={classes.typo}>
@@ -130,18 +128,18 @@ export default function Beyin() {
           lg={6}
         >
           <div className={classes.div}>
-            <Grid xs={12} container spacing={2}>
+            <Grid container spacing={2}>
               <Grid
                  container
-                 xs={12}
-                 sm={12}
-                 md={12}
-                 lg={12}
+
+
                  className={classes.grid}
               >
-                <Box className={classes.box1}>
+                {/* <Box> */}
+                  <div className={classes.box1}>
                   <Image className={classes.img1} alt="icon heart" src={Flat} />
-                </Box>
+                  </div>
+                {/* </Box> */}
               </Grid>
               <Grid item container className={classes.grid}>
                 <Grid item xs={12} sm={8} md={10} lg={10} container>

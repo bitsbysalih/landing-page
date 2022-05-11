@@ -51,18 +51,18 @@ export default function CenteredGrid() {
 
   return (
     <Box id="price">
-      <Typography component="div" variant="h3" className={classes.typo}>
+      <Typography variant="h3" className={classes.typo}>
         We made sure you get the best prices so you
         <br /> can thrive !
       </Typography>
-      <Typography component="div" variant="h6" className={classes.typo}>
+      <Typography variant="h6" className={classes.typo}>
         Our Extended Business Card is extremely affordable at every scale. Our
         goal is to provide
         <br /> amazing technology for everyone for the lowest price possible.
       </Typography>
       <Box>
         <Box style={{ margin: "4rem auto" }}>
-          <Container maxWidth="100%">
+          <Container>
             {/* <Grid container spacing={6} xs={12} lg={12}   direction="row"
         justifyContent="center"
         alignItems="center"> */}
@@ -228,18 +228,16 @@ export default function CenteredGrid() {
             <Grid
               container
               spacing={9}
-              xs={12}
-              lg={12}
               direction="row"
               justifyContent="center"
               alignItems="center"
             >
               {/* card one */}
               <Grid item>
-                <Paper item className={classes.card}>
+                <Paper className={classes.card}>
                   <CardHeader
                     action={
-                      <Typography component="div" variant="h5">
+                      <Typography variant="h5">
                         {" "}
                         50 <br />{" "}
                         <small style={{ fontSize: "24px" }}>cards</small>{" "}
@@ -248,33 +246,23 @@ export default function CenteredGrid() {
                     title="SME  Subscription"
                   />
                   <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
+                    <Typography variant="body2" color="textSecondary">
                       <CheckIcon className={classes.icon} /> $1.2 per user
                       monthly
                     </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
+                    <Typography variant="body2" color="textSecondary">
                       <CheckIcon className={classes.icon} /> Customizable card
                       and logo
                     </Typography>
                   </CardContent>
                   <Box>
-                    <Button className={classes.button} variant="">
-                      $270/Y only
-                    </Button>
+                    <Button className={classes.button}>$270/Y only</Button>
                   </Box>
                 </Paper>
               </Grid>
               {/* card two */}
               <Grid item>
-                <Paper item className={classes.card}>
+                <Paper className={classes.card}>
                   <CardHeader
                     action={
                       <Typography component="div" variant="h5">
@@ -285,27 +273,15 @@ export default function CenteredGrid() {
                     title="SME+ Subscription "
                   />
                   <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
+                    <Typography variant="body2" color="textSecondary">
                       <CheckIcon className={classes.icon} /> $1.2 per user
                       monthly
                     </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
+                    <Typography variant="body2" color="textSecondary">
                       <CheckIcon className={classes.icon} /> Customizable card
                       and logo
                     </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
+                    <Typography variant="body2" color="textSecondary">
                       <CheckIcon className={classes.icon} /> Fully customizable
                       loading page
                     </Typography>
@@ -314,7 +290,6 @@ export default function CenteredGrid() {
                     <Button
                       className={classes.button}
                       style={{ marginTop: "1rem" }}
-                      variant=""
                     >
                       $1,440/Y only
                     </Button>
@@ -323,7 +298,7 @@ export default function CenteredGrid() {
               </Grid>
               {/* card three */}
               <Grid item>
-                <Paper item className={classes.card}>
+                <Paper className={classes.card}>
                   <CardHeader
                     action={
                       <Typography component="div" variant="h5">
@@ -334,26 +309,14 @@ export default function CenteredGrid() {
                     title="Agency Subscription"
                   />
                   <CardContent>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
+                    <Typography variant="body2" color="textSecondary">
                       <CheckIcon className={classes.icon} /> $1 per user
                     </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
+                    <Typography variant="body2" color="textSecondary">
                       <CheckIcon className={classes.icon} /> Customizable card
                       and logo
                     </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
-                    >
+                    <Typography variant="body2" color="textSecondary">
                       <CheckIcon className={classes.icon} /> Fully customizable
                       loading page
                     </Typography>
@@ -362,7 +325,6 @@ export default function CenteredGrid() {
                     <Button
                       className={classes.button}
                       style={{ marginTop: "1rem" }}
-                      variant=""
                     >
                       $2400+/Y only
                     </Button>

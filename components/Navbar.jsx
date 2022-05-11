@@ -6,6 +6,7 @@ import {
   makeStyles,
   useTheme,
   useMediaQuery,
+  Box
 } from "@material-ui/core";
 import Link from "next/link";
 import Logo from "./logo/Logo";
@@ -24,8 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     flexGrow: "1",
-    cursor: "pointer",
-    marginLeft: "6rem",
+    margin:"auto 6rem",
   },
   log: {
     border: "1px solid #e3e3e3",
@@ -54,7 +54,9 @@ function Navbar() {
       <CssBaseline />
       <Toolbar>
         {/* Logo */}
-        <Logo />
+       <div className={classes.img}>
+       <Logo />
+       </div>
         {isMobile ? (
           // Icon
           <DrawerComponent />

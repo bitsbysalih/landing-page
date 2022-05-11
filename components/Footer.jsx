@@ -24,7 +24,7 @@ const Footer = () => {
     <Box style={{ marginTop: "12rem" }}>
       <footer>
         <Container style={{textAlign: "center"}} >
-          <Grid container spacing={4} xs={12} className={classes.grid}>
+          <Grid container spacing={4}  className={classes.grid}>
             <Grid item xs={3} sm={6} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/" color="inherit">
@@ -61,9 +61,9 @@ const Footer = () => {
           <Box>
             <Typography
               component="div"
-              variant="body1"
-              align="center"
-              style={{ fontSize: "10px" }}
+              variant="body2"
+              style={{fontSize: "10px"}}
+
             >
               Beyin Digital Technology Limited | Abu Dhabi, Masdar city
               <br />
