@@ -12,6 +12,7 @@ const useStyles = makeStyles(() => ({
     fontSize: "19px",
     lineHeight: "31px",
     color: "#58696D",
+    fontFamily: 'Poppins',
   },
 }));
 

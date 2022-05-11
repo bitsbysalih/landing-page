@@ -9,7 +9,7 @@ import Image from "next/image";
 const useStyles = makeStyles(() => ({
   box: { margin: "9rem auto", alignItems: "center", },
   typo: {
-    fontFamily: "Poppins",
+    fontFamily: 'Poppins',
     fontStyle: "normal",
     fontWeight: 300,
     fontSize: "40px",
