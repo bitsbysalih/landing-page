@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
     maxHeight: "100%",
   },
   typo: {
-    marginTop: "2rem",
+    marginTop: "1rem",
     fontFamily: "Poppins",
     fontWeight: 300,
     lineHeight: "54px",
@@ -36,15 +36,16 @@ export default function Hero() {
   return (
     <div className={classes.box}>
       <Grid
+      xs={12}
         container
         direction="row"
         justifyContent="space-around"
         alignItems="center"
       >
-        <Grid item xs={6} sm={12} md={4} lg={2} style={{ width: "20%" }}>
+        <Grid item  sm={4} md={6} lg={2}>
           <Image src={ImageCard} alt="Image Card" />
         </Grid>
-        <Grid item xs={6} sm={12} md={6} lg={7}>
+        <Grid item  sm={6} md={6} lg={7}>
           <div className={classes.boxx}>
             <Typography variant="h4" className={classes.typo}>
               Be the market leader

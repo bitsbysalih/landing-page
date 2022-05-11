@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     flexGrow: "1",
-    margin:"auto 6rem",
+
   },
   log: {
     border: "1px solid #e3e3e3",
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
 function Navbar() {
   const classes = useStyles();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <div position="static" className={classes.bar}>
       <CssBaseline />

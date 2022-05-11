@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
 
     display: "block",
-    width: "100%",
+    width: "80%",
     height: "100%",
   },
   box: {
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   box1: {
-    width: "100%",
+    width: "60%",
     height: "100%",
     display: "flex",
     justifyContent: "center",

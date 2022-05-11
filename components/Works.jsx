@@ -8,15 +8,15 @@ import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles(() => ({
   card: {
-    margin: "5rem 0rem",
+    margin: "5rem auto",
     width: "100%",
-    height: "481px",
+    height: "100%",
     background: "#FBFBFB",
     boxShadow: "0px 138px 189px -76px rgba(0, 0, 0, 0.06)",
     border: "2px solid rgba(227, 227, 227, 0.8)",
     borderRadius: "20px",
   },
-  box: { margin: "6rem 0rem" },
+  box: { margin: "6rem auto" },
   button: {
     border: "1.5px solid #E3E3E3",
     background: "#FBFBFB",
