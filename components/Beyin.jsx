@@ -14,22 +14,22 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "90%",
     textAlign: "center",
 
-    flexGrow: 1,
+
   },
   img: {
-    margin: "auto",
+
     display: "block",
     width: "100%",
     height: "100%",
   },
   box: {
-    height: "100%",
+    width: "33%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
   },
   box1: {
-    width: "90%",
+    width: "100%",
     height: "100%",
     display: "flex",
     justifyContent: "center",
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
   typo: {
     textAlign: "left",
-    padding: "6px 29px",
+    margin: "1rem",
 
   },
   img: {
@@ -45,7 +45,10 @@ const useStyles = makeStyles((theme) => ({
     width: "156px",
   },
   grid: {
-    margin: "1.5rem auto",
+    margin: "1rem auto",
+    width: "100%",
+    height: "100%"
+
   },
 }));
 
@@ -54,8 +57,10 @@ export default function Beyin() {
 
   return (
 
-    <div style={{ margin: "4rem 0rem" }} id="features">
-      <Grid container spacing={4}>
+    <div id="features">
+      <Grid container  direction="row"
+        justifyContent="space-around"
+        alignItems="center"  Align="center">
         <Grid
           item
           xs={12}
@@ -104,10 +109,10 @@ export default function Beyin() {
                   />
                 </div>
                 <Grid item xs={8}>
-                  <Grid item xs container spacing={2}>
+                  <Grid item xs container>
                     <Grid item>
                       <Typography variant="h5" className={classes.typo}>
-                        Unlimited copies and views
+                        Unlimited copies and <br/> views
                       </Typography>
                       <Typography variant="body2" className={classes.typo}>
                         Distribute as many copies as you need, no strings
@@ -136,13 +141,13 @@ export default function Beyin() {
                  className={classes.grid}
               >
                 {/* <Box> */}
-                  <div className={classes.box1}>
+                  <Grid className={classes.box1}>
                   <Image className={classes.img1} alt="icon heart" src={Flat} />
-                  </div>
+                  </Grid>
                 {/* </Box> */}
               </Grid>
               <Grid item container className={classes.grid}>
-                <Grid item xs={12} sm={8} md={10} lg={10} container>
+                <Grid item  sm={6} md={8} lg={10} container>
                   <Grid item xs container spacing={2}>
                     <Grid item>
                       <Typography variant="h5" className={classes.typo}>

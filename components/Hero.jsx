@@ -1,19 +1,17 @@
 import * as React from "react";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import { Typography ,makeStyles} from "@material-ui/core";
+import { Typography, makeStyles } from "@material-ui/core";
 import StyleButton from "./Button/StyleButton";
 
 const useStyles = makeStyles(() => ({
   box: {
-    margin: "5rem 1rem 10rem",
+    marginTop: "5rem",
     borderRadius: "30px",
   },
   boxx: {
     textAlign: "left",
-    margin: "4rem 2rem",
-    width: "100%",
-    maxHeight: "100%",
+    margin: "2rem auto",
   },
   typo: {
     marginTop: "2rem",
@@ -21,6 +19,7 @@ const useStyles = makeStyles(() => ({
     fontWeight: 300,
     lineHeight: "54px",
     fontSize: "36px",
+    width: "100%",
   },
   button: {
     marginLeft: "1",
@@ -39,15 +38,9 @@ export default function Hero() {
   const classes = useStyles();
 
   return (
-    <div className={classes.box} id="hero">
-      <Grid
-        container
-        spacing={9}
-        direction="row"
-        justifyContent="space-between"
-        alignItems="center"
-      >
-        <Grid item xs={7} sm={12} md={6} lg={7}>
+    <div id="hero" className={classes.box}>
+      <Grid container direction="row" justifyContent="space-between">
+        <Grid item sm={6} md={6} lg={7}>
           <div className={classes.boxx}>
             <Typography variant="h4" className={classes.typo}>
               Get the most effective business <br />
@@ -56,7 +49,11 @@ export default function Hero() {
             <Typography
               component="div"
               variant="body1"
-              style={{ margin: "2rem 1px" }}
+              style={{
+                margin: "2rem 1px",
+                width: "100%",
+                height: "100%",
+              }}
             >
               Extended Business Card Platform allows you to create extended
               business cards for you, your company, or clients in no time and

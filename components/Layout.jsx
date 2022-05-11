@@ -12,9 +12,9 @@ import Works from "./Works";
 
 function Layout() {
   return (
-    <>
+    <div>
       <Header />
-      <Container>
+      <Container maxWidth="lg">
         <Hero />
         <Ads />
         <Work />
@@ -24,7 +24,7 @@ function Layout() {
         <Works />
         <Footer />
       </Container>
-    </>
+    </div>
   );
 }
 

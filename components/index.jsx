@@ -7,7 +7,7 @@ import ImageIphone from "../public/iPhone.png";
 import Image from "next/image";
 
 const useStyles = makeStyles(() => ({
-  box: { margin: "9rem 0rem", width: "100%", height: "100%" },
+  box: { margin: "9rem auto", alignItems: "center", },
   typo: {
     fontFamily: "Poppins",
     fontStyle: "normal",
@@ -45,7 +45,7 @@ export default function Work() {
         className={classes.gridCard}
       >
         {/* one card */}
-        <Grid item xs={12} sm={8} md={4} lg={4}>
+        <Grid item xs={12} sm={6} md={4} lg={4}>
           <Grid>
             <Grid style={{ margin: "1rem 0rem" }}>
               {/* <Typography component="div" variant="h5">  </Typography> */}
@@ -71,25 +71,26 @@ export default function Work() {
           justifyContent="center"
           item
           xs={12}
-          sm={8}
+          sm={6}
           md={7}
           lg={5}
         >
           <Grid item xs={4} md={3} className={classes.imgIphone}>
             <Image src={ImageIphone} />
           </Grid>
-          <Grid item xs={12} sm={4} md={4} lg={8}>
+          <Grid item xs={8} sm={7} md={4} lg={8}>
             <Grid item>
               <Grid container>
                 <Grid item xs={4}>
                   <Typography
                     style={{ fontSize: "4rem", margin: "-22px 15px" }}
+
                   >
                     2
                   </Typography>
                 </Grid>
-                <Grid item sm={8} md={8} lg={7}>
-                  <Typography component="div" variant="body1">
+                <Grid item xs={8} sm={8} md={8} lg={7}>
+                  <Typography component="div" variant="body1" >
                     Click on start, then allow the camera to scan the card.
                   </Typography>
                 </Grid>
@@ -97,10 +98,10 @@ export default function Work() {
             </Grid>
             <Grid
               item
-              sm={12}
+              sm={8}
               md={10}
               lg={10}
-              style={{ margin: "2.5rem auto" }}
+              style={{ margin: "2.5rem 1rem" }}
             >
               <Typography component="div">
                 The website will recognize the card and show the Extended
