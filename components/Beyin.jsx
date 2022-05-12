@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   typo: {
     textAlign: "left",
-    margin: "1rem 1.3rem",
+    margin: "1rem auto",
   },
   grid: {
     margin: "1.2rem auto",
@@ -63,12 +63,12 @@ export default function Beyin() {
                   />
                 </div>
                 <Grid item xs={8}>
-                  <Grid container>
+                  <Grid container style={{border: '1px solid',marginLeft:'1rem'}}>
                     <Grid item>
-                      <Typography variant="h5" className={classes.typo}>
-                        it keeps a lasting impression every time
+                      <Typography component="div" variant="h5" className={classes.typo}>
+                        it keeps a lasting<br/> impression every time
                       </Typography>
-                      <Typography variant="body2" className={classes.typo}>
+                      <Typography component="div" variant="body1" className={classes.typo}>
                         Be memorable! leave a card that can be experienced again
                         and again long after you’re gone.
                       </Typography>
@@ -87,12 +87,12 @@ export default function Beyin() {
                       />
                     </div>
                     <Grid item xs={8}>
-                      <Grid item xs container>
+                      <Grid item container style={{border: '1px solid' , marginLeft:'1rem'}}>
                         <Grid item>
                           <Typography variant="h5" className={classes.typo}>
                             Unlimited copies and views
                           </Typography>
-                          <Typography variant="body2" className={classes.typo}>
+                          <Typography variant="body1" className={classes.typo}>
                             Distribute as many copies as you need, no strings
                             attached!
                           </Typography>
