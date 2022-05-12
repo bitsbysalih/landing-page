@@ -46,7 +46,7 @@ export default function Beyin() {
       <Grid
         container
         direction="row"
-        justifyContent="space-between"
+        justifyContent="space-around"
         alignItems="center"
         Align="center"
       >
@@ -63,10 +63,10 @@ export default function Beyin() {
                   />
                 </div>
                 <Grid item xs={8}>
-                  <Grid container style={{border: '1px solid',marginLeft:'1rem'}}>
+                  <Grid container style={{marginLeft:'1rem'}}>
                     <Grid item>
                       <Typography component="div" variant="h5" className={classes.typo}>
-                        it keeps a lasting<br/> impression every time
+                        it keeps a lasting impression every time
                       </Typography>
                       <Typography component="div" variant="body1" className={classes.typo}>
                         Be memorable! leave a card that can be experienced again
@@ -87,7 +87,7 @@ export default function Beyin() {
                       />
                     </div>
                     <Grid item xs={8}>
-                      <Grid item container style={{border: '1px solid' , marginLeft:'1rem'}}>
+                      <Grid item container style={{ marginLeft:'1rem'}}>
                         <Grid item>
                           <Typography variant="h5" className={classes.typo}>
                             Unlimited copies and views
