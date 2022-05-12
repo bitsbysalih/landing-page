@@ -10,39 +10,29 @@ import Flat from "../public/flat.png";
 
 const useStyles = makeStyles((theme) => ({
   div: {
-    padding: "1rem",
-    maxWidth: "90%",
+    padding: "1.8rem",
+    maxWidth: "100%",
     textAlign: "center",
   },
-  img: {
-    display: "block",
-    width: "80%",
-    height: "100%",
-  },
   box: {
-    width: "33%",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "left",
     alignItems: "center",
-    marginLeft: "1px"
   },
   box1: {
-    width: "60%",
+    width: "100%",
     height: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+
   },
   typo: {
     textAlign: "left",
-    margin: "1rem 2rem",
-  },
-  img: {
-    height: "156px",
-    width: "156px",
+    margin: "1rem 1.3rem",
   },
   grid: {
-    margin: "2rem auto",
+    margin: "1.2rem auto",
     width: "100%",
     height: "100%",
   },
@@ -60,15 +50,14 @@ export default function Beyin() {
         alignItems="center"
         Align="center"
       >
-        <Grid item sm={12} md={6} lg={6}>
+        <Grid item  sm={12} md={6} lg={6}>
           {/* card one */}
           <div className={classes.div}>
-            <Grid container spacing={2}>
+            <Grid container spacing={8} sm={12} md={12} lg={12}>
               <Grid container className={classes.grid}>
                 {/* card one one */}
                 <div className={classes.box}>
                   <Image
-                    className={classes.img1}
                     alt="icon heart"
                     src={Vector}
                   />
@@ -88,44 +77,47 @@ export default function Beyin() {
                 </Grid>
               </Grid>
               {/* card two  */}
-              <Grid container className={classes.grid}>
-                <div className={classes.box}>
-                  <Image
-                    className={classes.img1}
-                    alt="icon infinite"
-                    src={Vectoor}
-                  />
-                </div>
-                <Grid item xs={8}>
-                  <Grid item xs container>
-                    <Grid item>
-                      <Typography variant="h5" className={classes.typo}>
-                        Unlimited copies and <br /> views
-                      </Typography>
-                      <Typography variant="body2" className={classes.typo}>
-                        Distribute as many copies as you need, no strings
-                        attached!
-                      </Typography>
+              <div className={classes.div}>
+                <Grid container spacing={9} sm={12} md={12} lg={12}>
+                  <Grid container className={classes.grid}>
+                    <div className={classes.box}>
+                      <Image
+                        alt="icon infinite"
+                        src={Vectoor}
+                      />
+                    </div>
+                    <Grid item xs={8}>
+                      <Grid item xs container>
+                        <Grid item>
+                          <Typography variant="h5" className={classes.typo}>
+                            Unlimited copies and views
+                          </Typography>
+                          <Typography variant="body2" className={classes.typo}>
+                            Distribute as many copies as you need, no strings
+                            attached!
+                          </Typography>
+                        </Grid>
+                      </Grid>
                     </Grid>
                   </Grid>
                 </Grid>
-              </Grid>
+              </div>
             </Grid>
           </div>
         </Grid>
-        <Grid item sm={12} md={6} lg={6}>
+        <Grid item sm={12} md={6} lg={5}>
           <div className={classes.div}>
-            <Grid container spacing={2}>
+            <Grid container >
               <Grid container className={classes.grid}>
                 {/* <Box> */}
                 <Grid className={classes.box1}>
-                  <Image className={classes.img1} alt="icon heart" src={Flat} />
+                  <Image  alt="icon heart" src={Flat} />
                 </Grid>
                 {/* </Box> */}
               </Grid>
               <Grid item container className={classes.grid}>
                 <Grid item sm={10} md={8} lg={10} container>
-                  <Grid item container spacing={2}>
+                  <Grid item container>
                     <Grid item>
                       <Typography variant="h5" className={classes.typo}>
                         Works on all Smart devices
