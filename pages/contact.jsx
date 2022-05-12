@@ -34,19 +34,17 @@ export default function AutoGrid() {
   const classes = useStyles();
 
   return (
-    <Box>
+    <Box >
       <Navbar />
-      <Grid container sm={0} md={12} lg={12}>
-        <Grid item xs={12} sm={5} md={6} lg={6} className={style.contact}>
-          <Grid
+      <Grid container sm={12} md={12} lg={12}>
+        <Grid item xs={1} sm={0} md={6} lg={6} className={style.contact}>
+          {/* <Grid
             container
             direction="row"
             justifyContent="flex-start"
             alignItems="flex-start"
             style={{ margin: "1rem" }}
-          >
-            <Logo />
-          </Grid>
+          ></Grid> */}
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6} style={{ marginTop: "3rem" }}>
           <Grid>
@@ -139,7 +137,6 @@ export default function AutoGrid() {
                   </Card>
                 </Grid>
               </Grid>
-
               <Footer />
             </div>
           </Grid>

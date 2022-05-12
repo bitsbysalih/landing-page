@@ -18,6 +18,6 @@
   background-image: url(../public/pic.png) ;
   background-repeat: no-repeat;
   background-size:cover;
-  display: flex;
-  align-items: flex-end;
+  width: 100%;
+
 }

@@ -5,13 +5,13 @@ import Link from "@material-ui/core/Link";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-// import Logo from "./logo/Logo";
+import Logo from "../logo/Logo";
 
 
 const Footer = () => {
 
   return (
-    <Box style={{ marginTop: "12rem" }}>
+    <Box style={{ marginTop:'8rem'}}>
       <footer>
         <Container style={{textAlign: "center"}} >
           <Grid container>
@@ -45,8 +45,9 @@ const Footer = () => {
             </Grid>
           </Grid>
           {/* Logo */}
-          <Box style={{ margin: "3rem", textAlign: "center" }}>
-            {/* <Logo /> */}
+          <Box style={{   display: 'flex',
+  alignItems: 'flex-end',marginTop:'4rem' }}>
+            <Logo />
           </Box>
           <Box>
             <Typography
