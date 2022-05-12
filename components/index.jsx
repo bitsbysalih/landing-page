@@ -48,7 +48,7 @@ export default function Work() {
         <Grid item xs={12} sm={6} md={4} lg={4}>
           <Grid>
             <Grid style={{ margin: "1rem 0rem" }}>
-              {/* <Typography component="div" variant="h5">  </Typography> */}
+
               <Typography className={classes.typo2}>
                 1
                 <Typography
@@ -61,7 +61,7 @@ export default function Work() {
               </Typography>
             </Grid>
             <div className={classes.imgCard}>
-              <Image src={ImageCard} alt="Card" />
+              <Image src={ImageCard} alt="Card image" />
             </div>
           </Grid>
         </Grid>
@@ -76,7 +76,7 @@ export default function Work() {
           lg={5}
         >
           <Grid item xs={4} md={3} className={classes.imgIphone}>
-            <Image src={ImageIphone} />
+            <Image src={ImageIphone}  alt="Iphone image"/>
           </Grid>
           <Grid item xs={8} sm={7} md={4} lg={8}>
             <Grid item>

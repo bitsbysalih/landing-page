@@ -41,7 +41,7 @@ const Footer = () => {
             </Grid>
             <Grid item xs={3} sm={6} md={3} lg={3}>
               <Box>
-                <Link underline="none" href="/" color="inherit">
+                <Link underline="none" href="/contact" color="inherit">
                   Contact us
                 </Link>
               </Box>

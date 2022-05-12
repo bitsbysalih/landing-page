@@ -21,20 +21,26 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "#000",
     fontSize: "21px",
-    marginLeft: theme.spacing(6),
+    marginLeft: theme.spacing(3),
   },
   img: {
     flexGrow: "1",
 
   },
   log: {
-    border: "1px solid #e3e3e3",
-    width: "114px",
     marginLeft: "1rem",
-    borderRadius: "14px",
+    border: "1px solid #e3e3e3",
+    borderRadius: "14rem",
     boxShadow: "0px 3px 51px rgba(0, 0, 0, 0.03)",
-    transition: "all 240ms ease-in-out",
-    cursor: "pointer",
+    textTransform: 'none',
+    fontWeight: "400",
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontSize: '14px',
+    lineHeight: '21px',
+    textAlign: 'center',
+    padding:'0.6rem 3rem'
+
   },
   get: {
     marginLeft: "12rem",
@@ -42,6 +48,14 @@ const useStyles = makeStyles((theme) => ({
     filter: "0px 3px 51px rgba(0, 0, 0, 0.03)",
     transition: "all 240ms ease-in-out",
     cursor: "pointer",
+    textTransform: 'none',
+ fontFamily: 'Poppins',
+fontStyle: 'normal',
+fontWeight: '400',
+fontSize: '14px',
+lineHeight: '21px',
+textAlign: 'center',
+color: '#58696D'
   },
 }));
 
@@ -75,11 +89,17 @@ function Navbar() {
               <a className={classes.link}>Prices</a>
             </Link>
 
-            <>
-              <Button className={classes.get}>Get Started</Button>
-              <Button className={classes.log}>Login</Button>
-            </>
-          </div>
+
+              <Button className={classes.get} size="large">
+                <Link href="/contact">
+                  <a className={classes.link}>Get Started</a>
+                </Link>
+              </Button>
+              <Button className={classes.log}>
+                <Link href="#"><a className={classes.link}>Login</a></Link>
+                </Button>
+            </div>
+
         )}
       </Toolbar>
     </div>

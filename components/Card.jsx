@@ -5,6 +5,8 @@ import { Typography, makeStyles  } from "@material-ui/core";
 import StyleButton from "./Button/StyleButton";
 import Image from "next/image";
 import ImageCard from "../public/squircle.png";
+import Link from "next/link";
+
 
 const useStyles = makeStyles(() => ({
   box: {
@@ -27,6 +29,13 @@ const useStyles = makeStyles(() => ({
     marginLeft: "1",
     border: "1px solid gray",
     borderRadius: "22px",
+  },
+  link: {
+    fontFamily: "Poppins",
+    textDecoration: "none",
+    color: "#58696D",
+    fontSize: "21px",
+
   },
 }));
 
@@ -54,7 +63,11 @@ export default function Hero() {
               Stay ahead of the curve; upgrading to EBC will boost your business{" "}
               <br /> reputation and sales, especially with high profile clients.
             </Typography>
-            <StyleButton />
+            <Link href="/contact">
+          <a className={classes.link}>
+          <StyleButton />
+          </a>
+          </Link>
           </div>
         </Grid>
       </Grid>

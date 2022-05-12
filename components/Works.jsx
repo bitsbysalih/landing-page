@@ -5,6 +5,8 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import ArrowForwardIosSharpIcon from "@material-ui/icons/ArrowForwardIos";
 import Button from "@material-ui/core/Button";
+import Link from "next/link";
+
 
 const useStyles = makeStyles(() => ({
   card: {
@@ -27,6 +29,13 @@ const useStyles = makeStyles(() => ({
     lineHeight: "31px",
     margin: "3rem auto"
   },
+  link: {
+    fontFamily: "Poppins",
+    textDecoration: "none",
+    color: "#58696D",
+    fontSize: "21px",
+
+  },
 }));
 
 export const Works = () => {
@@ -45,14 +54,16 @@ export const Works = () => {
             <br /> close more deals
           </Typography>
         </div>
-        <Button
+       <Link href="/contact">
+         <a className={classes.link}>
+         <Button
           className={classes.button}
-
-          onClick={() => console.log("hey")}
           endIcon={<ArrowForwardIosSharpIcon />}
         >
           Get Started
         </Button>
+         </a>
+       </Link>
       </Grid>
     </Card>
   );

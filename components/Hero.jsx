@@ -5,6 +5,7 @@ import { Typography, makeStyles } from "@material-ui/core";
 import StyleButton from "./Button/StyleButton";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   box: {
@@ -34,13 +35,20 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "30px",
     boxShadow: "0 134px 148px -76px rgba(0, 0, 0, 0.3)",
   },
+   link: {
+    fontFamily: "Poppins",
+    textDecoration: "none",
+    color: "#58696D",
+    fontSize: "21px",
+
+  },
 }));
 
 export default function Hero() {
   const classes = useStyles();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("xs"));
-  // console.log({matches});
+
   return (
     <div id="hero" className={classes.box}>
       <Grid container direction="row" justifyContent="space-between">
@@ -53,18 +61,17 @@ export default function Hero() {
             <Typography
               component="div"
               variant="body1"
-              style={{
-                margin: "2rem 1px",
-                width: "100%",
-                height: "100%",
-              }}
-            >
+              style={{ margin: "2rem 1px"}}>
               Extended Business Card Platform allows you to create extended
               business cards for you, your company, or clients in no time and
               without complex steps for as low as $1 per month!
             </Typography>
             {/* button */}
-            <StyleButton />
+          <Link href="/contact">
+          <a className={classes.link}>
+          <StyleButton />
+          </a>
+          </Link>
           </div>
         </Grid>
         {/* video */}
