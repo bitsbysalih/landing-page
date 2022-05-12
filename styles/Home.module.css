@@ -8,8 +8,16 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .container {
     width: 100%;
     flex-direction: column;
   }
+
+}
+.contact {
+  background-image: url(../public/pic.png) ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  align-items: flex-end;
 }

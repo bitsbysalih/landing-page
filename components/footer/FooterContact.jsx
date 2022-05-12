@@ -5,7 +5,7 @@ import Link from "@material-ui/core/Link";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Logo from "./logo/Logo";
+// import Logo from "./logo/Logo";
 
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
     <Box style={{ marginTop: "12rem" }}>
       <footer>
         <Container style={{textAlign: "center"}} >
-          <Grid container spacing={4}>
+          <Grid container>
             <Grid item xs={3} sm={6} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/" color="inherit">
@@ -46,7 +46,7 @@ const Footer = () => {
           </Grid>
           {/* Logo */}
           <Box style={{ margin: "3rem", textAlign: "center" }}>
-            <Logo />
+            {/* <Logo /> */}
           </Box>
           <Box>
             <Typography
@@ -55,15 +55,7 @@ const Footer = () => {
               style={{fontSize: "10px"}}
 
             >
-              Beyin Digital Technology Limited | Abu Dhabi, Masdar city
-              <br />
-              © Beyin Digital Technology Limited - 2022. The trademarks, logos,
-              designs, services and the content appearing herein, is exclusively
-              <br />
-              owned by Beyin Digital Technology Limited, and/or its licensors,
-              and are protected. Any unauthorized use or reproduction or
-              <br /> distribution, shall attract suitable action under
-              applicable law.
+
             </Typography>
           </Box>
         </Container>

@@ -62,7 +62,7 @@ color: '#58696D'
 function Navbar() {
   const classes = useStyles();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <div position="static" className={classes.bar}>
       <CssBaseline />
