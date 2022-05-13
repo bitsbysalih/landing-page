@@ -35,7 +35,6 @@ const useStyles = makeStyles(() => ({
     textDecoration: "none",
     color: "#58696D",
     fontSize: "21px",
-   background:"red"
   },
 }));
 
@@ -63,10 +62,11 @@ export default function Hero() {
               Stay ahead of the curve; upgrading to EBC will boost your business{" "}
               <br /> reputation and sales, especially with high profile clients.
             </Typography>
-            <Link href="/contact">
 
+          </div>
+          <div>
+          <Link href="/contact">
           <a className={classes.link}>
-           
           <StyleButton />
           </a>
           </Link>

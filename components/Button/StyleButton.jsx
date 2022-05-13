@@ -4,6 +4,15 @@ import { Button, Typography } from "@material-ui/core";
 
 
 const useStyles = makeStyles((theme) => ({
+  div:{
+    '@media only screen and (max-width: 600px)': {
+
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+
+    },
+  },
   button: {
     border: "1.5px solid #E3E3E3",
     background: "#FBFBFB",
@@ -15,9 +24,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Poppins",
     textTransform: "none",
     color: "#58696D",
-    '@media only screen and (max-width: 600px)': {
-      margin:"auto 7rem",
-    },
   },
   typo :
   {
@@ -33,7 +39,7 @@ export default function StyleButton() {
   const classes = useStyles();
 
   return (
-    <div>
+    <div className={classes.div}>
       <Button
         className={classes.button}
         endIcon={<ArrowForwardIosSharpIcon />}
