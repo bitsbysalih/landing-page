@@ -15,28 +15,28 @@ const Footer = () => {
       <footer>
         <Container style={{textAlign: "center"}} >
           <Grid container>
-            <Grid item xs={3} sm={6} md={3} lg={3}>
+            <Grid item xs={3} sm={3} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/" color="inherit">
                   Terms and Conditions
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={3} sm={6} md={3} lg={3}>
+            <Grid item xs={3} sm={3} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/" color="inherit">
                   Privacy Policy
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={3} sm={6} md={3} lg={3}>
+            <Grid item xs={3} sm={3} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/contact" color="inherit">
                   Contact us
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={3} sm={6} md={3} lg={3}>
+            <Grid item xs={3} sm={3} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="#price" color="inherit">
                   Pricing

@@ -15,18 +15,23 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Poppins",
     textTransform: "none",
     color: "#58696D",
+    '@media only screen and (max-width: 600px)': {
+      margin:"auto",
+    },
   },
-  // link: {
-  //   fontFamily: "Poppins",
-  //   textDecoration: "none",
-  //   color: "#58696D",
-  //   fontSize: "21px",
-  //   marginLeft: theme.spacing(1),
-  // },
+  typo :
+  {
+    margin: "0rem 1rem",
+    '@media only screen and (max-width: 600px)': {
+      display: 'none',
+    }
+   }
 }));
+
 
 export default function StyleButton() {
   const classes = useStyles();
+
   return (
     <div>
       <Button
@@ -42,7 +47,8 @@ export default function StyleButton() {
       <Typography
         variant="subtitle2"
         component="span"
-        style={{ margin: "0rem 1rem" }}
+
+        className={classes.typo}
       >
         Get one month free Trial! cancel anytime
       </Typography>

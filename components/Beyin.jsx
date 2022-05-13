@@ -30,6 +30,11 @@ const useStyles = makeStyles((theme) => ({
   typo: {
     textAlign: "left",
     margin: "1rem auto",
+    '@media only screen and (max-width: 600px)': {
+      margin:"auto -0.4rem",
+      
+
+    },
   },
   grid: {
     margin: "1.2rem auto",
@@ -62,8 +67,8 @@ export default function Beyin() {
                     src={Vector}
                   />
                 </div>
-                <Grid item xs={8}>
-                  <Grid container style={{marginLeft:'1rem'}}>
+                <Grid item xs={8} sm={8} md={8} lg={8}>
+                  <Grid container style={{marginLeft:'2rem'}}>
                     <Grid item>
                       <Typography component="div" variant="h5" className={classes.typo}>
                         it keeps a lasting impression every time
@@ -77,31 +82,26 @@ export default function Beyin() {
                 </Grid>
               </Grid>
               {/* card two  */}
-              <div className={classes.div}>
-                <Grid container spacing={9} sm={12} md={12} lg={12}>
-                  <Grid container className={classes.grid}>
-                    <div className={classes.box}>
-                      <Image
-                        alt="icon infinite"
-                        src={Vectoor}
-                      />
-                    </div>
-                    <Grid item xs={8}>
-                      <Grid item container style={{ marginLeft:'1rem'}}>
-                        <Grid item>
-                          <Typography variant="h5" className={classes.typo}>
-                            Unlimited copies and views
-                          </Typography>
-                          <Typography variant="body1" className={classes.typo}>
-                            Distribute as many copies as you need, no strings
-                            attached!
-                          </Typography>
-                        </Grid>
-                      </Grid>
+              <Grid container className={classes.grid}>
+                <div className={classes.box}>
+                  <Image
+                    alt="icon infinity"
+                    src={Vectoor}
+                  />
+                </div>
+                <Grid item xs={8} sm={8} md={8} lg={8}>
+                  <Grid container style={{marginLeft:'1.4rem'}}>
+                    <Grid item>
+                      <Typography component="div" variant="h5" className={classes.typo}>
+                      Unlimited copies and views
+                      </Typography>
+                      <Typography component="div" variant="body1" className={classes.typo}>
+                      Distribute as many copies as you need, no strings attached!
+                      </Typography>
                     </Grid>
                   </Grid>
                 </Grid>
-              </div>
+              </Grid>
             </Grid>
           </div>
         </Grid>

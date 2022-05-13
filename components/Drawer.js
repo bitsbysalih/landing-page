@@ -30,26 +30,25 @@ function DrawerComponent() {
     <>
       <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
         <List>
-          <ListItem onClick={() => setOpenDrawer(false)}>
+        <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link href="/">
+              <Link href="#">
                 <a className={classes.link}>Home</a>
               </Link>
             </ListItemText>
           </ListItem>
-          <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
-            <Link href="3hero">
-              <a className={classes.link}>About</a>
-            </Link>
+            <ListItemText>
+              <Link href="#hero">
+                <a className={classes.link}>About</a>
+              </Link>
+            </ListItemText>
           </ListItem>
           <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link href="#work">
-                <a className={classes.link}>How it works </a>
-              </Link>
-            </ListItemText>
+            <Link href="#work">
+              <a className={classes.link}>How it works</a>
+            </Link>
           </ListItem>
           <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
@@ -59,6 +58,7 @@ function DrawerComponent() {
               </Link>
             </ListItemText>
           </ListItem>
+          <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link href="#price">

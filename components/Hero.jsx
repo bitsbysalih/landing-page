@@ -6,55 +6,19 @@ import StyleButton from "./Button/StyleButton";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Link from "next/link";
-
-const useStyles = makeStyles((theme) => ({
-  box: {
-    marginTop: "5rem",
-    borderRadius: "30px",
-  },
-  boxx: {
-    textAlign: "left",
-    margin: "2rem auto",
-  },
-  typo: {
-    marginTop: "2rem",
-    fontFamily: "Poppins",
-    fontWeight: 300,
-    lineHeight: "54px",
-    fontSize: "36px",
-    width: "100%",
-  },
-  button: {
-    marginLeft: "1",
-    border: "1px solid gray",
-    borderRadius: "23rem",
-  },
-  video: {
-    maxWidth: "100%",
-    height: "100%",
-    borderRadius: "30px",
-    boxShadow: "0 134px 148px -76px rgba(0, 0, 0, 0.3)",
-  },
-   link: {
-    fontFamily: "Poppins",
-    textDecoration: "none",
-    color: "#58696D",
-    fontSize: "21px",
-
-  },
-}));
+import styles from "../styles/hero.module.css"
 
 export default function Hero() {
-  const classes = useStyles();
+
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("xs"));
 
   return (
-    <div id="hero" className={classes.box}>
+    <div id="hero" className={styles.box}>
       <Grid container direction="row" justifyContent="space-between">
         <Grid item sm={7} md={6} lg={7}>
-          <div className={classes.boxx}>
-            <Typography variant="h4" className={classes.typo}>
+          <div className={styles.boxx}>
+            <Typography variant="h4" className={styles.typo}>
               Get the most effective business <br />
               card ever for only 1$/month
             </Typography>
@@ -68,7 +32,7 @@ export default function Hero() {
             </Typography>
             {/* button */}
           <Link href="/contact">
-          <a className={classes.link}>
+          <a className={styles.link}>
           <StyleButton />
           </a>
           </Link>
@@ -83,7 +47,7 @@ export default function Hero() {
           md={4}
           lg={3}
         >
-          <Grid style={{ height: "420px", maxWidth: "100%" }}>
+          <Grid className={styles.grid}>
             <video
               controls
               autostart="true"
@@ -91,7 +55,7 @@ export default function Hero() {
               src="./video.mp4"
               type="video/mp4"
               alt="Beyin Video"
-              className={classes.video}
+              className={styles.video}
             />
           </Grid>
         </Grid>
