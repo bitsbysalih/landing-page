@@ -35,7 +35,7 @@ const useStyles = makeStyles(() => ({
     textDecoration: "none",
     color: "#58696D",
     fontSize: "21px",
-
+   background:"red"
   },
 }));
 
@@ -64,7 +64,9 @@ export default function Hero() {
               <br /> reputation and sales, especially with high profile clients.
             </Typography>
             <Link href="/contact">
+
           <a className={classes.link}>
+           
           <StyleButton />
           </a>
           </Link>

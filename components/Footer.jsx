@@ -8,17 +8,25 @@ import { makeStyles } from "@material-ui/core/styles";
 import Logo from "./logo/Logo";
 
 
-const Footer = () => {
+const useStyles = makeStyles(() => ({
+grid:{
+  '@media only screen and (max-width: 600px)': {
+    fontSize:"10px"
+  }
+}
+}))
 
+const Footer = () => {
+const classes = useStyles();
   return (
     <Box style={{ marginTop: "12rem" }}>
       <footer>
         <Container style={{textAlign: "center"}} >
-          <Grid container spacing={4}>
+          <Grid container spacing={4} className={classes.grid}>
             <Grid item xs={3} sm={6} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/" color="inherit">
-                  Terms and Conditions
+                 T&C
                 </Link>
               </Box>
             </Grid>

@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "none",
     color: "#58696D",
     '@media only screen and (max-width: 600px)': {
-      margin:"auto",
+      margin:"auto 7rem",
     },
   },
   typo :
