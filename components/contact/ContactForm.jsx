@@ -67,7 +67,7 @@ export default function ContactForm() {
   const classes = useStyles();
 
   return (
-    <Grid item  style={{ margin: "3rem auto",border:"1px solid"}}>
+    <Grid item  style={{ margin: "3rem auto"}}>
       <Grid>
         <div>
           <Grid container direction="column" alignItems="center">

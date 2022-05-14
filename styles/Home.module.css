@@ -13,33 +13,34 @@
   }
 }
 .contact {
-  background-image: url(../public/pic.png);
+  /* background-image: url(../public/pic.png); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 100vh;
   width: 100%;
-  /* // padding: theme.spacing(3), */
-  over-flow-x: hidden;
-  over-flow-y: auto;
 
   background-position: center;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 962px) {
-  .contact {
-    border: 4px solid green;
+.img {
+  /* width: 50%; */
+  margin: 0 auto;
+}
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1160px) {
+  .img {
+    /* width: 50%; */
     display: none;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (max-width: 1000px) {
-
-  .img {
-    border:4px solid red;
-    display: none;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1157px) {
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-} */
+}

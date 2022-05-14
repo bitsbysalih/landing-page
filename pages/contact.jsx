@@ -11,19 +11,12 @@ export default function AutoGrid() {
   return (
     <Box>
       <Navbar />
-      <Container
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          border: "1px solid",
-        }}
-      >
-        <Grid container direction="row" alignItems="center">
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <div className={style.contact}></div>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
+      <Container>
+        <Grid container className={style.grid}>
+          <div className={style.img}>
+            <Image src={Pic} />
+          </div>
+          <Grid className={style.grid}>
             <ContactForm />
           </Grid>
         </Grid>
@@ -31,6 +24,3 @@ export default function AutoGrid() {
     </Box>
   );
 }
-
-// npm i emailjs-com
-// npm i react-hook-form axios nodemailer
