@@ -56,7 +56,7 @@ export default function StyleButton() {
 
         className={classes.typo}
       >
-        Get one month free Trial! cancel anytime
+        {/* Get one month free Trial! cancel anytime */}
       </Typography>
     </div>
   );

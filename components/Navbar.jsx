@@ -80,7 +80,7 @@ function Navbar() {
               <a className={classes.link} >About</a>
             </Link>
             <Link href="#work">
-              <a className={classes.link}>How it work</a>
+              <a className={classes.link}>How it works</a>
             </Link>
             <Link href="#features">
               <a className={classes.link}>Features</a>

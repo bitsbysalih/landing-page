@@ -18,7 +18,7 @@ const Footer = () => {
             <Grid item xs={3} sm={3} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/" color="inherit">
-                  Terms and Conditions
+                  T&C
                 </Link>
               </Box>
             </Grid>
