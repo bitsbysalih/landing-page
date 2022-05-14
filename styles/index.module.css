@@ -1,0 +1,28 @@
+.box {
+  margin: 9rem auto;
+  align-items: center;
+}
+.typo {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 54px;
+  display: flex;
+  align-items: center;
+}
+.imgIphone {
+  box-shadow: 0px 67.6825px 87.2063px rgba(0, 0, 0, 0.01);
+  border-radius: 19px;
+}
+.imgCard {
+  box-shadow: 0px 138px 189px -76px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+}
+.typo2 {
+  display: flex;
+  align-items: center;
+}
+.gridCard {
+  margin-left: 1rem;
+}

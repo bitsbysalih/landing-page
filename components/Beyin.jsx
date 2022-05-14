@@ -7,44 +7,45 @@ import Image from "next/image";
 import Vector from "../public/vector1.png";
 import Vectoor from "../public/Vector2.png";
 import Flat from "../public/flat.png";
+import style from "../styles/beyin.module.css";
 
-const useStyles = makeStyles((theme) => ({
-  div: {
-    padding: "1.8rem",
-    maxWidth: "100%",
-    textAlign: "center",
-  },
-  box: {
-    display: "flex",
-    justifyContent: "left",
-    alignItems: "center",
-  },
-  box1: {
-    width: "100%",
-    height: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+// const useStyles = makeStyles((theme) => ({
+//   div: {
+//     padding: "1.8rem",
+//     maxWidth: "100%",
+//     textAlign: "center",
 
-  },
-  typo: {
-    textAlign: "left",
-    margin: "1rem auto",
-    '@media only screen and (max-width: 600px)': {
-      margin:"auto -0.4rem",
-      
+//   },
+//   box: {
+//     display: "flex",
+//     justifyContent: "left",
+//     alignItems: "center",
+//   },
+//   box1: {
+//     width: "100%",
+//     height: "100%",
+//     display: "flex",
+//     justifyContent: "center",
+//     alignItems: "center",
 
-    },
-  },
-  grid: {
-    margin: "1.2rem auto",
-    width: "100%",
-    height: "100%",
-  },
-}));
+//   },
+//   typo: {
+//     textAlign: "left",
+//     margin: "1rem auto",
+//     '@media only screen and (max-width: 600px)': {
+//       margin:"auto -0.4rem",
+
+//     },
+//   },
+//   grid: {
+//     margin: "1.2rem auto",
+//     width: "100%",
+//     height: "100%",
+//   },
+// }));
 
 export default function Beyin() {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
     <div id="features">
@@ -53,27 +54,23 @@ export default function Beyin() {
         direction="row"
         justifyContent="space-around"
         alignItems="center"
-        Align="center"
       >
-        <Grid item  sm={12} md={6} lg={6}>
+        <Grid item sm={12} md={6} lg={6}>
           {/* card one */}
-          <div className={classes.div}>
-            <Grid container spacing={8} sm={12} md={12} lg={12}>
-              <Grid container className={classes.grid}>
+          <div className={style.div}>
+            <Grid container item spacing={8} sm={12} md={12} lg={12}>
+              <Grid container className={style.grid}>
                 {/* card one one */}
-                <div className={classes.box}>
-                  <Image
-                    alt="icon heart"
-                    src={Vector}
-                  />
+                <div className={style.box}>
+                  <Image alt="icon heart" src={Vector} />
                 </div>
                 <Grid item xs={8} sm={8} md={8} lg={8}>
-                  <Grid container style={{marginLeft:'2rem'}}>
+                  <Grid container style={{ marginLeft: "2rem" }}>
                     <Grid item>
-                      <Typography component="div" variant="h5" className={classes.typo}>
+                      <Typography variant="h5" className={style.typo}>
                         it keeps a lasting impression every time
                       </Typography>
-                      <Typography component="div" variant="body1" className={classes.typo}>
+                      <Typography variant="body1" className={style.typo}>
                         Be memorable! leave a card that can be experienced again
                         and again long after you’re gone.
                       </Typography>
@@ -82,21 +79,19 @@ export default function Beyin() {
                 </Grid>
               </Grid>
               {/* card two  */}
-              <Grid container className={classes.grid}>
-                <div className={classes.box}>
-                  <Image
-                    alt="icon infinity"
-                    src={Vectoor}
-                  />
+              <Grid container className={style.grid}>
+                <div className={style.box}>
+                  <Image alt="icon infinity" src={Vectoor} />
                 </div>
                 <Grid item xs={8} sm={8} md={8} lg={8}>
-                  <Grid container style={{marginLeft:'1.4rem'}}>
+                  <Grid container style={{ marginLeft: "1.4rem" }}>
                     <Grid item>
-                      <Typography component="div" variant="h5" className={classes.typo}>
-                      Unlimited copies and views
+                      <Typography variant="h5" className={style.typo}>
+                        Unlimited copies and views
                       </Typography>
-                      <Typography component="div" variant="body1" className={classes.typo}>
-                      Distribute as many copies as you need, no strings attached!
+                      <Typography variant="body1" className={style.typo}>
+                        Distribute as many copies as you need, no strings
+                        attached!
                       </Typography>
                     </Grid>
                   </Grid>
@@ -106,23 +101,23 @@ export default function Beyin() {
           </div>
         </Grid>
         <Grid item sm={12} md={6} lg={5}>
-          <div className={classes.div}>
-            <Grid container >
-              <Grid container className={classes.grid}>
+          <div className={style.div}>
+            <Grid container>
+              <Grid container className={style.grid}>
                 {/* <Box> */}
-                <Grid className={classes.box1}>
-                  <Image  alt="icon heart" src={Flat} />
+                <Grid className={style.box1}>
+                  <Image alt="icon heart" src={Flat} />
                 </Grid>
                 {/* </Box> */}
               </Grid>
-              <Grid item container className={classes.grid}>
+              <Grid item container className={style.grid}>
                 <Grid item sm={10} md={8} lg={10} container>
                   <Grid item container>
                     <Grid item>
-                      <Typography variant="h5" className={classes.typo}>
+                      <Typography variant="h5" className={style.typo}>
                         Works on all Smart devices
                       </Typography>
-                      <Typography variant="body2" className={classes.typo}>
+                      <Typography variant="body2" className={style.typo}>
                         The EBC card works on all popular smart devices like
                         Android and IOS as long as it can run Chrome, Edge or
                         Safari.

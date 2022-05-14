@@ -2,15 +2,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import ArrowForwardIosSharpIcon from "@material-ui/icons/ArrowForwardIos";
 import { Button, Typography } from "@material-ui/core";
 
-
-const useStyles = makeStyles((theme) => ({
-  div:{
-    '@media only screen and (max-width: 600px)': {
-
+const useStyles = makeStyles(() => ({
+  div: {
+    "@media only screen and (max-width: 600px)": {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-
     },
   },
   button: {
@@ -25,15 +22,14 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "none",
     color: "#58696D",
   },
-  typo :
-  {
-    margin: "0rem 1rem",
-    '@media only screen and (max-width: 600px)': {
-      display: 'none',
-    }
-   }
+  // typo :
+  // {
+  //   margin: "0rem 1rem",
+  //   '@media only screen and (max-width: 600px)': {
+  //     display: 'none',
+  //   }
+  //  }
 }));
-
 
 export default function StyleButton() {
   const classes = useStyles();
@@ -45,19 +41,16 @@ export default function StyleButton() {
         endIcon={<ArrowForwardIosSharpIcon />}
         onClick={() => console.log("hey")}
       >
-        {/* <Link href="/contact">
-          <a className={classes.link}>Get started</a>
-        </Link> */}
         Get started
       </Button>
-      <Typography
+      {/* <Typography
         variant="subtitle2"
         component="span"
 
         className={classes.typo}
       >
-        {/* Get one month free Trial! cancel anytime */}
-      </Typography>
+        Get one month free Trial! cancel anytime
+      </Typography> */}
     </div>
   );
 }

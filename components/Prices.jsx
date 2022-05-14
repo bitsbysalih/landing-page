@@ -11,7 +11,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
 
-const useCardHeaderStyles = makeStyles(() => ({
+const useStyles = makeStyles(() => ({
   card: {
     borderColor: "#E3E3E3",
     borderRadius: "8.05664px",
@@ -47,7 +47,7 @@ const useCardHeaderStyles = makeStyles(() => ({
 }));
 
 export default function CenteredGrid() {
-  const classes = useCardHeaderStyles();
+  const classes = useStyles();
 
   return (
     <Box id="price">
@@ -55,14 +55,14 @@ export default function CenteredGrid() {
         We made sure you get the best prices so you
         <br /> can thrive !
       </Typography>
-      <Typography variant="h6" className={classes.typo}>
+      <Typography  className={classes.typo}>
         Our Extended Business Card is extremely affordable at every scale. Our
         goal is to provide
         <br /> amazing technology for everyone for the lowest price possible.
       </Typography>
       <Box>
         <Box style={{ margin: "4rem auto" }}>
-          <Container>
+
             {/* <Grid container spacing={6} xs={12} lg={12}   direction="row"
         justifyContent="center"
         alignItems="center"> */}
@@ -265,7 +265,7 @@ export default function CenteredGrid() {
                 <Paper className={classes.card}>
                   <CardHeader
                     action={
-                      <Typography component="div" variant="h5">
+                      <Typography  variant="h5">
                         {" "}
                         100 <br /> <small>cards</small>{" "}
                       </Typography>
@@ -301,7 +301,7 @@ export default function CenteredGrid() {
                 <Paper className={classes.card}>
                   <CardHeader
                     action={
-                      <Typography component="div" variant="h5">
+                      <Typography  variant="h5">
                         {" "}
                         200+ <br /> <small>cards</small>{" "}
                       </Typography>
@@ -332,7 +332,7 @@ export default function CenteredGrid() {
                 </Paper>
               </Grid>
             </Grid>
-          </Container>
+
         </Box>
       </Box>
     </Box>

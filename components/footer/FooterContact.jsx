@@ -7,13 +7,11 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Logo from "../logo/Logo";
 
-
 const Footer = () => {
-
   return (
-    <Box style={{ marginTop:'8rem'}}>
+    <Box style={{ marginTop: "8rem" }}>
       <footer>
-        <Container style={{textAlign: "center"}} >
+        <Container style={{ textAlign: "center" }}>
           <Grid container>
             <Grid item xs={3} sm={3} md={3} lg={3}>
               <Box>
@@ -45,11 +43,16 @@ const Footer = () => {
             </Grid>
           </Grid>
           {/* Logo */}
-          <Box style={{   display: 'flex',
-  alignItems: 'flex-end',marginTop:'4rem' }}>
+          <Box
+            style={{
+              display: "flex",
+              alignItems: "flex-end",
+              marginTop: "4rem",
+            }}
+          >
             <Logo />
           </Box>
-          <Box>
+          {/* <Box>
             <Typography
               component="div"
               variant="body2"
@@ -58,7 +61,7 @@ const Footer = () => {
             >
 
             </Typography>
-          </Box>
+          </Box> */}
         </Container>
       </footer>
     </Box>

@@ -14,7 +14,7 @@ function Ads() {
   return (
     <Box style={{ textAlign: "center" }}>
       <Grid>
-        <Typography component="div" variant="h5" style={{ margin: "2rem auto"}}>
+        <Typography variant="h5" style={{ margin: "2rem auto"}}>
           Companies we work with!
         </Typography>
         <Grid container spacing={2}>

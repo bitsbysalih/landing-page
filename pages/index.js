@@ -15,13 +15,13 @@ export default function Home() {
 
   return (
 
-     <div className={styles.container}>
+    <div className={styles.container}>
        <Head>
          <title>Beyin</title>
          <meta name="description" content="Beyin Digital Technology" />
         <link rel="icon" href="/favicon.ico" />
        </Head>
-        <main>
+        <div>
           <Header />
           <Container>
           <Hero />
@@ -33,10 +33,10 @@ export default function Home() {
           <Works />
           <Footer />
           </Container>
-        </main>
+        </div>
 
 
-     </div>
+    </div>
 
   )
 }

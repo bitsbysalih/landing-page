@@ -1,29 +1,23 @@
 import * as React from "react";
-import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import { Typography, makeStyles } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import StyleButton from "./Button/StyleButton";
-import { useTheme } from "@material-ui/core/styles";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Link from "next/link";
 import styles from "../styles/hero.module.css"
 
 export default function Hero() {
-
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("xs"));
 
   return (
     <div id="hero" className={styles.box}>
       <Grid container direction="row" justifyContent="space-between">
         <Grid item sm={7} md={6} lg={7}>
           <div className={styles.boxx}>
-            <Typography variant="h4" className={styles.typo}>
+            <Typography    variant="h4" className={styles.typo}>
               Get the most effective business <br />
               card ever for only 1$/month
             </Typography>
             <Typography
-              component="div"
+             
               variant="body1"
               style={{ margin: "2rem 1px"}}>
               Extended Business Card Platform allows you to create extended
@@ -40,6 +34,7 @@ export default function Hero() {
         </Grid>
         {/* video */}
         <Grid
+        item
           container
           alignItems="center"
           justifyContent="center"

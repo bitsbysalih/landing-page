@@ -1,7 +1,7 @@
-import React, { useRef ,useState} from "react";
+import React, { useRef, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 import {
   Grid,
@@ -29,45 +29,43 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function ContactForm() {
-  const form  = useRef();
+  const form = useRef();
   const [name, setName] = React.useState("");
   const [namee, setNamee] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
   const [phone, setPhone] = React.useState("");
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    // console.log(email, password);
-    // clearing the values
-
-
-  }
-
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_cimlf7l', 'template_uwx4iaq',e.target, 'e2S4DcJNxPge4El9X')
-      .then((result) => {
-        console.log(result.text);
-
-      }, (error) => {
+    emailjs
+      .sendForm(
+        "service_cimlf7l",
+        "template_uwx4iaq",
+        e.target,
+        "e2S4DcJNxPge4El9X"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
           console.log(error.text);
-
-      });
-      // alert('Email Send!')
-      setName("");
-      setNamee("");
-      setPhone("");
-      setEmail("");
-      setMessage("");
+        }
+      );
+    // alert('Email Send!')
+    setName("");
+    setNamee("");
+    setPhone("");
+    setEmail("");
+    setMessage("");
   };
-
 
   const classes = useStyles();
 
   return (
-    <Grid item  style={{ margin: "3rem auto"}}>
+    <Grid item style={{ margin: "3rem auto" }}>
       <Grid>
         <div>
           <Grid container direction="column" alignItems="center">
@@ -81,7 +79,7 @@ export default function ContactForm() {
                   <Typography
                     variant="body2"
                     color="textSecondary"
-                    component="p"
+                    component="div"
                     gutterBottom
                   >
                     Fill up the form and our team will get back to you within 24
@@ -91,33 +89,33 @@ export default function ContactForm() {
                     <Grid container spacing={1}>
                       <Grid xs={12} sm={6} item>
                         <TextField
-                        type="text"
-                        name="first name"
-                        value={name}
+                          type="text"
+                          name="first name"
+                          value={name}
                           placeholder="Enter first name"
                           label="First Name"
                           variant="outlined"
                           fullWidth
                           required
-                          onChange={e => setName(e.target.value)}
+                          onChange={(e) => setName(e.target.value)}
                         />
                       </Grid>
                       <Grid xs={12} sm={6} item>
                         <TextField
-                         type="text"
-                         name="last name"
-                         value={namee}
+                          type="text"
+                          name="last name"
+                          value={namee}
                           placeholder="Enter last name"
                           label="Last Name"
                           variant="outlined"
                           fullWidth
                           required
-                          onChange={e => setNamee(e.target.value)}
+                          onChange={(e) => setNamee(e.target.value)}
                         />
                       </Grid>
                       <Grid item xs={12}>
                         <TextField
-                         name="user_email"
+                          name="user_email"
                           type="email"
                           value={email}
                           placeholder="Enter email"
@@ -143,24 +141,26 @@ export default function ContactForm() {
                       </Grid>
                       <Grid item xs={12}>
                         <TextField
-                         name="message"
+                          name="message"
                           label="message"
                           value={message}
                           type="text"
                           multiline
-                          rows={4}
+                          row={4}
                           placeholder="Type your message here"
                           variant="outlined"
                           fullWidth
                           required
                           onChange={(e) => setMessage(e.target.value)}
-
                         />
                       </Grid>
                       <Grid item xs={12}>
-                        <Button type="submit" value="send"
-                        className={classes.get}
-                        fullWidth >
+                        <Button
+                          type="submit"
+                          value="send"
+                          className={classes.get}
+                          fullWidth
+                        >
                           Send
                         </Button>
                       </Grid>
@@ -176,5 +176,3 @@ export default function ContactForm() {
     </Grid>
   );
 }
-// service_k5vjrah
-// onClick={handleSubmit}

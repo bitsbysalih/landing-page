@@ -30,7 +30,7 @@ function DrawerComponent() {
     <>
       <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
         <List>
-        <ListItem onClick={() => setOpenDrawer(false)}>
+          <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link href="#">
                 <a className={classes.link}>Home</a>

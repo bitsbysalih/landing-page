@@ -1,0 +1,23 @@
+.box {
+  margin: 10rem 1rem 10rem;
+}
+.boxx {
+  text-align: left;
+  margin: 4rem 2rem;
+  width: 90%;
+  max-height: 100%;
+}
+.typo {
+  margin-top: 1rem;
+  font-family: "Poppins";
+  font-weight: 300;
+  line-height: 54px;
+  font-size: 36px;
+}
+
+.link {
+  font-family: "Poppins";
+  text-decoration: none;
+  color: #58696d;
+  font-size: 21px;
+}

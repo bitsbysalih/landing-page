@@ -14,7 +14,7 @@ export default function AutoGrid() {
       <Container>
         <Grid container className={style.grid}>
           <div className={style.img}>
-            <Image src={Pic} />
+            <Image src={Pic} alt="Image Beyin" />
           </div>
           <Grid className={style.grid}>
             <ContactForm />

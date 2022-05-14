@@ -7,26 +7,25 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Logo from "./logo/Logo";
 
-
 const useStyles = makeStyles(() => ({
-grid:{
-  '@media only screen and (max-width: 600px)': {
-    fontSize:"10px"
-  }
-}
-}))
+  grid: {
+    "@media only screen and (max-width: 600px)": {
+      fontSize: "10px",
+    },
+  },
+}));
 
 const Footer = () => {
-const classes = useStyles();
+  const classes = useStyles();
   return (
     <Box style={{ marginTop: "12rem" }}>
       <footer>
-        <Container style={{textAlign: "center"}} >
+        <Container style={{ textAlign: "center" }}>
           <Grid container spacing={4} className={classes.grid}>
             <Grid item xs={3} sm={6} md={3} lg={3}>
               <Box>
                 <Link underline="none" href="/" color="inherit">
-                 T&C
+                  T&C
                 </Link>
               </Box>
             </Grid>
@@ -57,12 +56,7 @@ const classes = useStyles();
             <Logo />
           </Box>
           <Box>
-            <Typography
-              component="div"
-              variant="body2"
-              style={{fontSize: "10px"}}
-
-            >
+            <Typography variant="body2" style={{ fontSize: "10px" }}>
               Beyin Digital Technology Limited | Abu Dhabi, Masdar city
               <br />
               © Beyin Digital Technology Limited - 2022. The trademarks, logos,

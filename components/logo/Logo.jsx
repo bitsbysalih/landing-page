@@ -6,7 +6,7 @@ export default function Logo() {
   return (
       <div>
       <Link href="/">
-        <a >
+        <a>
         <Image src={Beyin} alt="Beyin Logo" />
         </a>
       </Link>
