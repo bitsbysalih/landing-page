@@ -11,7 +11,7 @@ const useStyles = makeStyles(() => ({
     },
   },
   button: {
-    border: "1.5px solid #E3E3E3",
+    border: "1.5px solid #a39f9f",
     background: "#FBFBFB",
     borderRadius: "22px",
     width: "220px",
@@ -30,6 +30,7 @@ const useStyles = makeStyles(() => ({
   //   }
   //  }
 }));
+
 
 export default function StyleButton() {
   const classes = useStyles();
