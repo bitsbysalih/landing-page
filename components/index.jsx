@@ -83,18 +83,19 @@ export default function Work() {
                 <Grid item xs={4}>
                   <Typography
                     style={{ fontSize: "4rem", margin: "-22px 14px" }}
+                    className={style.tow}
                   >
                     2
                   </Typography>
                 </Grid>
                 <Grid item xs={8} sm={8} md={8} lg={6}>
-                  <Typography variant="body1">
+                  <Typography variant="body1" className={style.typoPhone}>
                     Click on start, then allow the camera to scan the card.
                   </Typography>
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item sm={8} md={10} lg={10} style={{ margin: "2.5rem 1rem" }}>
+            <Grid item sm={8} md={10} lg={10} style={{ margin: "2.5rem 1rem" }} className={style.typoPhone}>
               <Typography>
                 The website will recognize the card and show the Extended
                 Business Card.

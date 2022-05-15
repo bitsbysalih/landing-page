@@ -25,16 +25,18 @@
     align-items: center;
 
   }
-  .typo {
+  .typo, .typo2 {
     text-align: left;
     margin: 1rem auto;
-
-
   }
-  @media only screen and (max-width: 600px) {
-.typo {
-    margin:auto -0.4rem
 
+  @media only screen and (max-width: 600px) {
+.typo  {
+      width: 120%;
+}
+.typo2{
+  width: 90%;
 }
 
   }
+

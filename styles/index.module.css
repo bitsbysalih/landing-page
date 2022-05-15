@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
 }
+
 .imgIphone {
   box-shadow: 0px 67.6825px 87.2063px rgba(0, 0, 0, 0.01);
   border-radius: 19px;
@@ -26,3 +27,39 @@
 .gridCard {
   margin-left: 1rem;
 }
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .typoPhone {
+
+    margin: auto 2rem 1rem!important;
+
+  }
+  .tow {
+margin:-1.5rem 4rem!important;
+
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  .typoPhone {
+    border: 1px solid
+  }
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  .typoPhone {
+    border: 1px solid
+  }
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+  .typoPhone {
+    border: 1px solid
+  }
+} */

@@ -48,8 +48,7 @@ export const Works = () => {
       >
         <div className={style.box}>
           <Typography  variant="h4" style={{textAlign: "center"}}>
-            Let’s make your business card
-            <br /> close more deals
+            Let’s make your business card close more deals
           </Typography>
         </div>
        <Link href="/contact">

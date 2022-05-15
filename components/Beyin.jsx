@@ -65,7 +65,7 @@ export default function Beyin() {
                   <Image alt="icon heart" src={Vector} />
                 </div>
                 <Grid item xs={8} sm={8} md={8} lg={8}>
-                  <Grid container style={{ marginLeft: "2rem" }}>
+                  <Grid container style={{ marginLeft: "1.4rem" }}>
                     <Grid item>
                       <Typography variant="h5" className={style.typo}>
                         it keeps a lasting impression every time
@@ -84,7 +84,7 @@ export default function Beyin() {
                   <Image alt="icon infinity" src={Vectoor} />
                 </div>
                 <Grid item xs={8} sm={8} md={8} lg={8}>
-                  <Grid container style={{ marginLeft: "1.4rem" }}>
+                  <Grid container style={{ marginLeft: "0.9rem" }}>
                     <Grid item>
                       <Typography variant="h5" className={style.typo}>
                         Unlimited copies and views
@@ -117,7 +117,7 @@ export default function Beyin() {
                       <Typography variant="h5" className={style.typo}>
                         Works on all Smart devices
                       </Typography>
-                      <Typography variant="body2" className={style.typo}>
+                      <Typography variant="body2" className={style.typo2}>
                         The EBC card works on all popular smart devices like
                         Android and IOS as long as it can run Chrome, Edge or
                         Safari.
