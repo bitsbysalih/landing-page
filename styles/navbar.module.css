@@ -5,7 +5,7 @@
   display: flex;
 }
 .btn {
-  margin: auto 10rem;
+  margin: auto 5rem;
 }
 .link {
   font-family: "Poppins";
@@ -29,13 +29,21 @@
   font-size: 24px;
   line-height: 21px;
   text-decoration: none;
-  padding: 8px 2rem;
+  padding: 8px 3.5rem;
   color: #58696d;
 }
+
 .get {
   border: 1px solid #fff;
   border-radius: 24px;
   text-decoration: none;
   padding: 8px 2rem;
   color: #58696d;
+  font-size: 24px;
+}
+.log:hover {
+  background: #e9ebeb;
+}
+.get:hover {
+  background: #e9ebeb;
 }

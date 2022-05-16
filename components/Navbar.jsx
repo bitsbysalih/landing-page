@@ -88,16 +88,13 @@ function Navbar() {
               <a className={style.link}>Prices</a>
             </Link>
             <div className={style.btn}>
-              <Button size="large">
-                <Link href="/contact">
-                  <a className={style.get}>Get Started</a>
-                </Link>
-              </Button>
-              <Button>
-                <Link href="#">
-                  <a className={style.log}>Login</a>
-                </Link>
-              </Button>
+              <Link href="/contact">
+                <a className={style.get}>Get Started</a>
+              </Link>
+
+              <Link href="#">
+                <a className={style.log}>Login</a>
+              </Link>
             </div>
           </div>
         )}

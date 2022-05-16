@@ -13,12 +13,21 @@
 }
 
 .imgIphone {
-  box-shadow: 0px 67.6825px 87.2063px rgba(0, 0, 0, 0.01);
-  border-radius: 19px;
+/* Dark beyin */
+
+background: #1E2D3D;
+/* Beyin super dark */
+border-radius: 2.4rem;
+border: 3rem solid #151F2B;
+box-shadow: 0px 67.6825px 87.2063px rgba(0, 0, 0, 0.11);
 }
 .imgCard {
-  box-shadow: 0px 138px 189px -76px rgba(0, 0, 0, 0.03);
-  border-radius: 5px;
+  background: #F9FCFD;
+border: 0.525573px solid rgba(37, 45, 56, 0.23);
+box-shadow: 0px 88.8219px 131.393px -45.7249px rgba(0, 0, 0, 0.14);
+border-radius: 5.25573px;
+
+width:80%;
 }
 .typo2 {
   display: flex;

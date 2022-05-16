@@ -1,4 +1,4 @@
-import { Box, Grid ,Typography} from "@material-ui/core";
+import { Box, Grid, Typography, ButtonBase } from "@material-ui/core";
 // import { makeStyles } from "@material-ui/core/styles";
 import ImageCard from "../public/card.png";
 import ImageIphone from "../public/iPhone.png";
@@ -57,9 +57,9 @@ export default function Work() {
                 </Typography>
               </Typography>
             </Grid>
-            <Grid className={style.imgCard}>
-              <Image src={ImageCard} alt="Card image" />
-            </Grid>
+            <ButtonBase className={style.imgCard}>
+              <Image src={ImageCard} />
+            </ButtonBase>
           </Grid>
         </Grid>
         {/* tow card */}
@@ -72,10 +72,12 @@ export default function Work() {
           md={7}
           lg={5}
         >
-          <Grid item sm={5} md={3} className={style.imgIphone}>
-            <Image src={ImageIphone} alt="Iphone image" />
+          <Grid item>
+            <ButtonBase className={style.imgIphone}>
+              <Image src={ImageIphone} />
+            </ButtonBase>
           </Grid>
-          <Grid item sm={7} md={4} lg={8}>
+          <Grid item sm={5} md={4} lg={8}>
             <Grid item>
               <Grid container spacing={2}>
                 <Grid item xs={4}>
@@ -93,7 +95,14 @@ export default function Work() {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item sm={8} md={10} lg={10} style={{ margin: "2.5rem 1rem" }} className={style.typoPhone}>
+            <Grid
+              item
+              sm={8}
+              md={10}
+              lg={10}
+              style={{ margin: "2.5rem 1rem" }}
+              className={style.typoPhone}
+            >
               <Typography>
                 The website will recognize the card and show the Extended
                 Business Card.

@@ -4,7 +4,7 @@ import Card from "@material-ui/core/Card";
 import Typography from "@material-ui/core/Typography";
 import StyleButton from "./Button/StyleButton";
 import Link from "next/link";
-import style from "../styles/works.module.css"
+import style from "../styles/works.module.css";
 
 // const useStyles = makeStyles(() => ({
 //   card: {
@@ -39,7 +39,7 @@ import style from "../styles/works.module.css"
 export const Works = () => {
   // const classes = useStyles();
   return (
-    <Card className={style.card} id="works">
+    <div className={style.card} id="works">
       <Grid
         container
         direction="column"
@@ -47,17 +47,17 @@ export const Works = () => {
         alignItems="center"
       >
         <div className={style.box}>
-          <Typography  variant="h4" style={{textAlign: "center"}}>
+          <Typography variant="h4" style={{ textAlign: "center" }}>
             Let’s make your business card close more deals
           </Typography>
         </div>
-       <Link href="/contact">
-         <a className={style.link}>
-        <StyleButton />
-         </a>
-       </Link>
+        <Link href="/contact">
+          <a className={style.link}>
+            <StyleButton />
+          </a>
+        </Link>
       </Grid>
-    </Card>
+    </div>
   );
 };
 
