@@ -20,6 +20,8 @@ const useStyles = makeStyles(() => ({
   },
   icon: {
     color: "black",
+    // marginLeft: "20rem",
+    // flexGrow:-1000
   },
 }));
 

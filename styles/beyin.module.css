@@ -1,8 +1,9 @@
 .div {
     padding: 1.8rem;
-    max-width: 100%;
+    /* max-width: 100%; */
     text-align: center;
     margin:2rem auto;
+
 
   }
   .grid {
@@ -32,7 +33,7 @@
 
   @media only screen and (max-width: 600px) {
 .typo  {
-      width: 120%;
+      width: 112%;
 }
 .typo2{
   width: 90%;
@@ -40,3 +41,29 @@
 
   }
 
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .typo {
+
+    width: 80%;
+  }
+  .typo2{
+    width: 80%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .typo {
+
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .typo {
+
+    width: 70%;
+  }
+}

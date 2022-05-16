@@ -1,6 +1,4 @@
-import React from "react";
-import { Box, Grid } from "@material-ui/core";
-import Typography from "@material-ui/core/Typography";
+import { Box, Grid ,Typography} from "@material-ui/core";
 // import { makeStyles } from "@material-ui/core/styles";
 import ImageCard from "../public/card.png";
 import ImageIphone from "../public/iPhone.png";

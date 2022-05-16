@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Inter:wght@200;400;500;600;700;800;900&family=League+Spartan:wght@300;400;500;600&family=Neonderthaw&family=Poppins:wght@100;200;300;400;500&display=swap");
 
-.container {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
 
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
-    flex-direction: column;
-  }
-}
 .contact {
   /* background-image: url(../public/pic.png); */
   background-repeat: no-repeat;

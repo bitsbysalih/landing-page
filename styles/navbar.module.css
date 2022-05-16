@@ -5,7 +5,7 @@
   display: flex;
 }
 .btn {
-  margin: auto 5rem;
+  margin: auto 10rem;
 }
 .link {
   font-family: "Poppins";
@@ -17,7 +17,7 @@
   margin-left: 3rem;
 }
 .img {
-  flex-grow: 0.7;
+  flex-grow: 1;
 }
 .log {
   border: 1px solid #d7d3d3;

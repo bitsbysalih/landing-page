@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { useRouter } from 'next/router'
 import emailjs from "@emailjs/browser";
 
 import {
@@ -29,9 +30,10 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function ContactForm() {
+  const router = useRouter()
   const form = useRef();
   const [name, setName] = React.useState("");
-  const [namee, setNamee] = React.useState("");
+  const [name2, setName2] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
   const [phone, setPhone] = React.useState("");
@@ -54,12 +56,14 @@ export default function ContactForm() {
           console.log(error.text);
         }
       );
+
     // alert('Email Send!')
     setName("");
-    setNamee("");
+    setName2("");
     setPhone("");
     setEmail("");
     setMessage("");
+    // router.push("/")
   };
 
   const classes = useStyles();
@@ -67,9 +71,8 @@ export default function ContactForm() {
   return (
     <Grid item style={{ margin: "3rem auto" }}>
       <Grid>
-        <div>
+        <>
           <Grid container direction="column" alignItems="center">
-            <Typography gutterBottom variant="h3" align="center"></Typography>
             <Grid>
               <Card style={{ maxWidth: 470 }}>
                 <CardContent>
@@ -104,13 +107,13 @@ export default function ContactForm() {
                         <TextField
                           type="text"
                           name="last name"
-                          value={namee}
+                          value={name2}
                           placeholder="Enter last name"
                           label="Last Name"
                           variant="outlined"
                           fullWidth
                           required
-                          onChange={(e) => setNamee(e.target.value)}
+                          onChange={(e) => setName2(e.target.value)}
                         />
                       </Grid>
                       <Grid item xs={12}>
@@ -171,7 +174,7 @@ export default function ContactForm() {
             </Grid>
           </Grid>
           <Footer />
-        </div>
+        </>
       </Grid>
     </Grid>
   );
