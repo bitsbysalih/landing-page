@@ -1,5 +1,6 @@
 // import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
 import Card from "@material-ui/core/Card";
 import Typography from "@material-ui/core/Typography";
 import StyleButton from "./Button/StyleButton";
@@ -39,25 +40,26 @@ import style from "../styles/works.module.css";
 export const Works = () => {
   // const classes = useStyles();
   return (
-    <div className={style.card} id="works">
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        alignItems="center"
-      >
-        <div className={style.box}>
-          <Typography component="div" variant="h3" style={{textAlign: "center"}} className={style.typo} >
+    <Box  id="works" className={style.box}>
+
+<Grid >
+       <Grid className={style.card}>
+          <Typography component="div" variant=""  className={style.typo}>
             Let’s make your business card close more deals
           </Typography>
-        </div>
-        <Link href="/contact">
+        </Grid>
+
+       <Grid className={style.grid}>
+       <Link href="/contact">
           <a className={style.link}>
             <StyleButton />
           </a>
         </Link>
-      </Grid>
-    </div>
+       </Grid>
+        </Grid>
+
+
+    </Box>
   );
 };
 

@@ -11,6 +11,7 @@
   margin: auto 5rem;
 }
 .link {
+
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
@@ -19,6 +20,8 @@
   margin-left: 3rem;
   color: #1e2d3d;
   text-decoration: none;
+  flex-grow: 1;
+
 }
 .img {
   flex-grow: 1;

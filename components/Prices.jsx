@@ -43,17 +43,27 @@ const useStyles = makeStyles(() => ({
     width: '50%',
     fontStyle: 'normal',
 fontWeight: 400,
-fontSize: '28px',
+fontSize: '32px',
 lineHeight: '115%',
+'@media only screen and (max-width: 800px)':{
+  width: '90%',
+  marginLeft:'2rem',
+},
   },
   typo2: {
     margin: "3rem 1rem",
     width: '57%',
     fontStyle: 'normal',
     fontWeight: 400,
-    fontSize: '16px',
+    fontSize: '17px',
     lineHeight: '115%',
-   
+    '@media only screen and (max-width: 800px)':{
+      width: '90%',
+      marginLeft:'2rem',
+    },
+
+
+
   },
   title: {
     fontSize: "2rem",

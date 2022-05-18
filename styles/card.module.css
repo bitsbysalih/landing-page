@@ -1,12 +1,6 @@
 .box {
   margin: 10rem auto;
 }
-/* .box2 {
-  text-align: left;
-  margin: 4rem 4rem auto auto;
-  width: 90%;
-  max-height: 100%;
-} */
 .typo {
   margin-top: 1rem;
   font-family: "Poppins";
@@ -38,4 +32,37 @@
   text-decoration: none;
   color: #58696d;
   font-size: 21px;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 590px) {
+  .box {
+
+    width: 110%;
+  }
+  .typo{
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .box {
+    /* background: blue; */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .box {
+    /* background: yellow; */
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .boxx {
+    width: 90%;
+  }
 }

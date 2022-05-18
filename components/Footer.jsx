@@ -10,7 +10,9 @@ import Logo from "./logo/Logo";
 const useStyles = makeStyles(() => ({
   grid: {
     "@media only screen and (max-width: 600px)": {
-      fontSize: "10px",
+      fontSize: "13px",
+   
+
     },
   },
   footer: {
