@@ -37,7 +37,8 @@ const Footer = () => {
             </Grid> */}
             <Grid item xs={4} sm={3} md={4} lg={4}>
               <Box>
-                <Link underline="none" href="https://beyin.vercel.app/privacy" color="inherit">
+
+                <Link underline="none" target="_blank" href="https://beyin.vercel.app/privacy" color="inherit">
                   Privacy Policy
                 </Link>
               </Box>

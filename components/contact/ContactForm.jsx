@@ -12,7 +12,7 @@ import {
   CardContent,
   Button,
 } from "@material-ui/core";
-import Footer from "../footer/FooterContact";
+import Footer from "./FooterContact";
 
 const useStyles = makeStyles(() => ({
   root: {

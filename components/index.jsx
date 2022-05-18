@@ -47,12 +47,15 @@ export default function Work() {
         className={style.gridCard}
       >
         {/* one card */}
-        <Grid item xs={12} sm={6} md={4} lg={4}>
-          <Grid>
+        <Grid item xs={12} sm={5} md={4} lg={4}>
+          <Grid className={style.card}>
             <Grid style={{ margin: "1rem 0rem" }}>
               <Typography className={style.typo2} style={{ fontSize: "60px" }}>
                 1
-                <Typography style={{ margin: " 1rem 5rem" }}>
+                <Typography
+                  style={{ margin: " 1rem 5rem" }}
+                  className={style.typo2}
+                >
                   Using your phone <br /> scan the QR code.
                 </Typography>
               </Typography>
@@ -68,7 +71,7 @@ export default function Work() {
           justifyContent="center"
           item
           xs={12}
-          sm={6}
+          sm={7}
           md={7}
           lg={5}
         >

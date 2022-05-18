@@ -13,16 +13,14 @@ const Footer = () => {
       <footer>
         <Container style={{ textAlign: "center" }}>
           <Grid container>
-            {/* <Grid item xs={3} sm={3} md={3} lg={3}>
-              <Box>
-                <Link underline="none" href="/" color="inherit">
-                  T&C
-                </Link>
-              </Box>
-            </Grid> */}
             <Grid item xs={4} sm={3} md={4} lg={4}>
               <Box>
-                <Link underline="none" href="https://beyin.vercel.app/privacy" color="inherit">
+                <Link
+                  underline="none"
+                  target="_blank"
+                  href="https://beyin.vercel.app/privacy"
+                  color="inherit"
+                >
                   Privacy Policy
                 </Link>
               </Box>
@@ -52,16 +50,6 @@ const Footer = () => {
           >
             <Logo />
           </Box>
-          {/* <Box>
-            <Typography
-              component="div"
-              variant="body2"
-              style={{fontSize: "10px"}}
-
-            >
-
-            </Typography>
-          </Box> */}
         </Container>
       </footer>
     </Box>
