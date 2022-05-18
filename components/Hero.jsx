@@ -13,11 +13,11 @@ export default function Hero() {
         <Grid item sm={7} md={6} lg={7}>
           <div className={styles.boxx}>
             <Typography    variant="h4" className={styles.typo}>
-              Get the most effective business 
+              Get the most effective business
               card ever for only 1$/month
             </Typography>
             <Typography
-
+                className={styles.typo2}
               variant="body1"
               style={{ margin: "2rem 1px"}}>
               Extended Business Card Platform allows you to create extended

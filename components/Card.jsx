@@ -57,7 +57,7 @@ export default function Hero() {
             <Typography variant="h4" className={style.typo}>
               Be the market leader
             </Typography>
-            <Typography style={{ margin: "2rem 1px" }}>
+            <Typography style={{ margin: "2rem 1px" }} className={style.typo2}>
               Stay ahead of the curve; upgrading to EBC will boost your business{" "}
               <br /> reputation and sales, especially with high profile clients.
             </Typography>

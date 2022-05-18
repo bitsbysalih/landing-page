@@ -1,19 +1,36 @@
 .box {
-  margin: 10rem 1rem;
-
+  margin: 10rem auto;
 }
-.boxx {
+/* .box2 {
   text-align: left;
-  margin: 4rem 2rem;
+  margin: 4rem 4rem auto auto;
   width: 90%;
   max-height: 100%;
-}
+} */
 .typo {
   margin-top: 1rem;
   font-family: "Poppins";
-  font-weight: 300;
-  line-height: 54px;
+  font-style: normal;
+  font-weight: 400;
   font-size: 36px;
+  line-height: 115%;
+  /* or 41px */
+
+  /* Blue beyin */
+
+  color: #252d38;
+}
+.typo2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 115%;
+  /* or 18px */
+
+  /* Blue beyin */
+
+  color: #252d38;
 }
 
 .link {

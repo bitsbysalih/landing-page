@@ -6,81 +6,79 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 36px;
   line-height: 54px;
   display: flex;
   align-items: center;
 }
 
 .imgIphone {
-/* Dark beyin */
+  /* Dark beyin */
 
-background: #1E2D3D;
-/* Beyin super dark */
-border-radius: 2.4rem;
-border: 3rem solid #151F2B;
-box-shadow: 0px 67.6825px 87.2063px rgba(0, 0, 0, 0.11);
+  background: #1e2d3d;
+  /* Beyin super dark */
+  border-radius: 2.4rem;
+  border: 3rem solid #151f2b;
+  box-shadow: 0px 67.6825px 87.2063px rgba(0, 0, 0, 0.11);
 }
 .imgCard {
-  background: #F9FCFD;
-border: 0.525573px solid rgba(37, 45, 56, 0.23);
-box-shadow: 0px 88.8219px 131.393px -45.7249px rgba(0, 0, 0, 0.14);
-border-radius: 5.25573px;
+  background: #f9fcfd;
+  border: 0.525573px solid rgba(37, 45, 56, 0.23);
+  box-shadow: 0px 88.8219px 131.393px -45.7249px rgba(0, 0, 0, 0.14);
+  border-radius: 5.25573px;
 
-width:80%;
+  width: 80%;
 }
 .typo2 {
   display: flex;
   align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 115%;
 }
 .gridCard {
   margin-left: 1rem;
 }
 
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   .typoPhone {
     /* border: 20px solid red; */
-    margin: auto 2rem 1rem!important;
-  width: 80%;
-
+    margin: auto 2rem 1rem !important;
+    width: 80%;
   }
   .tow {
-margin:-1.5rem 4rem!important;
-
+    margin: -1.5rem 4rem !important;
   }
 
-.typo2 {
-
+  .typo2 {
     width: 115%;
     /* margin: 1rem; */
-
   }
-  .card{
+  .card {
     /* border: 1px solid; */
-    margin:1.4rem 3px;
+    margin: 1.4rem 3px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .typoPhone {
     /* border: 1px solid; */
     width: 70%;
   }
   .typo2 {
-
     width: 115%;
     /* margin: 1rem; */
   }
   .box {
     /* border: 1px solid; */
     display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 

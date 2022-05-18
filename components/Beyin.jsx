@@ -70,7 +70,7 @@ export default function Beyin() {
                       <Typography variant="h5" className={style.typo}>
                         it keeps a lasting impression every time
                       </Typography>
-                      <Typography variant="body1" className={style.typo}>
+                      <Typography variant="body1" className={style.typo2}>
                         Be memorable! leave a card that can be experienced again
                         and again long after you’re gone.
                       </Typography>
@@ -89,7 +89,7 @@ export default function Beyin() {
                       <Typography variant="h5" className={style.typo}>
                         Unlimited copies and views
                       </Typography>
-                      <Typography variant="body1" className={style.typo}>
+                      <Typography variant="body1" className={style.typo2}>
                         Distribute as many copies as you need, no strings
                         attached!
                       </Typography>

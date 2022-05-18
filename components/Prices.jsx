@@ -40,6 +40,20 @@ const useStyles = makeStyles(() => ({
   },
   typo: {
     margin: "3rem 1rem",
+    width: '50%',
+    fontStyle: 'normal',
+fontWeight: 400,
+fontSize: '28px',
+lineHeight: '115%',
+  },
+  typo2: {
+    margin: "3rem 1rem",
+    width: '57%',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    fontSize: '16px',
+    lineHeight: '115%',
+   
   },
   title: {
     fontSize: "2rem",
@@ -51,14 +65,14 @@ export default function CenteredGrid() {
 
   return (
     <Box id="price">
-      <Typography variant="h3" className={classes.typo}>
-        We made sure you get the best prices so you
-        <br /> can thrive !
-      </Typography>
       <Typography  className={classes.typo}>
+        We made sure you get the best prices so you
+         can thrive !
+      </Typography>
+      <Typography  className={classes.typo2}>
         Our Extended Business Card is extremely affordable at every scale. Our
         goal is to provide
-        <br /> amazing technology for everyone for the lowest price possible.
+       amazing technology for everyone for the lowest price possible.
       </Typography>
       <Box>
         <Box style={{ margin: "4rem auto" }}>

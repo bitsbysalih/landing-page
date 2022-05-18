@@ -47,7 +47,7 @@ export const Works = () => {
         alignItems="center"
       >
         <div className={style.box}>
-          <Typography variant="h4" style={{ textAlign: "center" }}>
+          <Typography component="div" variant="h3" style={{textAlign: "center"}} className={style.typo} >
             Let’s make your business card close more deals
           </Typography>
         </div>

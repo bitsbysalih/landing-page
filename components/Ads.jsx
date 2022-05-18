@@ -12,7 +12,11 @@ import Image from "next/image";
 
 function Ads() {
   return (
-    <Box style={{ textAlign: "center" ,margin:"2rem auto"}}>
+    <Box style={{ textAlign: "center" ,margin:"2rem auto",fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    fontWeight: 300,
+    fontSize: '24px',
+    lineHeight: '36px'}}>
       <Grid>
         <Typography variant="h5" style={{ margin: "2rem auto"}}>
           Companies we work with!

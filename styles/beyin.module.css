@@ -1,54 +1,69 @@
 .div {
-    padding: 1.8rem;
-    /* max-width: 100%; */
-    text-align: center;
-    margin:2rem auto;
-
-
-  }
-  .grid {
-    margin: 1.2rem auto;
-    width: 100%;
-    height: 100%;
-
-  }
-  .box {
-    display: flex;
-    justify-content: lef;
-    align-items:center;
-
-  }
-  .box1 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-  .typo, .typo2 {
-    text-align: left;
-    margin: 1rem auto;
-  }
-
-  @media only screen and (max-width: 600px) {
-   
-.typo  {
-      width: 112%;
+  padding: 1.8rem;
+  /* max-width: 100%; */
+  text-align: center;
+  margin: 2rem auto;
 }
-.typo2{
-  width: 90%;
+.grid {
+  margin: 2.2rem auto;
+  width: 100%;
+  height: 100%;
+}
+.box {
+  display: flex;
+  justify-content: lef;
+  align-items: center;
+}
+.box1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.typo,
+.typo2 {
+  text-align: left;
+  margin: 2rem auto;
+}
+.typo {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 115%;
+  color: #252d38;
+  padding: 0.7rem;
+}
+.typo2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 115%;
+  padding: 0.7rem;
+  /* or 18px */
+
+  /* Blue beyin */
+
+  color: #252d38;
 }
 
+@media only screen and (max-width: 600px) {
+  .typo {
+    width: 102%;
   }
+  .typo2 {
+    width: 90%;
+  }
+}
 
-  /* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .typo {
-
     width: 80%;
   }
-  .typo2{
+  .typo2 {
     width: 80%;
   }
 }
@@ -56,7 +71,6 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .typo {
-
     width: 100%;
   }
 }
@@ -64,7 +78,6 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .typo {
-
     width: 70%;
   }
 }
