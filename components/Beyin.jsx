@@ -117,10 +117,9 @@ export default function Beyin() {
                       <Typography variant="h5" className={style.typo}>
                         Works on all Smart devices
                       </Typography>
-                      <Typography variant="body2" className={style.typo2}>
-                        The EBC card works on all popular smart devices like
-                        Android and IOS as long as it can run Chrome, Edge or
-                        Safari.
+                      <Typography variant="body2" className={style.typo3}>
+                      The EBC card works on all popular smart devices like Android and IOS as long as it can run Chrome, Edge or Safari.
+
                       </Typography>
                     </Grid>
                   </Grid>

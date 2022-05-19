@@ -40,25 +40,22 @@ import style from "../styles/works.module.css";
 export const Works = () => {
   // const classes = useStyles();
   return (
-    <Box  id="works" className={style.box}>
-
-<Grid >
-       <Grid className={style.card}>
-          <Typography component="div" variant=""  className={style.typo}>
+    <Box id="works" className={style.box}>
+      <Grid>
+        <Grid className={style.card}>
+          <Typography component="div" variant="h2" className={style.typo}>
             Let’s make your business card close more deals
           </Typography>
         </Grid>
 
-       <Grid className={style.grid}>
-       <Link href="/contact">
-          <a className={style.link}>
-            <StyleButton />
-          </a>
-        </Link>
-       </Grid>
+        <Grid className={style.grid}>
+          <Link href="/contact">
+            <a className={style.link}>
+              <StyleButton />
+            </a>
+          </Link>
         </Grid>
-
-
+      </Grid>
     </Box>
   );
 };

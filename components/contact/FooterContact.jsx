@@ -9,7 +9,7 @@ import Logo from "../logo/Logo";
 
 const Footer = () => {
   return (
-    <Box style={{ marginTop: "8rem" }}>
+    <Box style={{ margin: "7rem 1rem" }}>
       <footer>
         <Container style={{ textAlign: "center" }}>
           <Grid container>
@@ -40,16 +40,6 @@ const Footer = () => {
               </Box>
             </Grid>
           </Grid>
-          {/* Logo */}
-          <Box
-            style={{
-              display: "flex",
-              alignItems: "flex-end",
-              marginTop: "4rem",
-            }}
-          >
-            <Logo />
-          </Box>
         </Container>
       </footer>
     </Box>

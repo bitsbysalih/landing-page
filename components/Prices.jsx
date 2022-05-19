@@ -12,6 +12,9 @@ import CardContent from "@material-ui/core/CardContent";
 import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles(() => ({
+  box:{
+marginBottom:'10rem'
+  },
   card: {
     borderColor: "#E3E3E3",
     borderRadius: "8.05664px",
@@ -74,7 +77,7 @@ export default function CenteredGrid() {
   const classes = useStyles();
 
   return (
-    <Box id="price">
+    <Box id="price" className={classes.box}>
       <Typography  className={classes.typo}>
         We made sure you get the best prices so you
          can thrive !

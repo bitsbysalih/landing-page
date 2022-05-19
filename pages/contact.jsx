@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import Container from "@material-ui/core/Container";
-import { Grid, Box, Paper } from "@material-ui/core";
+import { Grid, Box, Paper, makeStyles } from "@material-ui/core";
 import Navbar from "../components/Navbar";
 import ContactForm from "../components/contact/ContactForm";
 import style from "../styles/Home.module.css";
 import Image from "next/image";
-import Pic from "../public/pic.png";
+import Logo from "../public/logowhite.png";
 
 export default function AutoGrid() {
   return (
@@ -18,18 +18,18 @@ export default function AutoGrid() {
       </Head>
       <Box>
         <Navbar />
-        <Container>
-          <div style={{ margin:"1rem auto"}}>
-          <Grid container className={style.grid}>
-            <div className={style.img}>
-              <Image src={Pic} alt="Image Beyin" />
+        <Grid style={{ display: "flex", width: "100%" }}>
+          <Grid className={style.div}>
+            <div className={style.logo}>
+              <Image src={Logo} alt="Beyin Image" />
             </div>
-            <Grid className={style.grid}>
-              <ContactForm />
-            </Grid>
           </Grid>
+          <div className={style.form}>
+            <Container>
+              <ContactForm />
+            </Container>
           </div>
-        </Container>
+        </Grid>
       </Box>
     </div>
   );

@@ -10,15 +10,15 @@ import Logo from "./logo/Logo";
 const useStyles = makeStyles(() => ({
   grid: {
     "@media only screen and (max-width: 600px)": {
-      fontSize: "13px",
-   
+      fontSize: "16px",
+
 
     },
   },
   footer: {
-    fontSize: "10px",
-    "@media only screen and (min-width: 600px)": {
-      fontSize: "6px",
+    fontSize: "15px",
+    "@media only screen and (max-width: 600px)": {
+      fontSize: "9px",
     },
   },
 }));
@@ -37,7 +37,7 @@ const Footer = () => {
                 </Link>
               </Box>
             </Grid> */}
-            <Grid item xs={4} sm={3} md={4} lg={4}>
+            <Grid item xs={4} sm={4} md={4} lg={4}>
               <Box>
 
                 <Link underline="none" target="_blank" href="https://beyin.vercel.app/privacy" color="inherit">
@@ -45,14 +45,14 @@ const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={4} sm={3} md={4} lg={4}>
+            <Grid item xs={4} sm={4} md={4} lg={4}>
               <Box>
                 <Link underline="none" href="/contact" color="inherit">
                   Contact us
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={4} sm={3} md={4} lg={4}>
+            <Grid item xs={4} sm={4} md={4} lg={4}>
               <Box>
                 <Link underline="none" href="#price" color="inherit">
                   Pricing
