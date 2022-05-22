@@ -63,7 +63,7 @@ export default function Hero() {
             </Typography>
           </div>
           {/* <div> */}
-          <Link href="/contact">
+          <Link href="https://ebcdb.beyin.me/signup">
             <a className={style.link}>
               <StyleButton />
             </a>

@@ -91,7 +91,7 @@ function Navbar() {
               <a className={style.link}>Prices</a>
             </Link>
             <div className={style.btn}>
-              <Link href="/contact">
+              <Link href="https://ebcdb.beyin.me/signup">
                 <a className={style.get}>Get Started</a>
               </Link>
 

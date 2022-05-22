@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
     },
   },
   footer: {
-    fontSize: "15px",
+    fontSize: "13px",
     "@media only screen and (max-width: 600px)": {
       fontSize: "9px",
     },
@@ -65,7 +65,7 @@ const Footer = () => {
             <Logo />
           </Box>
           <Box>
-            <Typography variant="body2"  className={classes.footer}>
+            <Typography variant="body1"  className={classes.footer}>
               Beyin Digital Technology Limited | Abu Dhabi, Masdar city
               <br />
               © Beyin Digital Technology Limited - 2022. The trademarks, logos,

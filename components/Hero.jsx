@@ -25,7 +25,7 @@ export default function Hero() {
               without complex steps for as low as $1 per month!
             </Typography>
             {/* button */}
-          <Link href="/contact">
+          <Link href="https://ebcdb.beyin.me/signup">
           <a className={styles.link}>
           <StyleButton />
           </a>

@@ -49,7 +49,7 @@ export const Works = () => {
         </Grid>
 
         <Grid className={style.grid}>
-          <Link href="/contact">
+          <Link href="https://ebcdb.beyin.me/signup">
             <a className={style.link}>
               <StyleButton />
             </a>
