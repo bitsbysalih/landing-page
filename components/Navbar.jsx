@@ -75,9 +75,9 @@ function Navbar() {
           <DrawerComponent />
         ) : (
           <div className={style.div}>
-             {/* <Link href="/">
+             <Link href="/">
               <a className={style.link}>Home</a>
-            </Link> */}
+            </Link>
             <Link href="#hero">
               <a className={style.link}>About</a>
             </Link>

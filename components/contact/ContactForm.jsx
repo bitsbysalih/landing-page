@@ -57,7 +57,7 @@ export default function ContactForm() {
   return (
     <div>
       <Head>
-        <title>Get In Touch</title>
+        <title>Contact</title>
         <meta name="description" content="Let's get in touch" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

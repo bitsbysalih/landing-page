@@ -1,20 +1,25 @@
 import React from "react";
 import Head from "next/head";
-import styled from "styled-components";
-import Container from "@material-ui/core/Container";
-import { Grid, Box, Paper } from "@material-ui/core";
-import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
-import Navbar from "../components/Navbar";
+import {   Toolbar,
+  CssBaseline,
+  useTheme,
+  useMediaQuery,
+  Grid,
+  Box} from "@material-ui/core";
 import ContactForm from "../components/contact/ContactForm";
 import style from "../styles/Home.module.css";
+import styles from "../styles/navbar.module.css";
 import Image from "next/image";
-import Logo from "../public/logowhite.png";
-import bgImage from "../public/contect.png";
+import bgImage from "../public/aa.png";
 import beyinLogo from "../components/logo/Logo";
+import Link from "next/link";
+import Logo from "../components/logo/Logo";
+import DrawerComponent from "../components/Drawer"
 
 export default function AutoGrid() {
   // const classes = useStyles();
-
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <div>
       <Head>
@@ -23,7 +28,27 @@ export default function AutoGrid() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box>
-        <Navbar />
+        {/* <Navbar /> */}
+    <Box className={styles.bar}>
+      <CssBaseline />
+      <Toolbar>
+
+        <div className={styles.img}>
+          <Logo />
+        </div>
+        {isMobile ? (
+          // Icon
+          <DrawerComponent />
+        ) : (
+          <div>
+             <Link href="/">
+              <a className={style.link}>Home</a>
+            </Link>
+          </div>
+        )}
+      </Toolbar>
+    </Box>
+        {/*  */}
         <Grid
           container
           direction="row"
