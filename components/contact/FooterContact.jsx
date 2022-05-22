@@ -9,7 +9,7 @@ import Logo from "../logo/Logo";
 
 const Footer = () => {
   return (
-    <Box style={{ margin: "7rem 1rem" }}>
+    <Box style={{ marginTop: "10rem" }}>
       <footer>
         <Container style={{ textAlign: "center" }}>
           <Grid container>
@@ -44,7 +44,7 @@ const Footer = () => {
         </Container>
 
       </footer>
-     
+
     </Box>
   );
 };

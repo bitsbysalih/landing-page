@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Inter:wght@200;400;500;600;700;800;900&family=League+Spartan:wght@300;400;500;600&family=Neonderthaw&family=Poppins:wght@100;200;300;400;500&display=swap");
 
-/* .bgImage{
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+.box{
 
+position: fixed;
 
-} */
+}
 .icon {
   color: black;
 }
@@ -21,16 +19,15 @@
   text-decoration: none;
 }
 
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 1430px) {
+@media only screen and (max-width: 1440px) {
   .bgImage {
     display: none;
   }
+  .form {
+    margin: 3rem auto;
+  }
+
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1400px) {
-  .form {
-    margin: 6rem auto;
-  }
-}

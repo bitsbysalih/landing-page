@@ -27,7 +27,7 @@ export default function AutoGrid() {
   const [openDrawer, setOpenDrawer] = useState(false);
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
-    <div>
+    <Box>
       <Head>
         <title>Beyin Contact</title>
         <meta name="description" content="Beyin Digital Technology" />
@@ -78,24 +78,25 @@ export default function AutoGrid() {
           direction="row"
           justifyContent="space-evenly"
           alignItems="center"
+          className={style.box}
         >
-          <Grid item xs={6} lg={6} className={style.bgImage}>
+          <Grid item xs={6} className={style.bgImage}>
             {/* <Image src={Logo} alt="aa" /> */}
 
             <Image
               src={bgImage}
               alt="Beyin image"
               objectFit="cover"
-              quality={90}
+              quality={100}
             />
           </Grid>
-          <Grid item xs={6} lg={6}>
+          <Grid item xs={6}>
             <div className={style.form}>
               <ContactForm />
             </div>
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </Box>
   );
 }
