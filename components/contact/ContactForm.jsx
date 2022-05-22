@@ -31,26 +31,37 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function ContactForm() {
-  const [fullname, setFullname] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
 
-  async function handleSubmit(e) {
-    e.preventDefault();
+const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [phone, setPhone] = useState("");
+const [message, setMessage] = useState("");
 
-    const formData = {};
 
-    Array.from(e.currentTarget.elements).forEach((field) => {
-      if (!field.name) return;
-      formData[field.name] = field.value;
-    });
-
-    await fetch("/api/mail", {
-      method: "POST",
-      body: JSON.stringify(formData),
-    });
-  }
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  await fetch("/api/mail", {
+    body: JSON.stringify({
+      email: email,
+      name: name,
+      phone: phone,
+      // subject: subject,
+      message: message,
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+    method: "POST",
+  }).then((res) => {
+    if (res.status === 200) {
+      // alert("Your Message has been recieved");
+      setName("")
+      setEmail("")
+      setPhone("")
+      setMessage("")
+    }
+  });
+};
 
   const classes = useStyles();
 
@@ -85,67 +96,55 @@ export default function ContactForm() {
                         <Grid xs={12} item>
                           <TextField
                             type="text"
-                            name="fullname"
-                            // value={fullname}
+                            name="fullName"
+                            value={name}
                             placeholder="Enter first name"
                             label="FullName"
                             variant="outlined"
                             fullWidth
                             required
-                            // onChange={(e) => {
-                            //   setFullname(e.target.value);
-                            // }}
+
+                            onChange={(e) => {
+                              setName(e.target.value);
+                            }}
                           />
                         </Grid>
-                        {/* <Grid xs={12} sm={6} item>
-                        <TextField
-                          type="text"
-                          name="last name"
-                          value={lastName}
-                          placeholder="Enter last name"
-                          label="Last Name"
-                          variant="outlined"
-                          fullWidth
-                          required
-                          onChange={(e) =>  setValues({ ...values, lastName: e.target.value })}
-
-                        />
-                      </Grid> */}
                         <Grid item xs={12}>
                           <TextField
-                            name="user_email"
+                            name="email"
                             type="email"
-                            // value={email}
+                            value={email}
                             placeholder="Enter email"
                             label="Email"
                             variant="outlined"
                             fullWidth
                             required
-                            // onChange={(e) => {
-                            //   setEmail(e.target.value);
-                            // }}
+
+                            onChange={(e) => {
+                              setEmail(e.target.value);
+                            }}
                           />
                         </Grid>
                         <Grid item xs={12}>
                           <TextField
                             name="phone"
                             type="text"
-                            // value={phone}
+                            value={phone}
                             placeholder="Enter phone number"
                             label="Phone"
                             variant="outlined"
                             fullWidth
                             required
-                            // onChange={(e) => {
-                            //   setPhone(e.target.value);
-                            // }}
+                            onChange={(e) => {
+                              setPhone(e.target.value);
+                            }}
                           />
                         </Grid>
                         <Grid item xs={12}>
                           <TextField
                             name="message"
                             label="message"
-                            // value={message}
+                            value={message}
                             type="text"
                             multiline
                             row={4}
@@ -153,9 +152,9 @@ export default function ContactForm() {
                             variant="outlined"
                             fullWidth
                             required
-                            // onChange={(e) => {
-                            //   setMessage(e.target.value);
-                            // }}
+                            onChange={(e) => {
+                              setMessage(e.target.value);
+                            }}
                           />
                         </Grid>
                         <Grid item xs={12}>
@@ -175,7 +174,6 @@ export default function ContactForm() {
               </Grid>
             </Grid>
             <Footer />
-            {/* <Logo /> */}
           </>
         </Grid>
       </Grid>

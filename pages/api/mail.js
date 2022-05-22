@@ -1,57 +1,44 @@
+/* eslint-disable import/no-anonymous-default-export */
 const mail = require('@sendgrid/mail');
 
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default (req,res) => {
-  const body = JSON.stringify(req.body);
-  const message = `
-  Name: ${body.name}\r\n
-  Email: ${body.email}\r\n
-  Phone: ${body.phonel}\r\n
-  Message: ${body.message}
-`;
+async function sendEmail(req,res){
+try{
+ await mail.send({
+  from:"noreply@beyin.me",
+  to: "mgurshi73@gmail.com",
+  subject:`Have new message:${req.body.name}`,
+  html:`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
 
-mail.send({
-  to: "mgrushi73@gmail.com",
-  from: "noreply@beyin.me",
-  subject: 'New Message!',
-  text: message,
-  html: message.replace(/\r\n/g, '<br>'),
-}).then(() => {
- return res.status(200).json({ status: 'Ok' });
-});
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+  <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
 
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  </head>
+<body>
+<div style={{display:'flex',justifyContent: 'center';alignItems:'center';borderRadius:'5px';overFlow:'hidden';font-family: 'helvetica', 'ui-sans';}}>
+<h3>You've got a new mail from ${req.body.name}, their email is: ✉️${req.body.email} </h3>
+<div style="font-size: 16px;">
+<h3>Phone :${req.body.phone}</h3>
+<p>Message:</p>
+<p>${req.body.message}</p>
+<br>
+</div>
+</div>
+</body>
+  `
+ })
+} catch(error){
+  return res.status(error.statusCode || 500).json({error:error.message});
 }
+return res.status(200).json({error:"ok"})
+}
+export default sendEmail;
 
-// const sgMail = require('@sendgrid/mail');
-// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-// const msg = {
-//   to: "mgrushi73@gmail.com",
-//   from: "noreply@beyin.me", // Use the email address or domain you verified above
-//   subject: 'Sending with Twilio SendGrid is Fun',
-//   text: 'and easy to do anywhere, even with Node.js',
-//   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-// };
-// //ES6
-// sgMail
-//   .send(msg)
-//   .then(() => {}, error => {
-//     console.error(error);
-
-//     if (error.response) {
-//       console.error(error.response.body)
-//     }
-//   });
-// //ES8
-// (async () => {
-//   try {
-//     await sgMail.send(msg);
-//   } catch (error) {
-//     console.error(error);
-
-//     if (error.response) {
-//       console.error(error.response.body)
-//     }
-//   }
-// })();
