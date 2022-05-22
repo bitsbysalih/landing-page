@@ -16,7 +16,7 @@ import ContactForm from "../components/contact/ContactForm";
 import style from "../styles/Home.module.css";
 import styles from "../styles/navbar.module.css";
 import Image from "next/image";
-import bgImage from "../public/aa.png";
+import bgImage from "../public/contect.png";
 import beyinLogo from "../components/logo/Logo";
 import Link from "next/link";
 import Logo from "../components/logo/Logo";
