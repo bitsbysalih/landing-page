@@ -1,11 +1,17 @@
-import React from "react";
+import React ,{useState}from "react";
 import Head from "next/head";
 import {   Toolbar,
   CssBaseline,
   useTheme,
   useMediaQuery,
   Grid,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
   Box} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
 import ContactForm from "../components/contact/ContactForm";
 import style from "../styles/Home.module.css";
 import styles from "../styles/navbar.module.css";
@@ -14,16 +20,16 @@ import bgImage from "../public/aa.png";
 import beyinLogo from "../components/logo/Logo";
 import Link from "next/link";
 import Logo from "../components/logo/Logo";
-import DrawerComponent from "../components/Drawer"
+
 
 export default function AutoGrid() {
-  // const classes = useStyles();
   const theme = useTheme();
+  const [openDrawer, setOpenDrawer] = useState(false);
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <div>
       <Head>
-        <title>Beyin</title>
+        <title>Beyin Contact</title>
         <meta name="description" content="Beyin Digital Technology" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -37,8 +43,26 @@ export default function AutoGrid() {
           <Logo />
         </div>
         {isMobile ? (
-          // Icon
-          <DrawerComponent />
+          <>
+          <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
+            <List>
+              <ListItem onClick={() => setOpenDrawer(false)}>
+                <ListItemText>
+                  <Link href="/">
+                    <a className={style.link}>Home</a>
+                  </Link>
+                </ListItemText>
+              </ListItem>
+              </List>
+              </Drawer>
+              <IconButton
+        onClick={() => setOpenDrawer(!openDrawer)}
+        className={style.icon}
+      >
+        <MenuIcon />
+      </IconButton>
+              </>
+
         ) : (
           <div>
              <Link href="/">
