@@ -61,7 +61,7 @@ export default function Work() {
               </Typography>
             </Grid>
             <ButtonBase className={style.imgCard}>
-              <Image src={ImageCard} />
+              <Image src={ImageCard} alt="Card image"/>
             </ButtonBase>
           </Grid>
         </Grid>
@@ -75,9 +75,9 @@ export default function Work() {
           md={7}
           lg={5}
         >
-          <Grid item>
+          <Grid>
             <ButtonBase className={style.imgIphone}>
-              <Image src={ImageIphone} />
+              <Image src={ImageIphone} alt="Image Iphone" />
             </ButtonBase>
           </Grid>
           <Grid item sm={5} md={4} lg={8}>

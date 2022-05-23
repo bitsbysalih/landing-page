@@ -1,102 +1,63 @@
-import React ,{useState}from "react";
-import Head from "next/head";
-import {   Toolbar,
-  CssBaseline,
-  useTheme,
-  useMediaQuery,
-  Grid,
-  Drawer,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  Box} from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
-import ContactForm from "../components/contact/ContactForm";
-import style from "../styles/Home.module.css";
-import styles from "../styles/navbar.module.css";
-import Image from "next/image";
-import bgImage from "../public/contect.png";
-import beyinLogo from "../components/logo/Logo";
-import Link from "next/link";
-import Logo from "../components/logo/Logo";
 
+import Head from "next/head";
+import Grid from "@material-ui/core/Grid"
+import {  makeStyles, createStyles } from "@material-ui/core";
+import Side from "../components/contact/Side";
+import Form from "../components/contact/ContactForm";
+import Navbar from "../components/contact/Nav";
+
+const useStyles = makeStyles(() =>
+  createStyles({
+    wrapper: {
+      height: "100vh",
+    },
+    box: {
+      position: "fixed",
+    },
+    bgImage: {
+      height: "100vh",
+      "@media only screen and (max-width: 640px)": {
+        display: "none",
+      },
+    },
+    form: {
+      // position: 'relative',
+      "@media only screen and (max-width: 1440px)": {
+        margin: "3rem auto",
+      },
+    },
+  })
+);
 
 export default function AutoGrid() {
-  const theme = useTheme();
-  const [openDrawer, setOpenDrawer] = useState(false);
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const classes = useStyles();
+
   return (
-    <Box>
+    <div>
       <Head>
         <title>Beyin Contact</title>
         <meta name="description" content="Beyin Digital Technology" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box>
-        {/* <Navbar /> */}
-    <Box className={styles.bar}>
-      <CssBaseline />
-      <Toolbar>
+      <>
+        <Navbar />
 
-        <div className={styles.img}>
-          <Logo />
-        </div>
-        {isMobile ? (
-          <>
-          <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
-            <List>
-              <ListItem onClick={() => setOpenDrawer(false)}>
-                <ListItemText>
-                  <Link href="/">
-                    <a className={style.link}>Home</a>
-                  </Link>
-                </ListItemText>
-              </ListItem>
-              </List>
-              </Drawer>
-              <IconButton
-        onClick={() => setOpenDrawer(!openDrawer)}
-        className={style.icon}
-      >
-        <MenuIcon />
-      </IconButton>
-              </>
-
-        ) : (
-          <div>
-             <Link href="/">
-              <a className={style.link}>Home</a>
-            </Link>
-          </div>
-        )}
-      </Toolbar>
-    </Box>
-        {/*  */}
         <Grid
           container
           direction="row"
           justifyContent="space-evenly"
           alignItems="center"
-          className={style.box}
+          className={classes.box}
         >
-          <Grid item xs={6} className={style.bgImage}>
-            {/* <Image src={Logo} alt="aa" /> */}
-
-            <Image
-              src={bgImage}
-              alt="Beyin image"
-              objectFit="cover"
-              quality={100}
-            />
+          <Grid item xs={6} className={classes.bgImage}>
+            <Side />
           </Grid>
-          <Grid item xs={6}>
-            <div className={style.form}>
-              <ContactForm />
-            </div>
+
+          <Grid item sm={6} className={classes.form}>
+            <Form />
           </Grid>
         </Grid>
-      </Box>
-    </Box>
+      </>
+    </div>
   );
 }

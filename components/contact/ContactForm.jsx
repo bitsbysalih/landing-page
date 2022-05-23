@@ -2,9 +2,9 @@ import React, { useRef, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import { useRouter } from "next/router";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import Head from "next/head";
-import Logo from "../logo/Logo"
+import Logo from "../logo/Logo";
 import {
   Grid,
   TextField,
@@ -19,7 +19,7 @@ const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
   },
-  get: {
+  send: {
     border: "1.5px solid #E3E3E3",
     background: "#FBFBFB",
     borderRadius: "22px",
@@ -31,37 +31,35 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function ContactForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
-const [name, setName] = useState("");
-const [email, setEmail] = useState("");
-const [phone, setPhone] = useState("");
-const [message, setMessage] = useState("");
-
-
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  await fetch("/api/mail", {
-    body: JSON.stringify({
-      email: email,
-      name: name,
-      phone: phone,
-      // subject: subject,
-      message: message,
-    }),
-    headers: {
-      "Content-Type": "application/json",
-    },
-    method: "POST",
-  }).then((res) => {
-    if (res.status === 200) {
-      // alert("Your Message has been recieved");
-      setName("")
-      setEmail("")
-      setPhone("")
-      setMessage("")
-    }
-  });
-};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await fetch("/api/mail", {
+      body: JSON.stringify({
+        email: email,
+        name: name,
+        phone: phone,
+        // subject: subject,
+        message: message,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    }).then((res) => {
+      if (res.status === 200) {
+        // alert("Your Message has been recieved");
+        setName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+      }
+    });
+  };
 
   const classes = useStyles();
 
@@ -77,7 +75,7 @@ const handleSubmit = async (e) => {
           <>
             <Grid container direction="column" alignItems="center">
               <Grid>
-                <Card style={{ maxWidth: 570 }}>
+                <Card style={{ maxWidth: 700 }}>
                   <CardContent>
                     <Typography gutterBottom variant="h5">
                       Contact Us
@@ -103,7 +101,6 @@ const handleSubmit = async (e) => {
                             variant="outlined"
                             fullWidth
                             required
-
                             onChange={(e) => {
                               setName(e.target.value);
                             }}
@@ -119,7 +116,6 @@ const handleSubmit = async (e) => {
                             variant="outlined"
                             fullWidth
                             required
-
                             onChange={(e) => {
                               setEmail(e.target.value);
                             }}
@@ -161,7 +157,7 @@ const handleSubmit = async (e) => {
                           <Button
                             type="submit"
                             value="send"
-                            className={classes.get}
+                            className={classes.send}
                             fullWidth
                           >
                             Send
