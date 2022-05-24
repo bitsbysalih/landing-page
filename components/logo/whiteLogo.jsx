@@ -1,8 +1,9 @@
 
 
 
-const LogoWhite = () => {
+const whiteLogo = () => {
   return (
+  <>
     <svg
       width="120"
       height="50"
@@ -35,6 +36,7 @@ const LogoWhite = () => {
         fill="#ffffff"
       />
     </svg>
+  </>
   );
 };
-export default LogoWhite;
+export default whiteLogo;

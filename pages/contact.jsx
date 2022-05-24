@@ -4,13 +4,10 @@ import Grid from "@material-ui/core/Grid"
 import {  makeStyles, createStyles } from "@material-ui/core";
 import Side from "../components/contact/Side";
 import Form from "../components/contact/ContactForm";
-import Navbar from "../components/contact/Nav";
+import Nav from "../components/contact/Nav";
 
 const useStyles = makeStyles(() =>
   createStyles({
-    wrapper: {
-      height: "100vh",
-    },
     box: {
       position: "fixed",
     },
@@ -33,14 +30,14 @@ export default function AutoGrid() {
   const classes = useStyles();
 
   return (
-    <div>
+    <>
       <Head>
         <title>Beyin Contact</title>
         <meta name="description" content="Beyin Digital Technology" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <Navbar />
+        <Nav />
 
         <Grid
           container
@@ -58,6 +55,6 @@ export default function AutoGrid() {
           </Grid>
         </Grid>
       </>
-    </div>
+    </>
   );
 }

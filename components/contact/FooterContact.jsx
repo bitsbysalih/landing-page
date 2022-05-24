@@ -9,16 +9,16 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(() => ({
   div: {
     marginTop: "14rem",
-    
+
   },
 }));
 
-const Footer = () => {
+const FooterContact = () => {
   const classes = useStyles();
   return (
-    <div className={classes.div}>
+    <Box className={classes.div}>
       <footer>
-        <Container>
+        {/* <Container> */}
           <Grid
             container
             direction="row"
@@ -26,11 +26,15 @@ const Footer = () => {
             alignItems="flex-end"
           >
             <Grid item xs={7} sm={7} md={6} lg={5}>
+              <Typography>
               <b> © Beyin</b> | All rights reserved 2022
+              </Typography>
             </Grid>
             <Grid item xs={2} sm={2} md={1} lg={1}>
               <Link underline="none" href="/contact" color="inherit">
-                T&C
+            <a>
+            T&C
+            </a>
               </Link>
             </Grid>
             <Grid item xs={2} sm={3} md={3} lg={2}>
@@ -40,14 +44,16 @@ const Footer = () => {
                 href="https://beyin.vercel.app/privacy"
                 color="inherit"
               >
+                <a>
                 Privacy Policy
+                </a>
               </Link>
             </Grid>
           </Grid>
-        </Container>
+        {/* </Container> */}
       </footer>
-    </div>
+    </Box>
   );
 };
 
-export default Footer;
+export default FooterContact;
