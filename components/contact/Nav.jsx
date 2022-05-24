@@ -39,6 +39,20 @@ export default function Nav() {
                     </Link>
                   </ListItemText>
                 </ListItem>
+                <ListItem onClick={() => setOpenDrawer(false)}>
+                  <ListItemText>
+                    <Link href="https://ebcdb.beyin.me/signup">
+                      <a className={style.get}>Gest Started</a>
+                    </Link>
+                  </ListItemText>
+                </ListItem>
+                <ListItem onClick={() => setOpenDrawer(false)}>
+                  <ListItemText>
+                    <Link href="/">
+                      <a className={style.log}>Login</a>
+                    </Link>
+                  </ListItemText>
+                </ListItem>
               </List>
             </Drawer>
             <IconButton
@@ -51,6 +65,12 @@ export default function Nav() {
           <div>
             <Link href="/">
               <a className={style.link}>Home</a>
+            </Link>
+            <Link href="/">
+                      <a className={style.get}>Gest Started</a>
+                    </Link>
+            <Link href="https://ebcdb.beyin.me/signup">
+                      <a className={style.log}>Login</a>
             </Link>
           </div>
         )}
