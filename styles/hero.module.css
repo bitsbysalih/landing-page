@@ -48,6 +48,9 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .typo{
+width:110%;
+  }
   .video {
     /* background: red; */
     max-width: 100%;

@@ -41,40 +41,28 @@
 }
 .typo3 {
   font-size: 16px;
-  width:120%
+  width: 120%;
 }
 
-
-@media only screen and (max-width: 600px) {
-  .typo {
-    width: 102%;
+@media only screen and (min-width: 650px) {
+  .div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .typo2 , .typo3 {
-    width: 90%;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .typo {
-    width: 80%;
-  }
-  .typo2,.typo3 {
-    width: 80%;
-
+  .typo,
+  .typo2 {
+    width: 110%;
   }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .typo {
-    width: 100%;
+@media only screen and (max-width: 900px) {
+  .div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .typo {
-    width: 90%;
+  .typo,
+  .typo2 {
+    width: 110%;
   }
 }

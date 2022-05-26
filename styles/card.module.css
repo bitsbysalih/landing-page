@@ -34,29 +34,10 @@
   font-size: 21px;
 }
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 590px) {
-  .box {
-
-    width: 110%;
-  }
-  .typo{
+  .typo {
     text-align: center;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .box {
-    /* background: blue; */
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .box {
-    /* background: yellow; */
   }
 }
 
