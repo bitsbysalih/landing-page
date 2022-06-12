@@ -1,5 +1,5 @@
 {
-  "name": "loading-page",
+  "name": "landing-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -30,6 +30,7 @@
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5"
   }

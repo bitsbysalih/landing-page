@@ -31,10 +31,16 @@ export default function AutoGrid() {
 
   return (
     <>
-      <Head>
+       <Head>
         <title>Beyin Contact</title>
         <meta name="description" content="Beyin Digital Technology" />
-        <link rel="icon" href="/favicon.ico" />
+         <meta data-rh="true" name="google" content="translate" />
+         <meta data-rh="true" name="keywords" content="Businesses card, virtual business card, online business card" />
+         <meta data-rh="true" name="keywords" content="Augmented Reality business card,AR businesses card,VR businesses card,Virtual Reality Business card,Extended reality business card" />
+         <meta data-rh="true" name="robots" content="index, follow"/>
+         <meta name="Linkedin:site" content="@beyin-tech" />
+         <meta name="instagram:site" content="@beyin.me" />
+          <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
         <Nav />
