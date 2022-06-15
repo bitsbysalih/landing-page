@@ -29,15 +29,7 @@
 
   width: 80%;
 }
-.typo2 {
-  display: flex;
-  align-items: center;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 115%;
-}
+
 .gridCard {
   margin-left: 1rem;
 }
@@ -61,6 +53,7 @@
     /* border: 1px solid; */
     margin: 1.4rem 3px;
   }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -71,6 +64,8 @@
   }
   .typo2 {
     width: 115%;
+  border: 1px solid;
+
     /* margin: 1rem; */
   }
   .box {
@@ -80,4 +75,5 @@
     align-items: center;
     justify-content: center;
   }
+
 }
