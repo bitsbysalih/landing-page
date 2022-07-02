@@ -8,17 +8,9 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Landing Beyin</title>
-				<meta charset="utf-8" />
-				<meta
-					name="google-site-verification"
-					content="gFgDtzR0i6ZwRv2Bu3dj-Odvct12dr19DfqLunnasUU"
-				/>
-				<meta
-					name="viewport"
-					content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
-				/>
-				<meta name="description" content="Beyin Digital Technology" />
-				{/* <meta name="description" content="Watch TV shows and movies online. Stream TV episodes of South Park, Empire, SNL, Modern Family and popular movies on your favorite devices. Start your free trial now. Cancel anytime." /> */}
+					<meta name="description" content="Beyin Digital Technology" />
+				<meta name="description" content="Augmented reality service providers
+نبتكر ونطور المشاريع الرقمية | Digital innovators" />
 				<meta data-rh="true" name="google" content="translate" />
 				<meta
 					data-rh="true"
@@ -30,17 +22,33 @@ export default function Home() {
 					name="keywords"
 					content="Augmented Reality business card,AR businesses card,VR businesses card,Virtual Reality Business card,Extended reality business card"
 				/>
+				<meta
+					data-rh="true"
+					name="keywords"
+					content="webxr,mobile apps,webvr,augmented reality technology,augmented reality apps,my business card"
+				/>
+				<meta
+					data-rh="true"
+					name="keywords"
+					content="business card design,phone app,app development,free business cards,custom business cards,order business cards"
+				/>
+				<meta
+					data-rh="true"
+					name="keywords"
+					content="mobile application development,business cards online,best android apps,business site,ar technology,ar app,best business cards"
+				/>
+
 				<meta data-rh="true" name="robots" content="index, follow" />
 				<meta name="Linkedin:site" content="@beyin-tech" />
 				<meta name="instagram:site" content="@beyin.me" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div>
+			<main>
 				<Header />
 				<Container>
 					<Loading />
 				</Container>
-			</div>
+			</main>
 		</>
 	);
 }

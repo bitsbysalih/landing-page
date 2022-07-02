@@ -22,13 +22,6 @@ const useStyles = makeStyles(() => ({
     textTransform: "none",
     color: "#58696D",
   },
-  // typo :
-  // {
-  //   margin: "0rem 1rem",
-  //   '@media only screen and (max-width: 600px)': {
-  //     display: 'none',
-  //   }
-  //  }
 }));
 
 export default function StyleButton() {

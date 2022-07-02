@@ -15,7 +15,7 @@ export default function Hero() {
 						<Typography
 							variant="h4"
 							className={styles.typo}
-							
+
 						>
 							Get the most effective business card ever for only 1$/month
 						</Typography>
@@ -46,7 +46,7 @@ export default function Hero() {
 					md={4}
 					lg={3}
 				>
-					<Grid className={styles.grid}>
+					<div className={styles.grid}>
 						<video
 							controls
 							autostart="true"
@@ -56,7 +56,7 @@ export default function Hero() {
 							alt="Beyin Video"
 							className={styles.video}
 						/>
-					</Grid>
+					</div>
 				</Grid>
 			</Grid>
 		</div>

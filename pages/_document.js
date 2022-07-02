@@ -1,15 +1,50 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/styles"; // works with @material-ui/core/styles, if you prefer to use it.
-// import theme from "../src/theme"; // Adjust here as well
+
 
 export default class MyDocument extends Document {
 	render() {
 		return (
 			<Html lang="en">
 				<Head>
-					{/* Not exactly required, but this is the PWA primary color */}
-					{/* <meta name="theme-color" content={theme.palette.primary.main} /> */}
+					<meta name="description" content="Beyin Digital Technology" />
+					<meta
+						name="description"
+						content="Augmented reality service providers
+نبتكر ونطور المشاريع الرقمية | Digital innovators"
+					/>
+					<meta data-rh="true" name="google" content="translate" />
+					<meta
+						data-rh="true"
+						name="keywords"
+						content="Businesses card, virtual business card, online business card"
+					/>
+					<meta
+						data-rh="true"
+						name="keywords"
+						content="Augmented Reality business card,AR businesses card,VR businesses card,Virtual Reality Business card,Extended reality business card"
+					/>
+					<meta
+						data-rh="true"
+						name="keywords"
+						content="webxr,mobile apps,webvr,augmented reality technology,augmented reality apps,my business card"
+					/>
+					<meta
+						data-rh="true"
+						name="keywords"
+						content="business card design,phone app,app development,free business cards,custom business cards,order business cards"
+					/>
+					<meta
+						data-rh="true"
+						name="keywords"
+						content="mobile application development,business cards online,best android apps,business site,ar technology,ar app,best business cards"
+					/>
+
+					<meta data-rh="true" name="robots" content="index, follow" />
+					<meta name="Linkedin:site" content="@beyin-tech" />
+					<meta name="instagram:site" content="@beyin.me" />
+					<link rel="icon" href="/favicon.ico" />
 				</Head>
 				<body>
 					<Main />
@@ -20,32 +55,10 @@ export default class MyDocument extends Document {
 	}
 }
 
-// `getInitialProps` belongs to `_document` (instead of `_app`),
-// it's compatible with server-side generation (SSG).
-MyDocument.getInitialProps = async (ctx) => {
-	// Resolution order
-	//
-	// On the server:
-	// 1. app.getInitialProps
-	// 2. page.getInitialProps
-	// 3. document.getInitialProps
-	// 4. app.render
-	// 5. page.render
-	// 6. document.render
-	//
-	// On the server with error:
-	// 1. document.getInitialProps
-	// 2. app.render
-	// 3. page.render
-	// 4. document.render
-	//
-	// On the client
-	// 1. app.getInitialProps
-	// 2. page.getInitialProps
-	// 3. app.render
-	// 4. page.render
 
-	// Render app and page and get the context of the page with collected side effects.
+MyDocument.getInitialProps = async (ctx) => {
+
+
 	const sheets = new ServerStyleSheets();
 	const originalRenderPage = ctx.renderPage;
 
@@ -58,7 +71,7 @@ MyDocument.getInitialProps = async (ctx) => {
 
 	return {
 		...initialProps,
-		// Styles fragment is rendered after the app and page rendering finish.
+
 		styles: [
 			...React.Children.toArray(initialProps.styles),
 			sheets.getStyleElement(),
