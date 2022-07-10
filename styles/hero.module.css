@@ -53,30 +53,31 @@
 width:110%;
   }
   .video {
-    /* background: red; */
     max-width: 100%;
     height: 100%;
-    margin: auto 2rem;
   }
   .grid {
     height: 650px;
-    width: 400px;
+    /* width: 400px; */
     border-radius: 20px;
+  
+    margin: 5rem auto;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 300px) {
-  .video {
-    height: 95%;
-  }
+  /* .video {
+    max-height: 100%;
+    max-width: 300px;
+  } */
 }
 
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   .boxx {
     width: 90%;
   }
-}
+} */
