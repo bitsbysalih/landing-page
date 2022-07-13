@@ -28,6 +28,7 @@ export default function StyleButton() {
   const classes = useStyles();
 
   return (
+
     <div className={classes.div}>
       <Button
         className={classes.button}
@@ -36,14 +37,6 @@ export default function StyleButton() {
       >
         Get started
       </Button>
-      {/* <Typography
-        variant="subtitle2"
-        component="span"
-
-        className={classes.typo}
-      >
-        Get one month free Trial! cancel anytime
-      </Typography> */}
     </div>
   );
 }

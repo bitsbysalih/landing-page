@@ -32,9 +32,9 @@ const FooterContact = () => {
             </Grid>
             <Grid item xs={2} sm={2} md={1} lg={1}>
               <Link underline="none" href="/contact" color="inherit">
-            <a>
+            {/* <a> */}
             T&C
-            </a>
+            {/* </a> */}
               </Link>
             </Grid>
             <Grid item xs={2} sm={3} md={3} lg={2}>
@@ -44,9 +44,9 @@ const FooterContact = () => {
                 href="https://beyin.vercel.app/privacy"
                 color="inherit"
               >
-                <a>
+                {/* <a> */}
                 Privacy Policy
-                </a>
+                {/* </a> */}
               </Link>
             </Grid>
           </Grid>
