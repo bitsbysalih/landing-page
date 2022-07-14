@@ -45,6 +45,10 @@ export default class MyDocument extends Document {
 					<meta name="Linkedin:site" content="@beyin-tech" />
 					<meta name="instagram:site" content="@beyin.me" />
 					<link rel="icon" href="/favicon.ico" />
+					<meta
+						name="google-site-verification"
+						content="th0w1IxRhRL1luM22xO2EhIv_Gi_erWm5shJS5_L4H4"
+					/>
 				</Head>
 				<body>
 					<Main />
