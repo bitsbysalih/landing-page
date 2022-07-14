@@ -5,28 +5,6 @@ import ImageIphone from "../public/iPhone.png";
 import Image from "next/image";
 import style from "../styles/index.module.css";
 
-// const useStyles = makeStyles(() => ({
-//   box: { margin: "9rem auto", alignItems: "center", },
-//   typo: {
-//     fontFamily: 'Poppins',
-//     fontStyle: "normal",
-//     fontWeight: 300,
-//     fontSize: "40px",
-//     lineHeight: "54px",
-//     display: "flex",
-//     alignItems: "center",
-//   },
-//   imgIphone: {
-//     boxShadow: " 0px 67.6825px 87.2063px rgba(0, 0, 0, 0.01)",
-//     borderRadius: "19.5238px",
-//   },
-//   imgCard: {
-//     boxShadow: "0px 138px 189px -76px rgba(0, 0, 0, 0.03)",
-//     borderRadius: "5.25573px",
-//   },
-//   typo2: { fontSize: "60px", display: "flex" },
-//   gridCard: { marginLeft: "1rem" },
-// }));
 
 export default function Work() {
   // const classes = useStyles();
@@ -59,7 +37,7 @@ export default function Work() {
 									fontSize: "20px",
 									fontFamily: "Poppins",
 								}}
-							
+
 							>
 								Using your phone <br /> scan the QR code.
 							</Typography>

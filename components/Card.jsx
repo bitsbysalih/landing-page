@@ -8,38 +8,9 @@ import ImageCard from "../public/squircle.png";
 import Link from "next/link";
 import style from "../styles/card.module.css";
 
-// const useStyles = makeStyles(() => ({
-//   box: {
-//     margin: "10rem 1rem 10rem",
-//   },
-//   boxx: {
-//     textAlign: "left",
-//     margin: "4rem 2rem",
-//     width: "90%",
-//     maxHeight: "100%",
-//   },
-//   typo: {
-//     marginTop: "1rem",
-//     fontFamily: "Poppins",
-//     fontWeight: 300,
-//     lineHeight: "54px",
-//     fontSize: "36px",
-//   },
-//   button: {
-//     marginLeft: "1",
-//     border: "1px solid gray",
-//     borderRadius: "22px",
-//   },
-//   link: {
-//     fontFamily: "Poppins",
-//     textDecoration: "none",
-//     color: "#58696D",
-//     fontSize: "21px",
-//   },
-// }));
 
 export default function Hero() {
-  // const classes = useStyles();
+
 
   return (
 		<div className={style.box}>

@@ -9,43 +9,8 @@ import Vectoor from "../public/Vector2.png";
 import Flat from "../public/flat.png";
 import style from "../styles/beyin.module.css";
 
-// const useStyles = makeStyles((theme) => ({
-//   div: {
-//     padding: "1.8rem",
-//     maxWidth: "100%",
-//     textAlign: "center",
-
-//   },
-//   box: {
-//     display: "flex",
-//     justifyContent: "left",
-//     alignItems: "center",
-//   },
-//   box1: {
-//     width: "100%",
-//     height: "100%",
-//     display: "flex",
-//     justifyContent: "center",
-//     alignItems: "center",
-
-//   },
-//   typo: {
-//     textAlign: "left",
-//     margin: "1rem auto",
-//     '@media only screen and (max-width: 600px)': {
-//       margin:"auto -0.4rem",
-
-//     },
-//   },
-//   grid: {
-//     margin: "1.2rem auto",
-//     width: "100%",
-//     height: "100%",
-//   },
-// }));
-
 export default function Beyin() {
-  // const classes = useStyles();
+
 
   return (
     <div id="features">
