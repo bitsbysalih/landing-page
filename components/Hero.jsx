@@ -12,11 +12,7 @@ export default function Hero() {
 			<Grid container direction="row" justifyContent="space-between">
 				<Grid item sm={7} md={6} lg={7}>
 					<div className={styles.boxx}>
-						<Typography
-							variant="h4"
-							className={styles.typo}
-
-						>
+						<Typography variant="h4" className={styles.typo}>
 							Get the most effective business card ever for only 1$/month
 						</Typography>
 						<Typography
@@ -29,7 +25,7 @@ export default function Hero() {
 							without complex steps for as low as $1 per month!
 						</Typography>
 						{/* button */}
-						<Link href="https://ebcdb.beyin.me/signup">
+						<Link href="https://app.sailspad.com/signup">
 							<a className={styles.link}>
 								<StyleButton />
 							</a>
