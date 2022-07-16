@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import bgImage from "../../public/contect.png";
-import Logo from "../logo/whiteLogo";
+import Logo from "../logo/Logo";
 
 function Side() {
   return (
@@ -18,7 +18,7 @@ function Side() {
       >
         <Link href="/">
           <a>
-            <Logo />
+            {/* <Logo /> */}
           </a>
         </Link>
       </div>

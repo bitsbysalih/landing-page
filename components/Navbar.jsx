@@ -20,7 +20,9 @@ function Navbar() {
 			<Toolbar>
 				{/* Logo */}
 				<div className={style.img}>
-					<Logo />
+					<div className={style.logo}>
+						<Logo />
+					</div>
 				</div>
 				{isMobile ? (
 					// Icon

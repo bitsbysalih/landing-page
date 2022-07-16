@@ -24,8 +24,10 @@ export default function Nav() {
 			<CssBaseline />
 			<Toolbar>
 				{/* Logo */}
-				<div style={{ flexGrow: 1 }}>
-					<Logo />
+				<div className={style.img}>
+					<div className={style.logo}>
+						<Logo />
+					</div>
 				</div>
 				{isMobile ? (
 					// Icon
