@@ -7,10 +7,13 @@ export default function Home() {
   return (
 		<>
 			<Head>
-				<title>Landing Beyin</title>
-					<meta name="description" content="Beyin Digital Technology" />
-				<meta name="description" content="Augmented reality service providers
-نبتكر ونطور المشاريع الرقمية | Digital innovators" />
+				<title>Landing Sailspad</title>
+				<meta name="description" content="Sailspad Digital Technology" />
+				<meta
+					name="description"
+					content="Augmented reality service providers
+نبتكر ونطور المشاريع الرقمية | Digital innovators"
+				/>
 				<meta data-rh="true" name="google" content="translate" />
 				<meta
 					data-rh="true"

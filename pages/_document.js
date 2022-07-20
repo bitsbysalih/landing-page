@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
-					<meta name="description" content="Beyin Digital Technology" />
+					<meta name="description" content="Sailspad Digital Technology" />
 					<meta
 						name="description"
 						content="Augmented reality service providers
