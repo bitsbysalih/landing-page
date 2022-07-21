@@ -7,7 +7,7 @@ export default function Home() {
   return (
 		<>
 			<Head>
-				<title>Landing Sailspad</title>
+				<title>Sailspad</title>
 				<meta name="description" content="Sailspad Digital Technology" />
 				<meta
 					name="description"
